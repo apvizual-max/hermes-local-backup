@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: session-replay-mcp
+Version: 0.1.0
+Summary: Session Replay MCP Server - debugging and audit with deterministic replay
+Requires-Python: >=3.10
+Requires-Dist: mcp>=1.0.0
+Requires-Dist: pydantic>=2.0

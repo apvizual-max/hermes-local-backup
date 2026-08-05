@@ -1,0 +1,37 @@
+{
+  "bot_username": "sentinelprime911_bot",
+  "bot_id": 8677539910,
+  "bot_name": "Sentinel Prime",
+  "commands": [
+    {
+      "command": "start",
+      "description": "Start the bot and get welcome message"
+    },
+    {
+      "command": "help",
+      "description": "Show available commands"
+    },
+    {
+      "command": "status",
+      "description": "Check Hermes system status"
+    },
+    {
+      "command": "info",
+      "description": "Get bot and system information"
+    },
+    {
+      "command": "echo",
+      "description": "Echo a message back"
+    }
+  ],
+  "description": "\ud83d\udee9\ufe0f Sentinel Prime - Autonomous Hermes Agent System\n\nThis is a private bot for personal use only.\n\nAvailable commands:\n/start - Start the bot and get help\n/help - Show available commands\n/status - Check system status\n/info - Get bot information\n/echo - Echo a message",
+  "short_description": "Hermes Agent Sentinel Prime - Private bot for Alex",
+  "privacy_mode": "To set privacy mode (restrict bot to commands only in groups):",
+  "botfather_commands": [
+    "/setprivacy - Enable to only respond to commands in groups",
+    "/setjoingroups - Disable to prevent bot from being added to groups",
+    "/setinline - Disable to turn off inline mode"
+  ],
+  "mcp_server": "telegram-bot-mcp (custom Python, uses Bot API token)",
+  "status": "configured as private"
+}

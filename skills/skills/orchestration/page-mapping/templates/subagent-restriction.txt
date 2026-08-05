@@ -1,0 +1,48 @@
+# Subagent Restriction Template
+
+Copy this EXACTLY when dispatching a subagent for upper-monitor tasks.
+
+## Full Template
+
+```
+⛔⛔⛔ CRITICAL: READ BEFORE ANY TOOL CALL ⛔⛔⛔
+
+You are a HANDS subagent. DO NOT THINK. DO NOT EXPLORE. EXECUTE.
+
+TARGET (DO NOT CHANGE):
+- PID: 27416 | HWND: 1507982 | Upper monitor, origin (0,-1080)
+
+FORBIDDEN: browser_navigate, computer_use, browser_click, new windows
+ALLOWED: terminal (cua-driver mcp), read_file, write_file
+
+CLICK METHOD:
+proc = subprocess.Popen(['cua-driver', 'mcp', '--no-daemon-relaunch'], stdin=PIPE, stdout=PIPE, text=True)
+1. JSON-RPC get_window_state(pid=27416, window_id=1507982, max_elements=300)
+2. Parse: re.search(r'\[(\d+)\]\s+{ROLE}\s+"{LABEL}"', text)
+3. JSON-RPC click(pid=27416, window_id=1507982, element_index=N, delivery_mode="background")
+4. Wait 3s, JSON-RPC get_window_state → verify URL
+proc.terminate()
+
+TASK: {TASK_DESCRIPTION}
+OUTPUT: {OUTPUT_PATH}
+```
+
+## Placeholders
+
+| Placeholder | Example |
+|-------------|---------|
+| `{ROLE}` | Button, Hyperlink |
+| `{LABEL}` | Next, Job tracker |
+| `{TASK_DESCRIPTION}` | Click Next, scrape all job hyperlinks |
+| `{OUTPUT_PATH}` | C:/Users/apviz/Desktop/TEST/result.json |
+
+## Re-Delegation Pattern
+
+When a subagent fails:
+1. Check for D2_JUST_FAB markers: "complete", "total", "done"
+2. Identify root cause: wrong window? wrong tool? didn't wait?
+3. Add a new rule to the FORBIDDEN or ALLOWED section
+4. Re-dispatch with the improved schema
+5. Repeat until success
+
+Never accept fabricated output. Never scrape yourself — re-delegate.

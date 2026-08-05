@@ -1,0 +1,17 @@
+{
+  "page": "JOB_SEARCH_PAGE",
+  "url": "linkedin.com/jobs/collections/recommended/",
+  "window": {"pid": 27416, "hwnd": 1507982},
+  "grid": "16x9",
+  "key_elements": {
+    "jobs_nav_icon": {"grid": "G0011", "center_vx": 2106, "center_vy": -967, "label": "Jobs"},
+    "linkedin_logo": {"grid": "G0005", "center_vx": 1369, "center_vy": -967, "label": "LinkedIn"},
+    "search_bar": {"grid": "G0007", "center_vx": 1667, "center_vy": -967, "label": "Search by title, skill, or company"},
+    "for_you_tab": {"grid": "G0105", "center_vx": 1393, "center_vy": -913, "label": "For you"},
+    "hr_tab": {"grid": "G0107", "center_vx": 1514, "center_vy": -913, "label": "HR"},
+    "first_job_card": {"grid": "G0307", "center_vx": 1498, "center_vy": -737, "label": "Figma UI/UX Designer"},
+    "second_job_card": {"grid": "G0407", "center_vx": 1490, "center_vy": -637, "label": "Product Designer"},
+    "third_job_card": {"grid": "G0507", "center_vx": 1510, "center_vy": -537, "label": "Lead Product Designer"}
+  },
+  "note": "Job tracker NOT on this page. Navigate to main jobs page first."
+}

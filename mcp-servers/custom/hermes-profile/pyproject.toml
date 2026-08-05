@@ -1,0 +1,17 @@
+[project]
+name = "hermes-profile-mcp"
+version = "0.1.0"
+description = "Hermes Profile MCP Server - profile lifecycle management"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0",
+    "pydantic>=2.0",
+    "pyyaml>=6.0",
+]
+
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

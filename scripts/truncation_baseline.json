@@ -1,0 +1,1496 @@
+{
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\profiles\\default\\CONSTINTA.md": {
+    "lines": 32,
+    "size": 1759,
+    "mtime": 1785887774.3959157,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\profiles\\default\\CONSTINTA.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\.archive\\multi-monitor-failure-escalation\\SKILL.md": {
+    "lines": 130,
+    "size": 5253,
+    "mtime": 1785888829.8716104,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\.archive\\multi-monitor-failure-escalation\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\accidental-data-loss-prevention\\SKILL.md": {
+    "lines": 50,
+    "size": 2241,
+    "mtime": 1785888856.354209,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\accidental-data-loss-prevention\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\adversarial-ux-test\\SKILL.md": {
+    "lines": 210,
+    "size": 10045,
+    "mtime": 1785888829.8726401,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\adversarial-ux-test\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\agentmail\\SKILL.md": {
+    "lines": 145,
+    "size": 5065,
+    "mtime": 1785888829.8736117,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\agentmail\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\alloydb-omni-access-control\\SKILL.md": {
+    "lines": 97,
+    "size": 4292,
+    "mtime": 1785888829.8746111,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\alloydb-omni-access-control\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\alloydb-omni-container\\SKILL.md": {
+    "lines": 147,
+    "size": 5976,
+    "mtime": 1785888829.8746111,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\alloydb-omni-container\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\alloydb-omni-data\\SKILL.md": {
+    "lines": 222,
+    "size": 11380,
+    "mtime": 1785888829.8761177,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\alloydb-omni-data\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\alloydb-omni-health\\SKILL.md": {
+    "lines": 126,
+    "size": 5614,
+    "mtime": 1785888829.8761177,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\alloydb-omni-health\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\alloydb-omni-kubernetes\\SKILL.md": {
+    "lines": 652,
+    "size": 19696,
+    "mtime": 1785888829.877136,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\alloydb-omni-kubernetes\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\alloydb-omni-monitor\\SKILL.md": {
+    "lines": 190,
+    "size": 10454,
+    "mtime": 1785888829.878127,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\alloydb-omni-monitor\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\alloydb-omni-optimize\\SKILL.md": {
+    "lines": 108,
+    "size": 4084,
+    "mtime": 1785888829.8791635,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\alloydb-omni-optimize\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\alloydb-omni-performance\\SKILL.md": {
+    "lines": 231,
+    "size": 12831,
+    "mtime": 1785888856.3552108,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\alloydb-omni-performance\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\alloydb-omni-replication\\SKILL.md": {
+    "lines": 102,
+    "size": 4597,
+    "mtime": 1785888856.356209,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\alloydb-omni-replication\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\alloydb-postgres-access-management\\SKILL.md": {
+    "lines": 131,
+    "size": 5468,
+    "mtime": 1785888856.356209,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\alloydb-postgres-access-management\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\alloydb-postgres-admin\\SKILL.md": {
+    "lines": 165,
+    "size": 7006,
+    "mtime": 1785888856.3572195,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\alloydb-postgres-admin\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\alloydb-postgres-data\\SKILL.md": {
+    "lines": 165,
+    "size": 7354,
+    "mtime": 1785888856.358209,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\alloydb-postgres-data\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\alloydb-postgres-health\\SKILL.md": {
+    "lines": 153,
+    "size": 5876,
+    "mtime": 1785888856.358209,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\alloydb-postgres-health\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\alloydb-postgres-monitor\\SKILL.md": {
+    "lines": 245,
+    "size": 23952,
+    "mtime": 1785888856.359209,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\alloydb-postgres-monitor\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\alloydb-postgres-optimize\\SKILL.md": {
+    "lines": 106,
+    "size": 3282,
+    "mtime": 1785888856.3602116,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\alloydb-postgres-optimize\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\alloydb-postgres-replication\\SKILL.md": {
+    "lines": 116,
+    "size": 4415,
+    "mtime": 1785888856.3602116,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\alloydb-postgres-replication\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\antigravity_process_logging\\SKILL.md": {
+    "lines": 66,
+    "size": 3547,
+    "mtime": 1785888856.3617203,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\antigravity_process_logging\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\apple\\apple-notes\\SKILL.md": {
+    "lines": 113,
+    "size": 3382,
+    "mtime": 1785888856.3627307,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\apple\\apple-notes\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\apple\\apple-reminders\\SKILL.md": {
+    "lines": 149,
+    "size": 4630,
+    "mtime": 1785888856.3637316,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\apple\\apple-reminders\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\apple\\findmy\\SKILL.md": {
+    "lines": 150,
+    "size": 4734,
+    "mtime": 1785888856.3637316,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\apple\\findmy\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\apple\\imessage\\SKILL.md": {
+    "lines": 121,
+    "size": 3438,
+    "mtime": 1785888856.3647294,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\apple\\imessage\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\autonomous-ai-agents\\antigravity-cli\\SKILL.md": {
+    "lines": 260,
+    "size": 10620,
+    "mtime": 1785888856.3657572,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\autonomous-ai-agents\\antigravity-cli\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\autonomous-ai-agents\\claude-code\\SKILL.md": {
+    "lines": 764,
+    "size": 35922,
+    "mtime": 1785888856.366757,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\autonomous-ai-agents\\claude-code\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\autonomous-ai-agents\\codex\\SKILL.md": {
+    "lines": 170,
+    "size": 6783,
+    "mtime": 1785888856.367755,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\autonomous-ai-agents\\codex\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\autonomous-ai-agents\\computer-use\\SKILL.md": {
+    "lines": 375,
+    "size": 17908,
+    "mtime": 1785888856.3683944,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\autonomous-ai-agents\\computer-use\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\autonomous-ai-agents\\grok\\SKILL.md": {
+    "lines": 327,
+    "size": 14924,
+    "mtime": 1785888856.3694324,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\autonomous-ai-agents\\grok\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\autonomous-ai-agents\\hermes-agent\\SKILL.md": {
+    "lines": 223,
+    "size": 13060,
+    "mtime": 1785888856.370403,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\autonomous-ai-agents\\hermes-agent\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\autonomous-ai-agents\\honcho\\SKILL.md": {
+    "lines": 450,
+    "size": 20615,
+    "mtime": 1785888856.370403,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\autonomous-ai-agents\\honcho\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\autonomous-ai-agents\\opencode\\SKILL.md": {
+    "lines": 238,
+    "size": 8372,
+    "mtime": 1785888856.371434,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\autonomous-ai-agents\\opencode\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\behave-system_behavioral_protocols\\SKILL.md": {
+    "lines": 120,
+    "size": 50728,
+    "mtime": 1785888856.3734336,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\behave-system_behavioral_protocols\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\bigquery\\SKILL.md": {
+    "lines": 97,
+    "size": 4823,
+    "mtime": 1785888856.3734336,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\bigquery\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\bigquery-data-transfer-service\\SKILL.md": {
+    "lines": 213,
+    "size": 8227,
+    "mtime": 1785888856.374432,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\bigquery-data-transfer-service\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\bioinformatics\\SKILL.md": {
+    "lines": 254,
+    "size": 14865,
+    "mtime": 1785888856.3754306,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\bioinformatics\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\blackbox\\SKILL.md": {
+    "lines": 162,
+    "size": 6525,
+    "mtime": 1785888856.3764346,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\blackbox\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\blender-mcp\\SKILL.md": {
+    "lines": 160,
+    "size": 6963,
+    "mtime": 1785888856.3764346,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\blender-mcp\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\blockchain\\evm\\SKILL.md": {
+    "lines": 230,
+    "size": 9515,
+    "mtime": 1785888856.3774366,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\blockchain\\evm\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\blockchain\\hyperliquid\\SKILL.md": {
+    "lines": 230,
+    "size": 8046,
+    "mtime": 1785888856.3784325,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\blockchain\\hyperliquid\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\blockchain\\solana\\SKILL.md": {
+    "lines": 227,
+    "size": 7531,
+    "mtime": 1785888856.3794365,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\blockchain\\solana\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\blueprint\\blueprint-index\\SKILL.md": {
+    "lines": 301,
+    "size": 12929,
+    "mtime": 1785888856.3794365,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\blueprint\\blueprint-index\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\blueprint\\model-strategy-implementations\\SKILL.md": {
+    "lines": 189,
+    "size": 6153,
+    "mtime": 1785888856.3804317,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\blueprint\\model-strategy-implementations\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\building-data-apps\\SKILL.md": {
+    "lines": 176,
+    "size": 7368,
+    "mtime": 1785888856.3814313,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\building-data-apps\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\computer-use\\cua-driver-mcp-click\\SKILL.md": {
+    "lines": 155,
+    "size": 5031,
+    "mtime": 1785888856.3814313,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\computer-use\\cua-driver-mcp-click\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\computer-use\\cua-driver-multi-monitor-workaround\\SKILL.md": {
+    "lines": 302,
+    "size": 13852,
+    "mtime": 1785888856.3824325,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\computer-use\\cua-driver-multi-monitor-workaround\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\computer-use\\grid-based-page-mapping\\SKILL.md": {
+    "lines": 96,
+    "size": 3423,
+    "mtime": 1785888856.3834312,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\computer-use\\grid-based-page-mapping\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\computer-use\\sentinel-orchestration\\SKILL.md": {
+    "lines": 111,
+    "size": 3603,
+    "mtime": 1785888856.3844345,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\computer-use\\sentinel-orchestration\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\architecture-diagram\\SKILL.md": {
+    "lines": 167,
+    "size": 6872,
+    "mtime": 1785888856.3844345,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\architecture-diagram\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\ascii-art\\SKILL.md": {
+    "lines": 341,
+    "size": 11772,
+    "mtime": 1785888856.38543,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\ascii-art\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\ascii-video\\SKILL.md": {
+    "lines": 260,
+    "size": 15999,
+    "mtime": 1785888856.3864062,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\ascii-video\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\baoyu-article-illustrator\\SKILL.md": {
+    "lines": 226,
+    "size": 11232,
+    "mtime": 1785888856.3874326,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\baoyu-article-illustrator\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\baoyu-comic\\SKILL.md": {
+    "lines": 266,
+    "size": 15762,
+    "mtime": 1785888856.3884327,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\baoyu-comic\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\baoyu-infographic\\SKILL.md": {
+    "lines": 256,
+    "size": 11565,
+    "mtime": 1785888856.3884327,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\baoyu-infographic\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\claude-design\\SKILL.md": {
+    "lines": 669,
+    "size": 26661,
+    "mtime": 1785888856.3904295,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\claude-design\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\comfyui\\SKILL.md": {
+    "lines": 631,
+    "size": 25623,
+    "mtime": 1785888856.3904295,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\comfyui\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\concept-diagrams\\SKILL.md": {
+    "lines": 381,
+    "size": 17720,
+    "mtime": 1785888856.3914368,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\concept-diagrams\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\creative-ideation\\SKILL.md": {
+    "lines": 196,
+    "size": 11505,
+    "mtime": 1785888856.3924313,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\creative-ideation\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\design-md\\SKILL.md": {
+    "lines": 239,
+    "size": 9591,
+    "mtime": 1785888856.393437,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\design-md\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\excalidraw\\SKILL.md": {
+    "lines": 216,
+    "size": 8386,
+    "mtime": 1785888856.3944323,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\excalidraw\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\humanizer\\SKILL.md": {
+    "lines": 666,
+    "size": 36004,
+    "mtime": 1785888856.3954315,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\humanizer\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\hyperframes\\SKILL.md": {
+    "lines": 210,
+    "size": 15303,
+    "mtime": 1785888856.3964322,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\hyperframes\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\kanban-video-orchestrator\\SKILL.md": {
+    "lines": 227,
+    "size": 10923,
+    "mtime": 1785888856.3974302,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\kanban-video-orchestrator\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\manim-video\\SKILL.md": {
+    "lines": 288,
+    "size": 13186,
+    "mtime": 1785888856.3984468,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\manim-video\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\meme-generation\\SKILL.md": {
+    "lines": 149,
+    "size": 6412,
+    "mtime": 1785888856.3984468,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\meme-generation\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\p5js\\SKILL.md": {
+    "lines": 575,
+    "size": 28944,
+    "mtime": 1785888856.3994284,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\p5js\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\pixel-art\\SKILL.md": {
+    "lines": 237,
+    "size": 8693,
+    "mtime": 1785888856.4004347,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\pixel-art\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\popular-web-designs\\SKILL.md": {
+    "lines": 233,
+    "size": 10831,
+    "mtime": 1785888856.401446,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\popular-web-designs\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\pretext\\SKILL.md": {
+    "lines": 239,
+    "size": 15076,
+    "mtime": 1785888856.4024286,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\pretext\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\sketch\\SKILL.md": {
+    "lines": 239,
+    "size": 10902,
+    "mtime": 1785888856.403448,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\sketch\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\songwriting-and-ai-music\\SKILL.md": {
+    "lines": 324,
+    "size": 12093,
+    "mtime": 1785888856.403448,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\songwriting-and-ai-music\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\touchdesigner-mcp\\SKILL.md": {
+    "lines": 375,
+    "size": 16519,
+    "mtime": 1785888856.4044385,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\creative\\touchdesigner-mcp\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\data-autocleaning\\SKILL.md": {
+    "lines": 289,
+    "size": 13298,
+    "mtime": 1785888856.4054284,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\data-autocleaning\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\dataform-bigquery\\SKILL.md": {
+    "lines": 325,
+    "size": 13486,
+    "mtime": 1785888856.4064379,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\dataform-bigquery\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\dbt-bigquery\\SKILL.md": {
+    "lines": 319,
+    "size": 12955,
+    "mtime": 1785888856.4064379,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\dbt-bigquery\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\devops\\cli\\SKILL.md": {
+    "lines": 175,
+    "size": 5539,
+    "mtime": 1785888856.4074328,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\devops\\cli\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\devops\\docker-management\\SKILL.md": {
+    "lines": 300,
+    "size": 11531,
+    "mtime": 1785888856.408432,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\devops\\docker-management\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\devops\\hermes-s6-container-supervision\\SKILL.md": {
+    "lines": 198,
+    "size": 13064,
+    "mtime": 1785888856.408432,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\devops\\hermes-s6-container-supervision\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\devops\\pinggy-tunnel\\SKILL.md": {
+    "lines": 328,
+    "size": 14752,
+    "mtime": 1785888856.4094334,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\devops\\pinggy-tunnel\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\devops\\watchers\\SKILL.md": {
+    "lines": 130,
+    "size": 5504,
+    "mtime": 1785888856.4104314,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\devops\\watchers\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\discovering-gcp-data-assets\\SKILL.md": {
+    "lines": 259,
+    "size": 11053,
+    "mtime": 1785888856.4114354,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\discovering-gcp-data-assets\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\email\\himalaya\\SKILL.md": {
+    "lines": 323,
+    "size": 8470,
+    "mtime": 1785888856.4114354,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\email\\himalaya\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\exec-sentinel-orchestrator\\SKILL.md": {
+    "lines": 163,
+    "size": 20067,
+    "mtime": 1785888856.4124334,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\exec-sentinel-orchestrator\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\exec-sentinel-orchestrator\\exec-local-service-management\\SKILL.md": {
+    "lines": 251,
+    "size": 11096,
+    "mtime": 1785888856.4134321,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\exec-sentinel-orchestrator\\exec-local-service-management\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\exec-sentinel-orchestrator\\exec-persistent-browser-auth\\SKILL.md": {
+    "lines": 214,
+    "size": 11925,
+    "mtime": 1785888856.4144351,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\exec-sentinel-orchestrator\\exec-persistent-browser-auth\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\federate-lakehouse-catalog\\SKILL.md": {
+    "lines": 333,
+    "size": 11538,
+    "mtime": 1785888856.4144351,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\federate-lakehouse-catalog\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\finance\\3-statement-model\\SKILL.md": {
+    "lines": 452,
+    "size": 22926,
+    "mtime": 1785888856.4154327,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\finance\\3-statement-model\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\finance\\comps-analysis\\SKILL.md": {
+    "lines": 681,
+    "size": 32486,
+    "mtime": 1785888856.4164293,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\finance\\comps-analysis\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\finance\\dcf-model\\SKILL.md": {
+    "lines": 1289,
+    "size": 51294,
+    "mtime": 1785888856.4184332,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\finance\\dcf-model\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\finance\\excel-author\\SKILL.md": {
+    "lines": 263,
+    "size": 9956,
+    "mtime": 1785888856.4184332,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\finance\\excel-author\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\finance\\lbo-model\\SKILL.md": {
+    "lines": 310,
+    "size": 18089,
+    "mtime": 1785888856.4194367,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\finance\\lbo-model\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\finance\\merger-model\\SKILL.md": {
+    "lines": 163,
+    "size": 6335,
+    "mtime": 1785888856.4204807,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\finance\\merger-model\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\finance\\pptx-author\\SKILL.md": {
+    "lines": 192,
+    "size": 7483,
+    "mtime": 1785888856.4214716,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\finance\\pptx-author\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\finance\\stocks\\SKILL.md": {
+    "lines": 114,
+    "size": 3744,
+    "mtime": 1785888856.4214716,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\finance\\stocks\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\firestore-data\\SKILL.md": {
+    "lines": 176,
+    "size": 9360,
+    "mtime": 1785888856.4224732,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\firestore-data\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\gcloud-auth-verification\\SKILL.md": {
+    "lines": 70,
+    "size": 2927,
+    "mtime": 1785888856.4234734,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\gcloud-auth-verification\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\github\\codebase-inspection\\SKILL.md": {
+    "lines": 135,
+    "size": 4638,
+    "mtime": 1785888856.4234734,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\github\\codebase-inspection\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\github\\github-auth\\SKILL.md": {
+    "lines": 266,
+    "size": 8759,
+    "mtime": 1785888856.4244719,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\github\\github-auth\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\github\\github-code-review\\SKILL.md": {
+    "lines": 500,
+    "size": 14995,
+    "mtime": 1785888856.425474,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\github\\github-code-review\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\github\\github-issues\\SKILL.md": {
+    "lines": 389,
+    "size": 10584,
+    "mtime": 1785888856.4264727,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\github\\github-issues\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\github\\github-pr-workflow\\SKILL.md": {
+    "lines": 386,
+    "size": 11301,
+    "mtime": 1785888856.4274695,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\github\\github-pr-workflow\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\github\\github-repo-management\\SKILL.md": {
+    "lines": 535,
+    "size": 15148,
+    "mtime": 1785888856.4284763,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\github\\github-repo-management\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\health\\fitness-nutrition\\SKILL.md": {
+    "lines": 275,
+    "size": 11238,
+    "mtime": 1785888856.4284763,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\health\\fitness-nutrition\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\health\\neuroskill-bci\\SKILL.md": {
+    "lines": 478,
+    "size": 18041,
+    "mtime": 1785888856.4294748,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\health\\neuroskill-bci\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\hermes-agent\\hermes-mcp-integration\\SKILL.md": {
+    "lines": 227,
+    "size": 9713,
+    "mtime": 1785888856.4304442,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\hermes-agent\\hermes-mcp-integration\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\hermes-antigravity-bridge\\SKILL.md": {
+    "lines": 225,
+    "size": 8771,
+    "mtime": 1785888856.4304442,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\hermes-antigravity-bridge\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\hermes-app-update-recovery\\SKILL.md": {
+    "lines": 86,
+    "size": 3951,
+    "mtime": 1785888856.431473,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\hermes-app-update-recovery\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\hermes-file-merge-reorganize\\SKILL.md": {
+    "lines": 124,
+    "size": 5094,
+    "mtime": 1785888856.4324453,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\hermes-file-merge-reorganize\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\hermes-infile-text-reprogramming\\SKILL.md": {
+    "lines": 160,
+    "size": 5891,
+    "mtime": 1785888856.4334764,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\hermes-infile-text-reprogramming\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\hermes-mcp-server-integration\\SKILL.md": {
+    "lines": 266,
+    "size": 9521,
+    "mtime": 1785888856.4334764,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\hermes-mcp-server-integration\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\hermes-obsidian-integration\\SKILL.md": {
+    "lines": 277,
+    "size": 9647,
+    "mtime": 1785888856.4344704,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\hermes-obsidian-integration\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\hermes-profile-architecture\\SKILL.md": {
+    "lines": 99,
+    "size": 4774,
+    "mtime": 1785888856.4350114,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\hermes-profile-architecture\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\hermes-system-setup-and-recovery\\SKILL.md": {
+    "lines": 169,
+    "size": 6196,
+    "mtime": 1785888856.4360394,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\hermes-system-setup-and-recovery\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\hermes-system-verification\\SKILL.md": {
+    "lines": 203,
+    "size": 7992,
+    "mtime": 1785888856.4360394,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\hermes-system-verification\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\linkedin\\linkedin-automation-playbook\\SKILL.md": {
+    "lines": 75,
+    "size": 5219,
+    "mtime": 1785888856.4375775,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\linkedin\\linkedin-automation-playbook\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\linkedin\\linkedin_computer_use\\SKILL.md": {
+    "lines": 255,
+    "size": 15204,
+    "mtime": 1785888856.4375775,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\linkedin\\linkedin_computer_use\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\linkedin\\linkedin_user_login\\SKILL.md": {
+    "lines": 194,
+    "size": 10053,
+    "mtime": 1785888856.4386122,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\linkedin\\linkedin_user_login\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\linkedin\\scrape-my-jobs-linkedin\\SKILL.md": {
+    "lines": 89,
+    "size": 3400,
+    "mtime": 1785888856.439597,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\linkedin\\scrape-my-jobs-linkedin\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\managing-python-dependencies\\SKILL.md": {
+    "lines": 102,
+    "size": 3734,
+    "mtime": 1785888856.4406168,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\managing-python-dependencies\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mcp\\fastmcp\\SKILL.md": {
+    "lines": 319,
+    "size": 9347,
+    "mtime": 1785888856.4406168,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mcp\\fastmcp\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mcp\\mcporter\\SKILL.md": {
+    "lines": 142,
+    "size": 4097,
+    "mtime": 1785888856.441611,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mcp\\mcporter\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\media\\gif-search\\SKILL.md": {
+    "lines": 110,
+    "size": 3705,
+    "mtime": 1785888856.4426117,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\media\\gif-search\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\media\\songsee\\SKILL.md": {
+    "lines": 102,
+    "size": 3313,
+    "mtime": 1785888856.4426117,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\media\\songsee\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\media\\youtube-content\\SKILL.md": {
+    "lines": 95,
+    "size": 4354,
+    "mtime": 1785888856.4436126,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\media\\youtube-content\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\migration\\openclaw-migration\\SKILL.md": {
+    "lines": 317,
+    "size": 16984,
+    "mtime": 1785888856.4446135,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\migration\\openclaw-migration\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\ml-best-practices\\SKILL.md": {
+    "lines": 231,
+    "size": 10911,
+    "mtime": 1785888856.4446135,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\ml-best-practices\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\accelerate\\SKILL.md": {
+    "lines": 368,
+    "size": 10427,
+    "mtime": 1785888856.445589,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\accelerate\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\chroma\\SKILL.md": {
+    "lines": 427,
+    "size": 10245,
+    "mtime": 1785888856.4465904,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\chroma\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\clip\\SKILL.md": {
+    "lines": 274,
+    "size": 7842,
+    "mtime": 1785888856.4476297,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\clip\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\evaluation\\evaluating-llms-harness\\SKILL.md": {
+    "lines": 514,
+    "size": 13590,
+    "mtime": 1785888856.4482536,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\evaluation\\evaluating-llms-harness\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\evaluation\\weights-and-biases\\SKILL.md": {
+    "lines": 615,
+    "size": 14164,
+    "mtime": 1785888856.4482536,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\evaluation\\weights-and-biases\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\faiss\\SKILL.md": {
+    "lines": 242,
+    "size": 5933,
+    "mtime": 1785888856.449294,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\faiss\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\flash-attention\\SKILL.md": {
+    "lines": 390,
+    "size": 11921,
+    "mtime": 1785888856.4502883,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\flash-attention\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\guidance\\SKILL.md": {
+    "lines": 597,
+    "size": 16750,
+    "mtime": 1785888856.4512894,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\guidance\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\huggingface-hub\\SKILL.md": {
+    "lines": 100,
+    "size": 4690,
+    "mtime": 1785888856.4512894,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\huggingface-hub\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\huggingface-tokenizers\\SKILL.md": {
+    "lines": 537,
+    "size": 14852,
+    "mtime": 1785888856.4522896,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\huggingface-tokenizers\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\inference\\llama-cpp\\SKILL.md": {
+    "lines": 268,
+    "size": 10023,
+    "mtime": 1785888856.4532895,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\inference\\llama-cpp\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\inference\\outlines\\SKILL.md": {
+    "lines": 681,
+    "size": 18883,
+    "mtime": 1785888856.4532895,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\inference\\outlines\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\inference\\serving-llms-vllm\\SKILL.md": {
+    "lines": 389,
+    "size": 10596,
+    "mtime": 1785888856.4542942,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\inference\\serving-llms-vllm\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\instructor\\SKILL.md": {
+    "lines": 761,
+    "size": 18338,
+    "mtime": 1785888856.4552884,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\instructor\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\lambda-labs\\SKILL.md": {
+    "lines": 568,
+    "size": 13473,
+    "mtime": 1785888856.456289,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\lambda-labs\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\llava\\SKILL.md": {
+    "lines": 325,
+    "size": 8793,
+    "mtime": 1785888856.456289,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\llava\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\modal\\SKILL.md": {
+    "lines": 370,
+    "size": 10297,
+    "mtime": 1785888856.457294,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\modal\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\nemo-curator\\SKILL.md": {
+    "lines": 417,
+    "size": 11676,
+    "mtime": 1785888856.4582887,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\nemo-curator\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\obliteratus\\SKILL.md": {
+    "lines": 361,
+    "size": 16718,
+    "mtime": 1785888856.4592881,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\obliteratus\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\peft\\SKILL.md": {
+    "lines": 454,
+    "size": 13338,
+    "mtime": 1785888856.4592881,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\peft\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\pinecone\\SKILL.md": {
+    "lines": 398,
+    "size": 9799,
+    "mtime": 1785888856.4602969,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\pinecone\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\pytorch-fsdp\\SKILL.md": {
+    "lines": 147,
+    "size": 161135,
+    "mtime": 1785888856.4622874,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\pytorch-fsdp\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\pytorch-lightning\\SKILL.md": {
+    "lines": 367,
+    "size": 10211,
+    "mtime": 1785888856.4632888,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\pytorch-lightning\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\qdrant\\SKILL.md": {
+    "lines": 524,
+    "size": 15194,
+    "mtime": 1785888856.4642975,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\qdrant\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\research\\dspy\\SKILL.md": {
+    "lines": 611,
+    "size": 16704,
+    "mtime": 1785888856.4642975,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\research\\dspy\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\saelens\\SKILL.md": {
+    "lines": 441,
+    "size": 16339,
+    "mtime": 1785888856.4652977,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\saelens\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\simpo\\SKILL.md": {
+    "lines": 239,
+    "size": 6871,
+    "mtime": 1785888856.4663248,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\simpo\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\slime\\SKILL.md": {
+    "lines": 486,
+    "size": 12839,
+    "mtime": 1785888856.4663248,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\slime\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\stable-diffusion\\SKILL.md": {
+    "lines": 542,
+    "size": 14282,
+    "mtime": 1785888856.467297,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\stable-diffusion\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\tensorrt-llm\\SKILL.md": {
+    "lines": 210,
+    "size": 6159,
+    "mtime": 1785888856.4682972,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\tensorrt-llm\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\torchtitan\\SKILL.md": {
+    "lines": 406,
+    "size": 11642,
+    "mtime": 1785888856.469298,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\torchtitan\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\training\\axolotl\\SKILL.md": {
+    "lines": 183,
+    "size": 5977,
+    "mtime": 1785888856.4702978,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\training\\axolotl\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\training\\trl-fine-tuning\\SKILL.md": {
+    "lines": 514,
+    "size": 14896,
+    "mtime": 1785888856.4702978,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\training\\trl-fine-tuning\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\training\\unsloth\\SKILL.md": {
+    "lines": 100,
+    "size": 3270,
+    "mtime": 1785888856.4712973,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\training\\unsloth\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\whisper\\SKILL.md": {
+    "lines": 338,
+    "size": 8455,
+    "mtime": 1785888856.4722974,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\mlops\\whisper\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\note-taking\\obsidian\\SKILL.md": {
+    "lines": 80,
+    "size": 3890,
+    "mtime": 1785888856.4722974,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\note-taking\\obsidian\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\notebook-guidance\\SKILL.md": {
+    "lines": 345,
+    "size": 16320,
+    "mtime": 1785888856.4732976,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\notebook-guidance\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\SKILL.md": {
+    "lines": 262,
+    "size": 16665,
+    "mtime": 1785888856.4742982,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\daily_operational_reporting\\SKILL.md": {
+    "lines": 193,
+    "size": 10029,
+    "mtime": 1785888856.4752972,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\daily_operational_reporting\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\dlg-slg-monitor\\SKILL.md": {
+    "lines": 68,
+    "size": 3089,
+    "mtime": 1785888856.4762974,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\dlg-slg-monitor\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\hermes-data-extraction\\SKILL.md": {
+    "lines": 203,
+    "size": 10072,
+    "mtime": 1785888856.4762974,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\hermes-data-extraction\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\journal-versioning\\SKILL.md": {
+    "lines": 126,
+    "size": 8406,
+    "mtime": 1785888856.4772997,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\journal-versioning\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\knowledge-capture\\SKILL.md": {
+    "lines": 122,
+    "size": 5596,
+    "mtime": 1785888856.4782972,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\knowledge-capture\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\large-journal-chunking\\SKILL.md": {
+    "lines": 342,
+    "size": 27922,
+    "mtime": 1785888856.4788055,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\large-journal-chunking\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\linkedin-local-data-extraction\\SKILL.md": {
+    "lines": 86,
+    "size": 4171,
+    "mtime": 1785888856.4798152,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\linkedin-local-data-extraction\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\optimus-backup-restore\\SKILL.md": {
+    "lines": 110,
+    "size": 5234,
+    "mtime": 1785888856.4808166,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\optimus-backup-restore\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\optimus-prime-setup\\SKILL.md": {
+    "lines": 131,
+    "size": 8396,
+    "mtime": 1785888856.4818168,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\optimus-prime-setup\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\popy-operator-protocol\\SKILL.md": {
+    "lines": 83,
+    "size": 4397,
+    "mtime": 1785888856.4818168,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\popy-operator-protocol\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\reflex-auto-rewrite\\SKILL.md": {
+    "lines": 93,
+    "size": 5998,
+    "mtime": 1785888856.4828172,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\reflex-auto-rewrite\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\self-improvement-loop\\SKILL.md": {
+    "lines": 225,
+    "size": 13017,
+    "mtime": 1785888856.4838161,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\self-improvement-loop\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\self-update-core\\SKILL.md": {
+    "lines": 126,
+    "size": 5893,
+    "mtime": 1785888856.4848156,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\self-update-core\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\sentinel-auto-recalibration\\SKILL.md": {
+    "lines": 367,
+    "size": 14715,
+    "mtime": 1785888856.4858415,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\sentinel-auto-recalibration\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\sentinel-local-system-awareness\\SKILL.md": {
+    "lines": 175,
+    "size": 10304,
+    "mtime": 1785888856.4858415,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\sentinel-local-system-awareness\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\sentinel-tool-assessment-protocol\\SKILL.md": {
+    "lines": 170,
+    "size": 8597,
+    "mtime": 1785888856.486843,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\sentinel-tool-assessment-protocol\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\session-journal-updater\\SKILL.md": {
+    "lines": 159,
+    "size": 6750,
+    "mtime": 1785888856.4878159,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\session-journal-updater\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\system-health-check\\SKILL.md": {
+    "lines": 88,
+    "size": 4324,
+    "mtime": 1785888856.4878159,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\optimus-prime-sentinel\\system-health-check\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\orchestration\\orchestration-main-ops\\SKILL.md": {
+    "lines": 249,
+    "size": 10230,
+    "mtime": 1785888856.4888167,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\orchestration\\orchestration-main-ops\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\orchestration\\page-mapping\\SKILL.md": {
+    "lines": 179,
+    "size": 5973,
+    "mtime": 1785888856.4898167,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\orchestration\\page-mapping\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\airtable\\SKILL.md": {
+    "lines": 248,
+    "size": 12457,
+    "mtime": 1785888856.490816,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\airtable\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\canvas\\SKILL.md": {
+    "lines": 117,
+    "size": 4220,
+    "mtime": 1785888856.490816,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\canvas\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\docx\\SKILL.md": {
+    "lines": 146,
+    "size": 9199,
+    "mtime": 1785888856.4918165,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\docx\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\google-workspace\\SKILL.md": {
+    "lines": 354,
+    "size": 14640,
+    "mtime": 1785888856.4928162,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\google-workspace\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\here-now\\SKILL.md": {
+    "lines": 236,
+    "size": 9893,
+    "mtime": 1785888856.493818,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\here-now\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\maps\\SKILL.md": {
+    "lines": 214,
+    "size": 7815,
+    "mtime": 1785888856.494246,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\maps\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\memento-flashcards\\SKILL.md": {
+    "lines": 343,
+    "size": 14404,
+    "mtime": 1785888856.4952955,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\memento-flashcards\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\nano-pdf\\SKILL.md": {
+    "lines": 72,
+    "size": 2552,
+    "mtime": 1785888856.4958298,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\nano-pdf\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\notion\\SKILL.md": {
+    "lines": 467,
+    "size": 15971,
+    "mtime": 1785888856.4968996,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\notion\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\ocr-and-documents\\SKILL.md": {
+    "lines": 192,
+    "size": 6450,
+    "mtime": 1785888856.4974606,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\ocr-and-documents\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\pdf\\SKILL.md": {
+    "lines": 193,
+    "size": 8073,
+    "mtime": 1785888856.4980333,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\pdf\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\powerpoint\\SKILL.md": {
+    "lines": 275,
+    "size": 21689,
+    "mtime": 1785888856.499152,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\powerpoint\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\shop\\SKILL.md": {
+    "lines": 243,
+    "size": 17824,
+    "mtime": 1785888856.4997003,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\shop\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\shopify\\SKILL.md": {
+    "lines": 392,
+    "size": 16426,
+    "mtime": 1785888856.5007818,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\shopify\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\siyuan\\SKILL.md": {
+    "lines": 317,
+    "size": 10429,
+    "mtime": 1785888856.5013185,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\siyuan\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\teams-meeting-pipeline\\SKILL.md": {
+    "lines": 135,
+    "size": 7791,
+    "mtime": 1785888856.5024152,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\teams-meeting-pipeline\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\telephony\\SKILL.md": {
+    "lines": 437,
+    "size": 14136,
+    "mtime": 1785888856.5029843,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\telephony\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\xlsx\\SKILL.md": {
+    "lines": 124,
+    "size": 10125,
+    "mtime": 1785888856.5035627,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\productivity\\xlsx\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\research\\arxiv\\SKILL.md": {
+    "lines": 301,
+    "size": 11261,
+    "mtime": 1785888856.504702,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\research\\arxiv\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\research\\blogwatcher\\SKILL.md": {
+    "lines": 156,
+    "size": 6142,
+    "mtime": 1785888856.5052502,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\research\\blogwatcher\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\research\\darwinian-evolver\\SKILL.md": {
+    "lines": 218,
+    "size": 9574,
+    "mtime": 1785888856.5057874,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\research\\darwinian-evolver\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\research\\domain-intel\\SKILL.md": {
+    "lines": 116,
+    "size": 5389,
+    "mtime": 1785888856.5068624,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\research\\domain-intel\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\research\\drug-discovery\\SKILL.md": {
+    "lines": 246,
+    "size": 10417,
+    "mtime": 1785888856.5074027,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\research\\drug-discovery\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\research\\duckduckgo-search\\SKILL.md": {
+    "lines": 257,
+    "size": 9412,
+    "mtime": 1785888856.5079422,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\research\\duckduckgo-search\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\research\\gitnexus-explorer\\SKILL.md": {
+    "lines": 233,
+    "size": 8251,
+    "mtime": 1785888856.50902,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\research\\gitnexus-explorer\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\research\\grounded-citations\\SKILL.md": {
+    "lines": 251,
+    "size": 12367,
+    "mtime": 1785888856.5095613,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\research\\grounded-citations\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\research\\llm-wiki\\SKILL.md": {
+    "lines": 526,
+    "size": 21530,
+    "mtime": 1785888856.5106637,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\research\\llm-wiki\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\research\\osint-investigation\\SKILL.md": {
+    "lines": 296,
+    "size": 12851,
+    "mtime": 1785888856.511208,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\research\\osint-investigation\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\research\\parallel-cli\\SKILL.md": {
+    "lines": 410,
+    "size": 12137,
+    "mtime": 1785888856.5117598,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\research\\parallel-cli\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\research\\polymarket\\SKILL.md": {
+    "lines": 96,
+    "size": 3956,
+    "mtime": 1785888856.5123107,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\research\\polymarket\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\research\\qmd\\SKILL.md": {
+    "lines": 460,
+    "size": 14257,
+    "mtime": 1785888856.5134003,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\research\\qmd\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\research\\research-paper-writing\\SKILL.md": {
+    "lines": 2396,
+    "size": 106927,
+    "mtime": 1785888856.5150328,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\research\\research-paper-writing\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\research\\scrapling\\SKILL.md": {
+    "lines": 355,
+    "size": 10223,
+    "mtime": 1785888856.5161107,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\research\\scrapling\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\research\\searxng-search\\SKILL.md": {
+    "lines": 214,
+    "size": 7833,
+    "mtime": 1785888856.5171857,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\research\\searxng-search\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\security\\1password\\SKILL.md": {
+    "lines": 182,
+    "size": 5659,
+    "mtime": 1785888856.5177577,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\security\\1password\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\security\\godmode\\SKILL.md": {
+    "lines": 422,
+    "size": 21401,
+    "mtime": 1785888856.5188634,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\security\\godmode\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\security\\oss-forensics\\SKILL.md": {
+    "lines": 442,
+    "size": 21277,
+    "mtime": 1785888856.5194306,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\security\\oss-forensics\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\security\\sherlock\\SKILL.md": {
+    "lines": 212,
+    "size": 7109,
+    "mtime": 1785888856.5205193,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\security\\sherlock\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\security\\unbroker\\SKILL.md": {
+    "lines": 336,
+    "size": 26477,
+    "mtime": 1785888856.5210612,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\security\\unbroker\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\security\\web-pentest\\SKILL.md": {
+    "lines": 352,
+    "size": 14472,
+    "mtime": 1785888856.5221572,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\security\\web-pentest\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\sentinel_memory_serach\\SKILL.md": {
+    "lines": 50,
+    "size": 3363,
+    "mtime": 1785888856.5226994,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\sentinel_memory_serach\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\skill-repair\\SKILL.md": {
+    "lines": 71,
+    "size": 2723,
+    "mtime": 1785888856.5232444,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\skill-repair\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\smart-home\\openhue\\SKILL.md": {
+    "lines": 131,
+    "size": 3849,
+    "mtime": 1785888856.523798,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\smart-home\\openhue\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\social-media\\xurl\\SKILL.md": {
+    "lines": 455,
+    "size": 17675,
+    "mtime": 1785888856.524878,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\social-media\\xurl\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\software-development\\code-wiki\\SKILL.md": {
+    "lines": 464,
+    "size": 15479,
+    "mtime": 1785888856.5254874,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\software-development\\code-wiki\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\software-development\\dogfood\\SKILL.md": {
+    "lines": 181,
+    "size": 7326,
+    "mtime": 1785888856.526036,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\software-development\\dogfood\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\software-development\\hermes-agent-skill-authoring\\SKILL.md": {
+    "lines": 226,
+    "size": 12458,
+    "mtime": 1785888856.5271118,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\software-development\\hermes-agent-skill-authoring\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\software-development\\inspecting-hermes-desktop-dom\\SKILL.md": {
+    "lines": 178,
+    "size": 7257,
+    "mtime": 1785888856.5276842,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\software-development\\inspecting-hermes-desktop-dom\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\software-development\\node-inspect-debugger\\SKILL.md": {
+    "lines": 338,
+    "size": 12111,
+    "mtime": 1785888856.5282297,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\software-development\\node-inspect-debugger\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\software-development\\plan\\SKILL.md": {
+    "lines": 357,
+    "size": 10135,
+    "mtime": 1785888856.5293694,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\software-development\\plan\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\software-development\\python-debugpy\\SKILL.md": {
+    "lines": 392,
+    "size": 14618,
+    "mtime": 1785888856.5299077,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\software-development\\python-debugpy\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\software-development\\requesting-code-review\\SKILL.md": {
+    "lines": 299,
+    "size": 9639,
+    "mtime": 1785888856.5304556,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\software-development\\requesting-code-review\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\software-development\\simplify-code\\SKILL.md": {
+    "lines": 289,
+    "size": 15866,
+    "mtime": 1785888856.5315413,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\software-development\\simplify-code\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\software-development\\spike\\SKILL.md": {
+    "lines": 216,
+    "size": 9821,
+    "mtime": 1785888856.5321105,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\software-development\\spike\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\software-development\\subagent-driven-development\\SKILL.md": {
+    "lines": 371,
+    "size": 11951,
+    "mtime": 1785888856.5326788,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\software-development\\subagent-driven-development\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\software-development\\systematic-debugging\\SKILL.md": {
+    "lines": 430,
+    "size": 15370,
+    "mtime": 1785888856.5332482,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\software-development\\systematic-debugging\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\software-development\\test-driven-development\\SKILL.md": {
+    "lines": 381,
+    "size": 11562,
+    "mtime": 1785888856.5343423,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\software-development\\test-driven-development\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\spanner-data\\SKILL.md": {
+    "lines": 99,
+    "size": 3781,
+    "mtime": 1785888856.5348773,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\spanner-data\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\system-configuration\\triple-crunch-hermetic-verification\\SKILL.md": {
+    "lines": 212,
+    "size": 11068,
+    "mtime": 1785888856.5354104,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\system-configuration\\triple-crunch-hermetic-verification\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\system-configuration\\truncation-guardian\\SKILL.md": {
+    "lines": 160,
+    "size": 5737,
+    "mtime": 1785889328.7383857,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\system-configuration\\truncation-guardian\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\think-research_and_analysis\\SKILL.md": {
+    "lines": 85,
+    "size": 13416,
+    "mtime": 1785888856.536418,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\think-research_and_analysis\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\web-development\\cloudflare-temporary-deploy\\SKILL.md": {
+    "lines": 146,
+    "size": 8483,
+    "mtime": 1785888856.536418,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\web-development\\cloudflare-temporary-deploy\\SKILL.md"
+  },
+  "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\web-development\\page-agent\\SKILL.md": {
+    "lines": 209,
+    "size": 9628,
+    "mtime": 1785888856.5374184,
+    "path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\web-development\\page-agent\\SKILL.md"
+  }
+}

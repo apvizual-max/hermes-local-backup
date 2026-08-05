@@ -1,0 +1,8 @@
+pyproject.toml
+src/windows_system/__init__.py
+src/windows_system/server.py
+src/windows_system_mcp.egg-info/PKG-INFO
+src/windows_system_mcp.egg-info/SOURCES.txt
+src/windows_system_mcp.egg-info/dependency_links.txt
+src/windows_system_mcp.egg-info/requires.txt
+src/windows_system_mcp.egg-info/top_level.txt

@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: optimus-orchestrator-mcp
+Version: 0.1.0
+Summary: Optimus Prime Orchestration MCP Server - exposes cognitive architecture primitives
+Requires-Python: >=3.10
+Requires-Dist: mcp>=1.0.0
+Requires-Dist: pydantic>=2.0
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: psutil>=5.9

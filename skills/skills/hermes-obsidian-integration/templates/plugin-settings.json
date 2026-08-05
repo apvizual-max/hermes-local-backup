@@ -1,0 +1,51 @@
+# Hermes-Obsidian Integration - Plugin Settings Template
+
+## Hermes Agent Plugin Settings
+Copy to `<vault>/.obsidian/plugins/hermes-agent/data.json`:
+```json
+{
+  "baseUrl": "http://127.0.0.1:8642",
+  "apiKey": "<API_SERVER_KEY>",
+  "model": "",
+  "transport": "runs",
+  "reasoningEffort": "",
+  "includeNoteContent": true,
+  "requestTimeoutMs": 120000,
+  "maxTabs": 3,
+  "workingFolder": "",
+  "autoApproveTools": true,
+  "userName": "Popy",
+  "hermesHome": "C:\\Users\\apviz\\AppData\\Local\\hermes",
+  "graphMaxNotes": 150,
+  "graphMinEdgeWeight": 0.3,
+  "graphIncludeWikilinks": true
+}
+```
+
+## Hermes Console Plugin Settings
+Copy to `<vault>/.obsidian/plugins/hermes-console/data.json`:
+```json
+{
+  "sessionIntegration": true,
+  "maxSessions": 25,
+  "notifyOnFinish": true,
+  "notificationSound": "Beep",
+  "notificationVolume": 80,
+  "binariesDownloaded": true
+}
+```
+
+## Hermes TTS Plugin Settings
+Copy to `<vault>/.obsidian/plugins/hermes-tts/data.json`:
+```json
+{
+  "includeFrontmatter": false,
+  "stripMarkdown": true,
+  "voicePrompt": "Calm, warm, and concise with short pauses between sections.",
+  "outputFolder": "Attachments/TTS Audio",
+  "provider": "OpenAI",
+  "apiKey": "<OPENAI_API_KEY>",
+  "model": "gpt-4o-mini",
+  "voice": "Shimmer"
+}
+```

@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: postgresql-mcp
+Version: 0.1.0
+Summary: PostgreSQL MCP Server - database management and queries
+Requires-Python: >=3.10
+Requires-Dist: mcp>=1.0.0
+Requires-Dist: pydantic>=2.0
+Requires-Dist: asyncpg>=0.29

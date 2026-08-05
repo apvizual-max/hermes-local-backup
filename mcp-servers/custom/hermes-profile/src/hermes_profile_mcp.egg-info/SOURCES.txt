@@ -1,0 +1,8 @@
+pyproject.toml
+src/hermes_profile/__init__.py
+src/hermes_profile/server.py
+src/hermes_profile_mcp.egg-info/PKG-INFO
+src/hermes_profile_mcp.egg-info/SOURCES.txt
+src/hermes_profile_mcp.egg-info/dependency_links.txt
+src/hermes_profile_mcp.egg-info/requires.txt
+src/hermes_profile_mcp.egg-info/top_level.txt

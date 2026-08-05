@@ -1,0 +1,8 @@
+pyproject.toml
+src/minio_mcp/__init__.py
+src/minio_mcp/server.py
+src/minio_mcp.egg-info/PKG-INFO
+src/minio_mcp.egg-info/SOURCES.txt
+src/minio_mcp.egg-info/dependency_links.txt
+src/minio_mcp.egg-info/requires.txt
+src/minio_mcp.egg-info/top_level.txt

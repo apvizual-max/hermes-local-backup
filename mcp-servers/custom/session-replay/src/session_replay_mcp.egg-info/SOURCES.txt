@@ -1,0 +1,8 @@
+pyproject.toml
+src/session_replay/__init__.py
+src/session_replay/server.py
+src/session_replay_mcp.egg-info/PKG-INFO
+src/session_replay_mcp.egg-info/SOURCES.txt
+src/session_replay_mcp.egg-info/dependency_links.txt
+src/session_replay_mcp.egg-info/requires.txt
+src/session_replay_mcp.egg-info/top_level.txt

@@ -1,0 +1,8 @@
+pyproject.toml
+src/grafana_mcp/__init__.py
+src/grafana_mcp/server.py
+src/grafana_mcp.egg-info/PKG-INFO
+src/grafana_mcp.egg-info/SOURCES.txt
+src/grafana_mcp.egg-info/dependency_links.txt
+src/grafana_mcp.egg-info/requires.txt
+src/grafana_mcp.egg-info/top_level.txt

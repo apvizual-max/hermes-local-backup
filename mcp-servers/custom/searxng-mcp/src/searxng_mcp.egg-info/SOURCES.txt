@@ -1,0 +1,8 @@
+pyproject.toml
+src/searxng_mcp/__init__.py
+src/searxng_mcp/server.py
+src/searxng_mcp.egg-info/PKG-INFO
+src/searxng_mcp.egg-info/SOURCES.txt
+src/searxng_mcp.egg-info/dependency_links.txt
+src/searxng_mcp.egg-info/requires.txt
+src/searxng_mcp.egg-info/top_level.txt

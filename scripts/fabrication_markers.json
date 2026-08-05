@@ -1,0 +1,30 @@
+{
+  "markers": {
+    "conștința": 1,
+    "complete": 1,
+    "perfect": 1,
+    "comprehensive": 1,
+    "excellent": 1,
+    "state-of-the-art": 1,
+    "flawless": 1,
+    "testmarker": 1
+  },
+  "skill_counts": {
+    "anti_stupidity": 8
+  },
+  "patterns": {
+    "MARKETING_LANGUAGE": [
+      "conștința",
+      "complete",
+      "perfect",
+      "comprehensive",
+      "excellent",
+      "state-of-the-art",
+      "flawless",
+      "testmarker"
+    ]
+  },
+  "root_causes": {},
+  "version": "1.0.0",
+  "last_updated": "2026-07-12T14:46:54.006609"
+}

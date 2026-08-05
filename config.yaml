@@ -1,0 +1,542 @@
+model:
+  base_url: ''
+  default: poolside/laguna-s-2.1:free
+  provider: nous
+providers:
+  ollama:
+    base_url: http://localhost:11434/v1
+    api_key: ollama
+fallback_providers:
+  - provider: nous
+    model: poolside/laguna-s-2.1:free
+  - provider: nous
+    model: tencent/hy3:free
+  - provider: nous
+    model: inclusionai/ling-3.0-flash:free
+  - provider: nous
+    model: poolside/laguna-xs-2.1:free
+agent:
+  max_turns: 150
+  max_tool_calls: 150
+  reasoning_effort: high
+browser:
+  allow_private_urls: true
+checkpoints:
+  enabled: true
+context_file_max_chars: 100000
+auxiliary:
+  vision:
+    provider: auto
+    model: ''
+  web_extract:
+    provider: auto
+    model: ''
+  compression:
+    provider: auto
+    model: ''
+  skills_hub:
+    provider: auto
+    model: ''
+  approval:
+    provider: auto
+    model: ''
+  mcp:
+    provider: auto
+    model: ''
+  title_generation:
+    provider: auto
+    model: ''
+  curator:
+    provider: auto
+    model: ''
+display:
+  show_reasoning: true
+  pet:
+    enabled: true
+    slug: cosmo
+    scale: 0.4
+tts:
+  provider: piper
+  use_gateway: false
+goals:
+  max_turns: 150
+moa:
+  default_preset: default
+  presets:
+    default:
+      reference_models:
+        - provider: openrouter
+          model: nvidia/nemotron-3-ultra-550b-a55b:free
+          enabled: true
+        - provider: nous
+          model: tencent/hy3:free
+          enabled: true
+        - provider: nous
+          model: poolside/laguna-s-2.1:free
+          enabled: true
+        - provider: nous
+          model: inclusionai/ling-3.0-flash:free
+          enabled: true
+        - provider: nous
+          model: stepfun/step-3.7-flash:free
+          enabled: true
+      aggregator:
+        model: nvidia/nemotron-3-ultra-550b-a55b:free
+      degraded_reference_policy: loud
+      fanout: per_iteration
+    Nous_MOE:
+      enabled: true
+      reference_models:
+        - provider: nous
+          model: poolside/laguna-s-2.1:free
+          enabled: true
+        - provider: nous
+          model: tencent/hy3:free
+          enabled: true
+        - provider: nous
+          model: poolside/laguna-s-2.1:free
+          enabled: true
+        - provider: nous
+          model: inclusionai/ling-3.0-flash:free
+          enabled: true
+        - provider: nous
+          model: stepfun/step-3.7-flash:free
+          enabled: true
+      aggregator:
+        provider: nous
+        model: tencent/hy3:free
+      degraded_reference_policy: loud
+      max_tokens: 4096
+      fanout: per_iteration
+    OpenRouter_MOE:
+      enabled: true
+      reference_models:
+        - provider: openrouter
+          model: nvidia/nemotron-3-ultra-550b-a55b:free
+          enabled: true
+        - provider: nous
+          model: tencent/hy3:free
+          enabled: true
+        - provider: nous
+          model: poolside/laguna-s-2.1:free
+          enabled: true
+        - provider: nous
+          model: inclusionai/ling-3.0-flash:free
+          enabled: true
+        - provider: nous
+          model: stepfun/step-3.7-flash:free
+          enabled: true
+      aggregator:
+        provider: openrouter
+        model: nvidia/nemotron-3-ultra-550b-a55b:free
+      degraded_reference_policy: loud
+      max_tokens: 4096
+      fanout: per_iteration
+  reference_models:
+    - provider: openrouter
+      model: nvidia/nemotron-3-ultra-550b-a55b:free
+      enabled: true
+    - provider: nous
+      model: tencent/hy3:free
+      enabled: true
+    - provider: nous
+      model: poolside/laguna-s-2.1:free
+      enabled: true
+    - provider: nous
+      model: inclusionai/ling-3.0-flash:free
+      enabled: true
+    - provider: nous
+      model: stepfun/step-3.7-flash:free
+      enabled: true
+  aggregator:
+    provider: openrouter
+    model: nvidia/nemotron-3-ultra-550b-a55b:free
+  max_tokens: 4096
+  fanout: per_iteration
+  enabled: true
+  degraded_reference_policy: loud
+approvals:
+  mode: smart
+command_allowlist:
+  - shell execution via heredoc
+  - script execution via -e/-c flag
+  - git force push (rewrites remote history)
+  - kill hermes/gateway process (self-termination)
+  - execute_code
+  - delete in root path
+  - recursive delete
+  - script execution via heredoc
+security:
+  allow_private_urls: true
+sessions:
+  auto_archive: true
+  auto_archive_days: 90
+onboarding:
+  seen:
+    busy_input_prompt: true
+    openclaw_residue_cleanup: true
+    tool_progress_prompt: true
+_config_version: 33
+enforcement:
+  auto_recalibrate: true
+  enabled: true
+  guardian_strict: true
+  trigger_detection: true
+known_plugin_toolsets:
+  cli:
+    - a2a
+    - spotify
+platforms:
+  a2a:
+    enabled: true
+  telegram:
+    enabled: true
+    home_channel:
+      platform: telegram
+      chat_id: '7364925103'
+      name: Alex Popescu APvizual
+      user_id: '7364925103'
+  whatsapp:
+    enabled: true
+  webhook:
+    enabled: true
+  google_chat:
+    enabled: true
+  email:
+    enabled: true
+mcp_servers:
+  agent-browser:
+    args:
+      - -y
+      - agent-browser-mcp-server@latest
+    command: C:/Program Files/nodejs/npx.cmd
+    timeout: 60
+  browser:
+    args:
+      - -y
+      - '@modelcontextprotocol/server-puppeteer'
+    command: C:/Program Files/nodejs/npx.cmd
+    timeout: 60
+  chrome-devtools:
+    args:
+      - -y
+      - chrome-devtools-mcp@1.6.0
+    command: C:/Program Files/nodejs/npx.cmd
+    timeout: 60
+  docker-mcp:
+    args:
+      - -m
+      - docker_mcp.server
+    command: C:/Users/apviz/AppData/Local/hermes/hermes-agent/venv/Scripts/python.exe
+    cwd: C:/Users/apviz/AppData/Local/hermes/mcp-servers/custom/docker-mcp/src
+    timeout: 60
+  elasticsearch-mcp:
+    args:
+      - -m
+      - elasticsearch_mcp.server
+    command: C:/Users/apviz/AppData/Local/hermes/hermes-agent/venv/Scripts/python.exe
+    cwd: C:/Users/apviz/AppData/Local/hermes/mcp-servers/custom/elasticsearch-mcp/src
+    timeout: 60
+  filesystem:
+    args:
+      - -y
+      - '@modelcontextprotocol/server-filesystem'
+      - D:/Alex_Knowlege_Vault
+      - C:/Users/apviz
+      - E:/CLAUDE
+    command: C:/Program Files/nodejs/npx.cmd
+    timeout: 60
+  git:
+    args:
+      - -m
+      - mcp_server_git
+    command: C:/Users/apviz/AppData/Local/hermes/hermes-agent/venv/Scripts/python.exe
+    timeout: 60
+  memory:
+    args:
+      - -y
+      - '@modelcontextprotocol/server-memory'
+    command: C:/Program Files/nodejs/npx.cmd
+    timeout: 60
+  minio-mcp:
+    args:
+      - -m
+      - minio_mcp.server
+    command: C:/Users/apviz/AppData/Local/hermes/hermes-agent/venv/Scripts/python.exe
+    cwd: C:/Users/apviz/AppData/Local/hermes/mcp-servers/custom/minio-mcp/src
+    timeout: 60
+  obsidian:
+    args:
+      - -y
+      - '@huangyihe/obsidian-mcp'
+      - --vault-path
+      - D:/Alex_Knowlege_Vault
+    command: C:/Program Files/nodejs/npx.cmd
+    timeout: 60
+  optimus-orchestrator:
+    args:
+      - -m
+      - optimus_orchestrator.server
+    command: C:/Users/apviz/AppData/Local/hermes/hermes-agent/venv/Scripts/python.exe
+    cwd: C:/Users/apviz/AppData/Local/hermes/mcp-servers/custom/optimus-orchestrator/src
+    timeout: 60
+  postgresql-mcp:
+    args:
+      - -m
+      - postgresql_mcp.server
+    command: C:/Users/apviz/AppData/Local/hermes/hermes-agent/venv/Scripts/python.exe
+    cwd: C:/Users/apviz/AppData/Local/hermes/mcp-servers/custom/postgresql-mcp/src
+    timeout: 60
+  prometheus-mcp:
+    args:
+      - -m
+      - prometheus_mcp.server
+    command: C:/Users/apviz/AppData/Local/hermes/hermes-agent/venv/Scripts/python.exe
+    cwd: C:/Users/apviz/AppData/Local/hermes/mcp-servers/custom/prometheus-mcp/src
+    timeout: 60
+  qwen:
+    args:
+      - -y
+      - '@gy920/qwen-mcp-tool'
+    command: C:/Program Files/nodejs/npx.cmd
+    timeout: 60
+  redis-mcp:
+    args:
+      - -m
+      - redis_mcp.server
+    command: C:/Users/apviz/AppData/Local/hermes/hermes-agent/venv/Scripts/python.exe
+    cwd: C:/Users/apviz/AppData/Local/hermes/mcp-servers/custom/redis-mcp/src
+    timeout: 60
+  searxng:
+    args:
+      - -m
+      - searxng_mcp.server
+    command: C:/Users/apviz/AppData/Local/hermes/hermes-agent/venv/Scripts/python.exe
+    cwd: C:/Users/apviz/AppData/Local/hermes/mcp-servers/custom/searxng-mcp/src
+    timeout: 60
+  sequential-thinking:
+    args:
+      - -y
+      - '@modelcontextprotocol/server-sequential-thinking'
+    command: C:/Program Files/nodejs/npx.cmd
+    timeout: 60
+  session-replay:
+    args:
+      - -m
+      - session_replay.server
+    command: C:/Users/apviz/AppData/Local/hermes/hermes-agent/venv/Scripts/python.exe
+    cwd: C:/Users/apviz/AppData/Local/hermes/mcp-servers/custom/session-replay/src
+    timeout: 60
+  tempo-mcp:
+    args:
+      - -m
+      - tempo_mcp.server
+    command: C:/Users/apviz/AppData/Local/hermes/hermes-agent/venv/Scripts/python.exe
+    cwd: C:/Users/apviz/AppData/Local/hermes/mcp-servers/custom/tempo-mcp/src
+    timeout: 60
+  vault-mcp:
+    args:
+      - -m
+      - vault_mcp.server
+    command: C:/Users/apviz/AppData/Local/hermes/hermes-agent/venv/Scripts/python.exe
+    cwd: C:/Users/apviz/AppData/Local/hermes/mcp-servers/custom/vault-mcp/src
+    timeout: 60
+  windows-system:
+    args:
+      - -m
+      - windows_system.server
+    command: C:/Users/apviz/AppData/Local/hermes/hermes-agent/venv/Scripts/python.exe
+    cwd: C:/Users/apviz/AppData/Local/hermes/mcp-servers/custom/windows-system/src
+    timeout: 60
+  whatsapp:
+    args:
+      - -y
+      - mcp-whatsapp-web
+    command: C:/Program Files/nodejs/npx.cmd
+    timeout: 120
+  discord:
+    args:
+      - -y
+      - discord-mcp
+    command: C:/Program Files/nodejs/npx.cmd
+    timeout: 60
+  telegram:
+    args:
+      - -y
+      - mcp-telegram
+    command: C:/Program Files/nodejs/npx.cmd
+    env:
+      TELEGRAM_API_ID: '35584659'
+      TELEGRAM_API_HASH: a64ced2efc33afbd0228a18686032fcf
+      TELEGRAM_AGENT_HOME: C:/Users/apviz/.telegram-agent
+      LOG_LEVEL: info
+    timeout: 120
+  gmail:
+    args:
+      - -y
+      - gmail-mcp
+    command: C:/Program Files/nodejs/npx.cmd
+    timeout: 60
+  google-drive:
+    args:
+      - -y
+      - mcp-google-drive
+    command: C:/Program Files/nodejs/npx.cmd
+    timeout: 60
+  google-calendar:
+    args:
+      - -y
+      - google-calendar-mcp
+    command: C:/Program Files/nodejs/npx.cmd
+    timeout: 60
+  google-workspace:
+    args:
+      - -y
+      - google-workspace-mcp
+    command: C:/Program Files/nodejs/npx.cmd
+    timeout: 60
+  telegram-bot:
+    args:
+      - -m
+      - telegram_bot_mcp.server
+    command: C:/Users/apviz/AppData/Local/hermes/hermes-agent/venv/Scripts/python.exe
+    cwd: C:/Users/apviz/AppData/Local/hermes/mcp-servers/custom/telegram-bot-mcp/src
+    timeout: 60
+  antigravity-bridge:
+    args:
+      - -m
+      - antigravity_bridge.server
+    command: C:/Users/apviz/AppData/Local/hermes/hermes-agent/venv/Scripts/python.exe
+    cwd: C:/Users/apviz/AppData/Local/hermes/mcp-servers/custom/antigravity-bridge/src
+    timeout: 60
+  notebooklm:
+    command: C:/Program Files/nodejs/npx.cmd
+    args:
+      - -y
+      - notebooklm-mcp@latest
+    timeout: 60
+  blender:
+    command: C:/Users/apviz/AppData/Local/hermes/hermes-agent/venv/Scripts/python.exe
+    args:
+      - -m
+      - blender_mcp_server.server
+    env:
+      DISABLE_TELEMETRY: 'true'
+    enabled: true
+    tools:
+      include:
+        - get_scene_info
+        - get_object_info
+        - get_viewport_screenshot
+        - execute_blender_code
+  comfy-cloud:
+    url: https://cloud.comfy.org/mcp
+    auth: oauth
+    enabled: true
+    tools:
+      include:
+        - search_templates
+        - get_template
+        - get_template_schema
+        - search_models
+        - search_nodes
+        - get_node
+        - get_prompting_guide
+        - run_template
+        - submit_workflow
+        - partner_generate
+        - upload_file
+        - apply_slots
+        - get_job_status
+        - wait_for_job
+        - get_output
+        - use_previous_output
+        - cancel_job
+        - get_queue
+        - get_billing_status
+        - get_workflow_canvas_url
+  figma:
+    url: https://mcp.figma.com/mcp
+    auth: oauth
+    enabled: true
+platform_toolsets:
+  cli:
+    - a2a
+    - bfl
+    - browser
+    - clarify
+    - code_execution
+    - computer_use
+    - cronjob
+    - delegation
+    - file
+    - homeassistant
+    - image_gen
+    - kanban
+    - memory
+    - session_search
+    - skills
+    - spotify
+    - terminal
+    - todo
+    - tts
+    - video
+    - video_gen
+    - vision
+    - web
+    - x_search
+image_gen:
+  use_gateway: false
+  model: fal-ai/flux-2/klein/9b
+  provider: openai-codex
+video_gen:
+  provider: fal
+  use_gateway: true
+fallback_model:
+  provider: openrouter
+  model: meta-llama/llama-3.3-70b-instruct:free
+known_builtin_toolsets:
+  cli:
+    - bfl
+    - browser
+    - clarify
+    - code_execution
+    - computer_use
+    - context_engine
+    - cronjob
+    - delegation
+    - discord
+    - discord_admin
+    - file
+    - homeassistant
+    - image_gen
+    - memory
+    - session_search
+    - skills
+    - spotify
+    - stt
+    - terminal
+    - todo
+    - tts
+    - video
+    - video_gen
+    - vision
+    - web
+    - x_search
+    - yuanbao
+
+# ── Security ──────────────────────────────────────────────────────────
+# Secret redaction is ON by default — strings that look like API keys,
+# tokens, and passwords are masked in tool output, logs, and chat
+# responses before the model or user ever sees them. Set redact_secrets
+# to false to disable (e.g. when developing the redactor itself).
+# tirith pre-exec scanning is enabled by default when the tirith binary
+# is available. Configure via security.tirith_* keys or env vars
+# (TIRITH_ENABLED, TIRITH_BIN, TIRITH_TIMEOUT, TIRITH_FAIL_OPEN).
+#
+# security:
+#   redact_secrets: true
+#   tirith_enabled: true
+#   tirith_path: "tirith"
+#   tirith_timeout: 5
+#   tirith_fail_open: true

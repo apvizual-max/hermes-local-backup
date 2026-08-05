@@ -1,0 +1,79 @@
+# Docker Compose for All MCP Backend Services
+
+## Usage
+```bash
+cd C:\Users\apviz\AppData\Local\hermes\scripts
+docker compose -f docker-compose-services.yaml up -d
+```
+
+## File
+```yaml
+version: '3.8'
+
+services:
+  postgres-mcp:
+    image: postgres:16
+    container_name: postgres-mcp
+    environment:
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+
+  redis-mcp:
+    image: redis:7-alpine
+    container_name: redis-mcp
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+
+  vault-mcp:
+    image: hashicorp/vault:1.15.0
+    container_name: vault-mcp
+    environment:
+      VAULT_DEV_ROOT_TOKEN_ID: root
+    ports:
+      - "8200:8200"
+    cap_add:
+      - IPC_LOCK
+    restart: unless-stopped
+
+  minio-mcp:
+    image: minio/minio:latest
+    container_name: minio-mcp
+    command: server /data --console-address ":9199"
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+    ports:
+      - "9000:9000"
+      - "9199:9199"
+    restart: unless-stopped
+
+  prometheus-mcp:
+    image: prom/prometheus:latest
+    container_name: prometheus-mcp
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    restart: unless-stopped
+
+  tempo:
+    image: grafana/tempo:2.5.0
+    container_name: tempo
+    ports:
+      - "3200:3200"
+    volumes:
+      - ./tempo-config.yaml:/etc/tempo.yaml
+    command: -config.file=/etc/tempo.yaml
+    restart: unless-stopped
+
+  chrome-docker-cdp:
+    image: selenium/standalone-chrome:latest
+    container_name: chrome-docker-cdp
+    ports:
+      - "4446:4444"
+    shm_size: 2gb
+    restart: unless-stopped
+```

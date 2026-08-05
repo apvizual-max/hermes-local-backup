@@ -1,0 +1,17 @@
+[project]
+name = "searxng-mcp"
+version = "0.1.0"
+description = "SearXNG MCP Server - HTTP wrapper for SearXNG search"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0",
+    "pydantic>=2.0",
+    "httpx>=0.25",
+]
+
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

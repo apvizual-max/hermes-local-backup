@@ -1,0 +1,23 @@
+# Secrets
+.env
+.env.*
+*.key
+*.pem
+.git-credentials
+**/auth.json*
+
+# Cache/temp
+*.log
+cache/
+hermes-backup-staging/
+
+# Runtime
+sessions/
+state/
+state-snapshots/
+memories/
+checkpoints/
+
+# Binaries
+*.pyc
+__pycache__/

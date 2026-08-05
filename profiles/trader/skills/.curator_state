@@ -1,0 +1,9 @@
+{
+  "last_report_path": "C:\\Users\\apviz\\AppData\\Local\\hermes\\profiles\\trader\\logs\\curator\\20260731-183331",
+  "last_run_at": "2026-07-31T18:33:31.104641+00:00",
+  "last_run_duration_seconds": 1.03929,
+  "last_run_summary": "auto: no changes; llm: skipped (consolidation off)",
+  "last_run_summary_shown_at": null,
+  "paused": false,
+  "run_count": 4
+}

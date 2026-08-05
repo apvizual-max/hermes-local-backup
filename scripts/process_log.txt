@@ -1,0 +1,196 @@
+2026-07-11T03:05:28.267701 Resuming from index 0
+2026-07-11T03:07:05.165617 Next AMINTIRE number: 11120580
+2026-07-11T03:09:55.895527 Checkpoint index 0 is lower than known progress 13570, advancing to 13570
+2026-07-11T03:09:55.896525 Resuming from index 13570
+2026-07-11T03:11:28.918167 Next AMINTIRE number: 11120580
+2026-07-11T03:11:33.508577 Total files: 99386
+2026-07-11T03:11:33.509580 Files remaining: 85816
+2026-07-11T03:12:13.183382 Processed 500 files, added 92343 lines, next num: 11212923, elapsed: 39.7s
+2026-07-11T03:12:39.203424 Processed 1000 files, added 146600 lines, next num: 11267180, elapsed: 65.7s
+2026-07-11T03:13:05.166284 Processed 1500 files, added 203792 lines, next num: 11324372, elapsed: 91.7s
+2026-07-11T03:13:19.955656 Processed 2000 files, added 227006 lines, next num: 11347586, elapsed: 106.4s
+2026-07-11T03:13:42.325997 Processed 2500 files, added 264972 lines, next num: 11385552, elapsed: 128.8s
+2026-07-11T03:14:03.636676 Processed 3000 files, added 300424 lines, next num: 11421004, elapsed: 150.1s
+2026-07-11T03:14:29.017153 Processed 3500 files, added 347908 lines, next num: 11468488, elapsed: 175.5s
+2026-07-11T03:15:13.295601 Processed 4000 files, added 443874 lines, next num: 11564454, elapsed: 219.8s
+2026-07-11T03:15:35.088415 Processed 4500 files, added 486405 lines, next num: 11606985, elapsed: 241.6s
+2026-07-11T03:16:41.725068 Processed 5000 files, added 646225 lines, next num: 11766805, elapsed: 308.2s
+2026-07-11T03:18:47.645800 Processed 5500 files, added 925833 lines, next num: 12046413, elapsed: 434.1s
+2026-07-11T03:18:55.179612 Processed 6000 files, added 930895 lines, next num: 12051475, elapsed: 441.7s
+2026-07-11T03:19:08.901414 Processed 6500 files, added 951811 lines, next num: 12072391, elapsed: 455.4s
+2026-07-11T03:19:16.086823 Processed 7000 files, added 956676 lines, next num: 12077256, elapsed: 462.6s
+2026-07-11T03:19:24.207462 Processed 7500 files, added 961739 lines, next num: 12082319, elapsed: 470.7s
+2026-07-11T03:19:39.061855 Processed 8000 files, added 982011 lines, next num: 12102591, elapsed: 485.6s
+2026-07-11T03:19:54.154888 Processed 8500 files, added 1002807 lines, next num: 12123387, elapsed: 500.6s
+2026-07-11T03:20:09.463585 Processed 9000 files, added 1024910 lines, next num: 12145490, elapsed: 516.0s
+2026-07-11T03:20:24.230511 Processed 9500 files, added 1045378 lines, next num: 12165958, elapsed: 530.7s
+2026-07-11T03:20:37.940421 Processed 10000 files, added 1064698 lines, next num: 12185278, elapsed: 544.4s
+2026-07-11T03:21:24.702898 Processed 10500 files, added 1172842 lines, next num: 12293422, elapsed: 591.2s
+2026-07-11T03:21:33.233438 Processed 11000 files, added 1185156 lines, next num: 12305736, elapsed: 599.7s
+2026-07-11T03:22:37.163004 Processed 11500 files, added 1334208 lines, next num: 12454788, elapsed: 663.7s
+2026-07-11T03:22:58.815698 Processed 12000 files, added 1377911 lines, next num: 12498491, elapsed: 685.3s
+2026-07-11T03:23:04.629403 Processed 12500 files, added 1385884 lines, next num: 12506464, elapsed: 691.1s
+2026-07-11T03:23:53.811669 Processed 13000 files, added 1493908 lines, next num: 12614488, elapsed: 740.3s
+2026-07-11T03:24:35.558224 Processed 13500 files, added 1595280 lines, next num: 12715860, elapsed: 782.0s
+2026-07-11T03:30:29.517421 Resuming from index 27070
+2026-07-11T03:32:20.741515 Next AMINTIRE number: 13244018
+2026-07-11T03:32:24.358373 Total files: 99386
+2026-07-11T03:32:24.367398 Files remaining: 72316
+2026-07-11T03:35:11.229786 Resuming from index 27070
+2026-07-11T03:37:04.057854 Next AMINTIRE number: 13515733
+2026-07-11T03:37:07.049734 Total files: 99386
+2026-07-11T03:37:07.049734 Files remaining: 72316
+2026-07-11T18:14:11.325815 Resuming from index 27070
+2026-07-11T18:14:11.325815 Next AMINTIRE number: 14634776
+2026-07-11T18:14:29.782818 Total files: 99386
+2026-07-11T18:14:29.783790 Files remaining: 72316
+2026-07-11T18:17:49.694995 Resuming from index 27070
+2026-07-11T18:17:52.284130 Next AMINTIRE number: 14961475
+2026-07-11T18:17:55.554233 Total files: 99386
+2026-07-11T18:17:55.554233 Files remaining: 72316
+2026-07-11T18:28:20.067461 Processed 500 files, added 1416419 lines, next num: 16377894, elapsed: 624.5s
+2026-07-11T18:28:40.333346 Processed 1000 files, added 1457539 lines, next num: 16419014, elapsed: 644.8s
+2026-07-11T18:29:00.064587 Processed 1500 files, added 1496748 lines, next num: 16458223, elapsed: 664.5s
+2026-07-11T18:29:25.979218 Processed 2000 files, added 1550896 lines, next num: 16512371, elapsed: 690.4s
+2026-07-11T18:29:46.523936 Processed 2500 files, added 1589587 lines, next num: 16551062, elapsed: 711.0s
+2026-07-11T18:30:10.140113 Processed 3000 files, added 1637297 lines, next num: 16598772, elapsed: 734.6s
+2026-07-11T18:30:50.828072 Processed 3500 files, added 1729627 lines, next num: 16691102, elapsed: 775.3s
+2026-07-11T18:31:02.317702 Processed 4000 files, added 1750536 lines, next num: 16712011, elapsed: 786.8s
+2026-07-11T18:31:46.703785 Processed 4500 files, added 1852656 lines, next num: 16814131, elapsed: 831.1s
+2026-07-11T18:32:27.142450 Processed 5000 files, added 1946106 lines, next num: 16907581, elapsed: 871.6s
+2026-07-11T18:33:12.081354 Processed 5500 files, added 2047446 lines, next num: 17008921, elapsed: 916.5s
+2026-07-11T18:33:29.414163 Processed 6000 files, added 2084565 lines, next num: 17046040, elapsed: 933.9s
+2026-07-11T18:33:49.275058 Processed 6500 files, added 2127108 lines, next num: 17088583, elapsed: 953.7s
+2026-07-11T18:34:12.689618 Processed 7000 files, added 2178157 lines, next num: 17139632, elapsed: 977.1s
+2026-07-11T18:34:32.462158 Processed 7500 files, added 2220496 lines, next num: 17181971, elapsed: 996.9s
+2026-07-11T18:34:59.547501 Processed 8000 files, added 2272854 lines, next num: 17234329, elapsed: 1024.0s
+2026-07-11T18:35:42.969310 Processed 8500 files, added 2355992 lines, next num: 17317467, elapsed: 1067.4s
+2026-07-11T18:36:00.224118 Processed 9000 files, added 2382257 lines, next num: 17343732, elapsed: 1084.7s
+2026-07-11T18:36:58.064660 Processed 9500 files, added 2484648 lines, next num: 17446123, elapsed: 1142.5s
+2026-07-11T18:37:41.210480 Processed 10000 files, added 2585682 lines, next num: 17547157, elapsed: 1185.7s
+2026-07-11T18:38:23.169183 Processed 10500 files, added 2680412 lines, next num: 17641887, elapsed: 1227.6s
+2026-07-11T18:38:37.951852 Processed 11000 files, added 2712521 lines, next num: 17673996, elapsed: 1242.4s
+2026-07-11T18:39:00.642911 Processed 11500 files, added 2761540 lines, next num: 17723015, elapsed: 1265.1s
+2026-07-11T18:39:20.506966 Processed 12000 files, added 2804386 lines, next num: 17765861, elapsed: 1285.0s
+2026-07-11T18:39:40.414450 Processed 12500 files, added 2846982 lines, next num: 17808457, elapsed: 1304.9s
+2026-07-11T18:40:07.689572 Processed 13000 files, added 2907807 lines, next num: 17869282, elapsed: 1332.1s
+2026-07-11T18:40:39.999958 Processed 13500 files, added 2981983 lines, next num: 17943458, elapsed: 1364.4s
+2026-07-11T18:40:53.565626 Processed 14000 files, added 3010755 lines, next num: 17972230, elapsed: 1378.0s
+2026-07-11T18:41:40.197606 Processed 14500 files, added 3123342 lines, next num: 18084817, elapsed: 1424.6s
+2026-07-11T18:42:23.645808 Processed 15000 files, added 3224159 lines, next num: 18185634, elapsed: 1468.1s
+2026-07-11T18:43:11.067152 Processed 15500 files, added 3305800 lines, next num: 18267275, elapsed: 1515.5s
+2026-07-11T18:43:30.901566 Processed 16000 files, added 3337342 lines, next num: 18298817, elapsed: 1535.3s
+2026-07-11T18:43:57.444859 Processed 16500 files, added 3392315 lines, next num: 18353790, elapsed: 1561.9s
+2026-07-11T18:44:16.616861 Processed 17000 files, added 3432394 lines, next num: 18393869, elapsed: 1581.1s
+2026-07-11T18:44:35.386953 Processed 17500 files, added 3473484 lines, next num: 18434959, elapsed: 1599.8s
+2026-07-11T18:45:11.241764 Processed 18000 files, added 3556874 lines, next num: 18518349, elapsed: 1635.7s
+2026-07-11T18:45:33.965577 Processed 18500 files, added 3607254 lines, next num: 18568729, elapsed: 1658.4s
+2026-07-11T18:45:49.757590 Processed 19000 files, added 3641041 lines, next num: 18602516, elapsed: 1674.2s
+2026-07-11T18:46:39.342012 Processed 19500 files, added 3760393 lines, next num: 18721868, elapsed: 1723.8s
+2026-07-11T18:47:22.774841 Processed 20000 files, added 3860805 lines, next num: 18822280, elapsed: 1767.2s
+2026-07-11T18:47:54.008728 Processed 20500 files, added 3931153 lines, next num: 18892628, elapsed: 1798.5s
+2026-07-11T18:48:09.957464 Processed 21000 files, added 3966255 lines, next num: 18927730, elapsed: 1814.4s
+2026-07-11T18:48:47.830531 Processed 21500 files, added 4018191 lines, next num: 18979666, elapsed: 1852.3s
+2026-07-11T18:49:13.157452 Processed 22000 files, added 4063419 lines, next num: 19024894, elapsed: 1877.6s
+2026-07-11T18:49:32.378658 Processed 22500 files, added 4105573 lines, next num: 19067048, elapsed: 1896.8s
+2026-07-11T18:50:06.435036 Processed 23000 files, added 4184503 lines, next num: 19145978, elapsed: 1930.9s
+2026-07-11T18:50:28.290041 Processed 23500 files, added 4232920 lines, next num: 19194395, elapsed: 1952.7s
+2026-07-11T18:50:49.830233 Processed 24000 files, added 4281105 lines, next num: 19242580, elapsed: 1974.3s
+2026-07-11T18:51:42.494999 Processed 24500 files, added 4408594 lines, next num: 19370069, elapsed: 2026.9s
+2026-07-11T18:52:20.721639 Processed 25000 files, added 4495717 lines, next num: 19457192, elapsed: 2065.2s
+2026-07-11T18:52:48.971879 Processed 25500 files, added 4558375 lines, next num: 19519850, elapsed: 2093.4s
+2026-07-11T18:53:08.886184 Processed 26000 files, added 4602224 lines, next num: 19563699, elapsed: 2113.3s
+2026-07-11T18:53:42.453975 Processed 26500 files, added 4649773 lines, next num: 19611248, elapsed: 2146.9s
+2026-07-11T18:54:22.443060 Processed 27000 files, added 4692241 lines, next num: 19653716, elapsed: 2186.9s
+2026-07-11T18:54:48.095662 Processed 27500 files, added 4737747 lines, next num: 19699222, elapsed: 2212.5s
+2026-07-11T18:55:24.389342 Processed 28000 files, added 4812011 lines, next num: 19773486, elapsed: 2248.8s
+2026-07-11T18:55:45.885689 Processed 28500 files, added 4859468 lines, next num: 19820943, elapsed: 2270.3s
+2026-07-11T18:56:13.492670 Processed 29000 files, added 4922594 lines, next num: 19884069, elapsed: 2297.9s
+2026-07-11T18:57:02.967612 Processed 29500 files, added 5041819 lines, next num: 20003294, elapsed: 2347.4s
+2026-07-11T18:57:36.511282 Processed 30000 files, added 5118634 lines, next num: 20080109, elapsed: 2381.0s
+2026-07-11T19:04:09.812979 Processed 30500 files, added 6086323 lines, next num: 21047798, elapsed: 2774.3s
+2026-07-11T19:11:25.851659 Processed 31000 files, added 7196403 lines, next num: 22157878, elapsed: 3210.3s
+2026-07-11T19:21:34.925097 Processed 31500 files, added 8709501 lines, next num: 23670976, elapsed: 3819.4s
+2026-07-11T19:21:52.046064 Processed 32000 files, added 8737871 lines, next num: 23699346, elapsed: 3836.5s
+2026-07-11T19:22:02.001865 Processed 32500 files, added 8749586 lines, next num: 23711061, elapsed: 3846.4s
+2026-07-11T19:22:13.670511 Processed 33000 files, added 8764543 lines, next num: 23726018, elapsed: 3858.1s
+2026-07-11T19:22:28.606801 Processed 33500 files, added 8786140 lines, next num: 23747615, elapsed: 3873.1s
+2026-07-11T19:22:42.428064 Processed 34000 files, added 8805221 lines, next num: 23766696, elapsed: 3886.9s
+2026-07-11T19:24:45.953833 Processed 34500 files, added 9082884 lines, next num: 24044359, elapsed: 4010.4s
+2026-07-11T19:26:50.545790 Processed 35000 files, added 9381235 lines, next num: 24342710, elapsed: 4135.0s
+2026-07-11T19:27:26.417323 Processed 35500 files, added 9461970 lines, next num: 24423445, elapsed: 4170.9s
+2026-07-11T19:28:28.999714 Processed 36000 files, added 9558642 lines, next num: 24520117, elapsed: 4233.4s
+2026-07-11T19:33:37.373797 Processed 36500 files, added 10287452 lines, next num: 25248927, elapsed: 4541.8s
+2026-07-11T19:34:00.158409 Processed 37000 files, added 10331910 lines, next num: 25293385, elapsed: 4564.6s
+2026-07-11T19:34:23.979628 Processed 37500 files, added 10375241 lines, next num: 25336716, elapsed: 4588.4s
+2026-07-11T19:34:53.364588 Processed 38000 files, added 10436279 lines, next num: 25397754, elapsed: 4617.8s
+2026-07-11T19:35:43.750664 Processed 38500 files, added 10528707 lines, next num: 25490182, elapsed: 4668.2s
+2026-07-11T19:36:25.029680 Processed 39000 files, added 10602691 lines, next num: 25564166, elapsed: 4709.5s
+2026-07-11T19:36:47.855410 Processed 39500 files, added 10649458 lines, next num: 25610933, elapsed: 4732.3s
+2026-07-11T19:37:09.416206 Processed 40000 files, added 10692071 lines, next num: 25653546, elapsed: 4753.9s
+2026-07-11T19:37:36.111556 Processed 40500 files, added 10749869 lines, next num: 25711344, elapsed: 4780.6s
+2026-07-11T19:38:17.972077 Processed 41000 files, added 10844975 lines, next num: 25806450, elapsed: 4822.4s
+2026-07-11T19:38:51.548377 Processed 41500 files, added 10916937 lines, next num: 25878412, elapsed: 4856.0s
+2026-07-11T19:39:14.089364 Processed 42000 files, added 10962956 lines, next num: 25924431, elapsed: 4878.5s
+2026-07-11T19:39:35.840856 Processed 42500 files, added 11006524 lines, next num: 25967999, elapsed: 4900.3s
+2026-07-11T19:40:02.495510 Processed 43000 files, added 11063432 lines, next num: 26024907, elapsed: 4926.9s
+2026-07-11T19:40:45.414312 Processed 43500 files, added 11160498 lines, next num: 26121973, elapsed: 4969.9s
+2026-07-11T19:41:25.901622 Processed 44000 files, added 11230171 lines, next num: 26191646, elapsed: 5010.3s
+2026-07-11T19:41:55.002945 Processed 44500 files, added 11275589 lines, next num: 26237064, elapsed: 5039.4s
+2026-07-11T19:42:20.269860 Processed 45000 files, added 11321262 lines, next num: 26282737, elapsed: 5064.7s
+2026-07-11T19:42:46.328405 Processed 45500 files, added 11376824 lines, next num: 26338299, elapsed: 5090.8s
+2026-07-11T19:43:30.236905 Processed 46000 files, added 11477012 lines, next num: 26438487, elapsed: 5134.7s
+2026-07-11T19:44:01.450152 Processed 46500 files, added 11543650 lines, next num: 26505125, elapsed: 5165.9s
+2026-07-11T19:44:23.821060 Processed 47000 files, added 11589293 lines, next num: 26550768, elapsed: 5188.3s
+2026-07-11T19:44:47.347488 Processed 47500 files, added 11637103 lines, next num: 26598578, elapsed: 5211.8s
+2026-07-11T19:45:12.585127 Processed 48000 files, added 11690782 lines, next num: 26652257, elapsed: 5237.0s
+2026-07-11T19:45:58.679099 Processed 48500 files, added 11795611 lines, next num: 26757086, elapsed: 5283.1s
+2026-07-11T19:46:28.087394 Processed 49000 files, added 11858064 lines, next num: 26819539, elapsed: 5312.5s
+2026-07-11T19:46:51.880812 Processed 49500 files, added 11903892 lines, next num: 26865367, elapsed: 5336.3s
+2026-07-11T19:47:28.425425 Processed 50000 files, added 11961975 lines, next num: 26923450, elapsed: 5372.9s
+2026-07-11T19:47:54.145543 Processed 50500 files, added 12006003 lines, next num: 26967478, elapsed: 5398.6s
+2026-07-11T19:48:58.495338 Processed 51000 files, added 12156425 lines, next num: 27117900, elapsed: 5462.9s
+2026-07-11T20:07:37.187671 Processed 51500 files, added 14781047 lines, next num: 29742522, elapsed: 6581.6s
+2026-07-11T20:09:56.444636 Processed 52000 files, added 15105227 lines, next num: 30066702, elapsed: 6720.9s
+2026-07-11T20:11:41.757554 Processed 52500 files, added 15360277 lines, next num: 30321752, elapsed: 6826.2s
+2026-07-11T20:14:53.465642 Processed 53000 files, added 15811511 lines, next num: 30772986, elapsed: 7017.9s
+2026-07-11T20:15:07.783436 Processed 53500 files, added 15831836 lines, next num: 30793311, elapsed: 7032.2s
+2026-07-11T20:15:21.799286 Processed 54000 files, added 15851411 lines, next num: 30812886, elapsed: 7046.2s
+2026-07-11T20:15:39.207245 Processed 54500 files, added 15878587 lines, next num: 30840062, elapsed: 7063.7s
+2026-07-11T20:16:09.403086 Processed 55000 files, added 15941331 lines, next num: 30902806, elapsed: 7093.8s
+2026-07-11T20:16:32.251750 Processed 55500 files, added 15987124 lines, next num: 30948599, elapsed: 7116.7s
+2026-07-11T20:17:00.368946 Processed 56000 files, added 16045220 lines, next num: 31006695, elapsed: 7144.8s
+2026-07-11T20:17:25.975035 Processed 56500 files, added 16089261 lines, next num: 31050736, elapsed: 7170.4s
+2026-07-11T20:18:26.541891 Processed 57000 files, added 16200756 lines, next num: 31162231, elapsed: 7231.0s
+2026-07-11T20:18:52.829285 Processed 57500 files, added 16255856 lines, next num: 31217331, elapsed: 7257.3s
+2026-07-11T20:19:16.232884 Processed 58000 files, added 16303309 lines, next num: 31264784, elapsed: 7280.7s
+2026-07-11T20:19:45.009674 Processed 58500 files, added 16365293 lines, next num: 31326768, elapsed: 7309.5s
+2026-07-11T20:20:05.400829 Processed 59000 files, added 16406163 lines, next num: 31367638, elapsed: 7329.8s
+2026-07-11T20:20:54.999808 Processed 59500 files, added 16515885 lines, next num: 31477360, elapsed: 7379.4s
+2026-07-11T20:21:21.476438 Processed 60000 files, added 16570602 lines, next num: 31532077, elapsed: 7405.9s
+2026-07-11T20:22:14.253300 Processed 60500 files, added 16618912 lines, next num: 31580387, elapsed: 7458.7s
+2026-07-11T20:22:52.430867 Processed 61000 files, added 16679670 lines, next num: 31641145, elapsed: 7496.9s
+2026-07-11T20:23:20.333315 Processed 61500 files, added 16729088 lines, next num: 31690563, elapsed: 7524.8s
+2026-07-11T20:24:05.854467 Processed 62000 files, added 16830787 lines, next num: 31792262, elapsed: 7570.3s
+2026-07-11T20:24:31.411741 Processed 62500 files, added 16884656 lines, next num: 31846131, elapsed: 7595.9s
+2026-07-11T20:24:55.218185 Processed 63000 files, added 16932651 lines, next num: 31894126, elapsed: 7619.7s
+2026-07-11T20:25:24.120723 Processed 63500 files, added 16993227 lines, next num: 31954702, elapsed: 7648.6s
+2026-07-11T20:25:47.961889 Processed 64000 files, added 17044228 lines, next num: 32005703, elapsed: 7672.4s
+2026-07-11T20:26:36.139435 Processed 64500 files, added 17152266 lines, next num: 32113741, elapsed: 7720.6s
+2026-07-11T20:27:01.559427 Processed 65000 files, added 17204592 lines, next num: 32166067, elapsed: 7746.0s
+2026-07-11T20:27:22.745413 Processed 65500 files, added 17246991 lines, next num: 32208466, elapsed: 7767.2s
+2026-07-11T20:27:54.648407 Processed 66000 files, added 17307049 lines, next num: 32268524, elapsed: 7799.1s
+2026-07-11T20:28:28.592486 Processed 66500 files, added 17362546 lines, next num: 32324021, elapsed: 7833.0s
+2026-07-11T20:29:10.781703 Processed 67000 files, added 17447321 lines, next num: 32408796, elapsed: 7875.2s
+2026-07-11T20:29:42.621132 Processed 67500 files, added 17514947 lines, next num: 32476422, elapsed: 7907.1s
+2026-07-11T20:30:05.078530 Processed 68000 files, added 17560813 lines, next num: 32522288, elapsed: 7929.5s
+2026-07-11T20:30:27.244085 Processed 68500 files, added 17604748 lines, next num: 32566223, elapsed: 7951.7s
+2026-07-11T20:30:53.432223 Processed 69000 files, added 17661169 lines, next num: 32622644, elapsed: 7977.9s
+2026-07-11T20:31:36.331408 Processed 69500 files, added 17758247 lines, next num: 32719722, elapsed: 8020.8s
+2026-07-11T20:32:28.843701 Processed 70000 files, added 17880091 lines, next num: 32841566, elapsed: 8073.3s
+2026-07-11T20:32:50.820736 Processed 70500 files, added 17925280 lines, next num: 32886755, elapsed: 8095.3s
+2026-07-11T20:33:12.885533 Processed 71000 files, added 17970185 lines, next num: 32931660, elapsed: 8117.3s
+2026-07-11T20:33:46.975658 Processed 71500 files, added 18038336 lines, next num: 32999811, elapsed: 8151.4s
+2026-07-11T20:34:21.582138 Processed 72000 files, added 18101459 lines, next num: 33062934, elapsed: 8186.0s
+2026-07-11T20:34:49.378646 All files processed, checkpoint removed.
+2026-07-11T20:34:49.378646 Finished processing. Total files processed in this run: 72316, lines added: 18157777, final next num: 33119252, total elapsed: 8213.8s

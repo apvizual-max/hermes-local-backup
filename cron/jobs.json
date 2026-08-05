@@ -1,0 +1,168 @@
+{
+  "jobs": [
+    {
+      "id": "e42fc3b9b0f6",
+      "name": "learning_cron",
+      "prompt": "Run learning cron job: report on learned lessons.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": "openrouter",
+      "model_snapshot": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "base_url": null,
+      "script": "learning_cron.py",
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 3 * * *",
+        "display": "0 3 * * *"
+      },
+      "schedule_display": "0 3 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 22
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-07-05T04:21:53.135814+03:00",
+      "next_run_at": "2026-08-06T03:00:00+03:00",
+      "last_run_at": "2026-08-05T03:47:43.080464+03:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": null,
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null
+    },
+    {
+      "id": "c944ad1f60a6",
+      "name": "Obsidian RAG rebuild",
+      "prompt": "Run the Obsidian RAG rebuild for the personal vault and report the result. Steps: 1) run `python \"C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\note-taking\\obsidian-rag\\scripts\\rebuild_index.py\"`, 2) run `python \"C:\\Users\\apviz\\AppData\\Local\\hermes\\skills\\note-taking\\obsidian-rag\\scripts\\health_check.py\"`, 3) summarize chunk count and any failures.",
+      "skills": [
+        "note-taking/obsidian-rag"
+      ],
+      "skill": "note-taking/obsidian-rag",
+      "model": null,
+      "provider": null,
+      "provider_snapshot": "openrouter",
+      "model_snapshot": "stepfun/step-3.7-flash:free",
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 3 * * *",
+        "display": "0 3 * * *"
+      },
+      "schedule_display": "0 3 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 22
+      },
+      "enabled": false,
+      "state": "paused",
+      "paused_at": "2026-08-05T03:49:05.686302+03:00",
+      "paused_reason": null,
+      "created_at": "2026-07-06T01:40:38.499526+03:00",
+      "next_run_at": "2026-08-05T03:48:51.690633+03:00",
+      "last_run_at": "2026-08-05T03:00:27.989029+03:00",
+      "last_status": "error",
+      "last_error": "RuntimeError: Skipped to prevent unintended spend: global inference config drifted since this job was created (model 'stepfun/step-3.7-flash:free' -> 'nvidia/nemotron-3-ultra-550b-a55b:free'), and this job is unpinned. No inference call was made. To run on the new config, pin it explicitly: `cronjob action=update job_id=c944ad1f60a6 provider=<provider> model=<model>` (or pin the original values to keep them). See #44585.",
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": null,
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null
+    },
+    {
+      "id": "4e11d98a52de",
+      "name": "truncation-guardian-cron",
+      "prompt": "Run the truncation guardian verification to ensure CONSTINTA.md and all skill files are never truncated. Execute: python C:\\Users\\apviz\\AppData\\Local\\hermes\\scripts\\truncation_guardian.py --mode cron",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": "openrouter",
+      "model_snapshot": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 30,
+        "display": "every 30m"
+      },
+      "schedule_display": "every 30m",
+      "repeat": {
+        "times": null,
+        "completed": 28
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-08-05T03:23:16.633915+03:00",
+      "next_run_at": "2026-08-05T18:20:26.091029+03:00",
+      "last_run_at": "2026-08-05T17:50:26.091029+03:00",
+      "last_status": "error",
+      "last_error": "RuntimeError: Skipped to prevent unintended spend: global inference config drifted since this job was created (provider 'openrouter' -> 'nous'; model 'nvidia/nemotron-3-ultra-550b-a55b:free' -> 'poolside/laguna-s-2.1:free'), and this job is unpinned. No inference call was made. To run on the new config, pin it explicitly: `cronjob action=update job_id=4e11d98a52de provider=<provider> model=<model>` (or pin the original values to keep them). See #44585.",
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": null,
+      "enabled_toolsets": [
+        "terminal"
+      ],
+      "workdir": null,
+      "fire_claim": null
+    },
+    {
+      "id": "534bbc34f2c6",
+      "name": "Weekly Hermes Backup",
+      "prompt": "Run the weekly Hermes backup script (backup-hermes.py) to back up all local Hermes files to https://github.com/apvizual-max/hermes-local-backup repo. Report success or any errors including file count.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "backup-hermes.sh",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 2 * * 0",
+        "display": "0 2 * * 0"
+      },
+      "schedule_display": "0 2 * * 0",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-08-05T15:10:01.539538+03:00",
+      "next_run_at": "2026-08-09T02:00:00+03:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": null,
+      "enabled_toolsets": null,
+      "workdir": null
+    }
+  ],
+  "updated_at": "2026-08-05T17:50:26.093044+03:00"
+}

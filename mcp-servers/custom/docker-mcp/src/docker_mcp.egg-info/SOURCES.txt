@@ -1,0 +1,8 @@
+pyproject.toml
+src/docker_mcp/__init__.py
+src/docker_mcp/server.py
+src/docker_mcp.egg-info/PKG-INFO
+src/docker_mcp.egg-info/SOURCES.txt
+src/docker_mcp.egg-info/dependency_links.txt
+src/docker_mcp.egg-info/requires.txt
+src/docker_mcp.egg-info/top_level.txt

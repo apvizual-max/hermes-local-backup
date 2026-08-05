@@ -1,0 +1,17 @@
+[project]
+name = "vault-mcp"
+version = "0.1.0"
+description = "HashiCorp Vault MCP Server - secret management and encryption"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0",
+    "pydantic>=2.0",
+    "hvac>=2.0",
+]
+
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,9 @@
+.git
+*.git
+.git-credentials
+node_modules
+__pycache__
+*.pyc
+*.cache
+cache/
+cache

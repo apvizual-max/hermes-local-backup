@@ -1,0 +1,17 @@
+[project]
+name = "elasticsearch-mcp"
+version = "0.1.0"
+description = "Elasticsearch MCP Server - cluster management, search, and analytics"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0",
+    "pydantic>=2.0",
+    "httpx>=0.25",
+]
+
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

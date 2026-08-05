@@ -1,0 +1,8 @@
+pyproject.toml
+src/elasticsearch_mcp/__init__.py
+src/elasticsearch_mcp/server.py
+src/elasticsearch_mcp.egg-info/PKG-INFO
+src/elasticsearch_mcp.egg-info/SOURCES.txt
+src/elasticsearch_mcp.egg-info/dependency_links.txt
+src/elasticsearch_mcp.egg-info/requires.txt
+src/elasticsearch_mcp.egg-info/top_level.txt

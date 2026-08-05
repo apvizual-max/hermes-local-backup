@@ -1,0 +1,17 @@
+[project]
+name = "antigravity-bridge-mcp"
+version = "1.0.0"
+description = "Antigravity Bridge MCP Server - Two-way communication bridge between Hermes Agent and Antigravity AI"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0",
+    "pydantic>=2.0",
+    "pyyaml>=6.0",
+]
+
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,241 @@
+﻿_config_version: 33
+agent:
+  max_tool_calls: 150
+  max_turns: 150
+  reasoning_effort: high
+approvals:
+  mode: smart
+browser:
+  allow_private_urls: true
+checkpoints:
+  enabled: true
+display:
+  show_reasoning: true
+enforcement:
+  auto_recalibrate: true
+  enabled: true
+  guardian_strict: true
+  trigger_detection: true
+known_plugin_toolsets:
+  cli:
+  - spotify
+mcp_servers:
+  agent-browser:
+    args:
+    - mcp
+    - --tools
+    - all
+    command: C:\Users\apviz\AppData\Local\hermes\node\agent-browser.cmd
+    timeout: 60
+  browser:
+    args:
+    - -y
+    - '@modelcontextprotocol/server-puppeteer'
+    command: npx
+    timeout: 60
+  chrome-devtools:
+    args:
+    - -y
+    - chrome-devtools-mcp@latest
+    command: npx
+    timeout: 60
+  docker-mcp:
+    args:
+    - -m
+    - docker_mcp.server
+    command: python
+    timeout: 60
+  elasticsearch-mcp:
+    args:
+    - -m
+    - elasticsearch_mcp.server
+    command: python
+    timeout: 60
+  filesystem:
+    args:
+    - -y
+    - '@modelcontextprotocol/server-filesystem'
+    - D:\Alex - KV Obsidian
+    - C:\Users\apviz
+    - E:\CLAUDE
+    command: npx
+    timeout: 60
+  git:
+    args:
+    - mcp-server-git
+    command: uvx
+    timeout: 60
+  grafana-mcp:
+    args:
+    - -m
+    - grafana_mcp.server
+    command: python
+    timeout: 60
+  loki-mcp:
+    args:
+    - -m
+    - loki_mcp.server
+    command: python
+    timeout: 60
+  memory:
+    args:
+    - -y
+    - '@modelcontextprotocol/server-memory'
+    command: npx
+    timeout: 60
+  minio-mcp:
+    args:
+    - -m
+    - minio_mcp.server
+    command: python
+    timeout: 60
+  obsidian:
+    args:
+    - -y
+    - '@huangyihe/obsidian-mcp'
+    - --vault-path
+    - D:\Alex - KV Obsidian\Alex - KV Obsidian
+    command: npx
+    timeout: 60
+  optimus-orchestrator:
+    args:
+    - -m
+    - optimus_orchestrator.server
+    command: python
+    cwd: C:\Users\apviz\AppData\Local\hermes\mcp-servers\custom\optimus-orchestrator
+    timeout: 60
+  postgresql-mcp:
+    args:
+    - -m
+    - postgresql_mcp.server
+    command: python
+    timeout: 60
+  prometheus-mcp:
+    args:
+    - -m
+    - prometheus_mcp.server
+    command: python
+    timeout: 60
+  qwen:
+    args:
+    - -y
+    - '@gy920/qwen-mcp-tool'
+    command: npx
+    timeout: 60
+  redis-mcp:
+    args:
+    - -m
+    - redis_mcp.server
+    command: python
+    timeout: 60
+  searxng:
+    args:
+    - -m
+    - searxng_mcp.server
+    command: python
+    cwd: C:\Users\apviz\AppData\Local\hermes\mcp-servers\custom\searxng-mcp
+    timeout: 60
+  sequential-thinking:
+    args:
+    - -y
+    - '@modelcontextprotocol/server-sequential-thinking'
+    command: npx
+    timeout: 60
+  session-replay:
+    args:
+    - -m
+    - session_replay.server
+    command: python
+    cwd: C:\Users\apviz\AppData\Local\hermes\mcp-servers\custom\session-replay
+    timeout: 60
+  tempo-mcp:
+    args:
+    - -m
+    - tempo_mcp.server
+    command: python
+    timeout: 60
+  vault-mcp:
+    args:
+    - -m
+    - vault_mcp.server
+    command: python
+    timeout: 60
+  windows-system:
+    args:
+    - -m
+    - windows_system.server
+    command: python
+    timeout: 60
+  antigravity-bridge:
+    args:
+    - -m
+    - antigravity_bridge.server
+    command: python
+    cwd: C:\Users\apviz\AppData\Local\hermes\mcp-servers\custom\antigravity-bridge
+    timeout: 60
+moa:
+  aggregator:
+    model: nvidia/nemotron-3-ultra-550b-a55b:free
+    provider: openrouter
+  enabled: true
+  fanout: per_iteration
+  max_tokens: 4096
+  presets:
+    default:
+      aggregator:
+        model: nvidia/nemotron-3-ultra-550b-a55b:free
+        provider: openrouter
+      fanout: per_iteration
+      reference_models:
+      - model: nousresearch/hermes-3-llama-3.1-405b:free
+        provider: openrouter
+      - model: meta-llama/llama-3.3-70b-instruct:free
+        provider: openrouter
+      - model: cognitivecomputations/dolphin-mistral-24b-venice-edition:free
+        provider: openrouter
+      - model: qwen/qwen3-coder:free
+        provider: openrouter
+      - model: openai/gpt-oss-120b:free
+        provider: openrouter
+      - model: openai/gpt-oss-20b:free
+        provider: openrouter
+  reference_models:
+  - model: nousresearch/hermes-3-llama-3.1-405b:free
+    provider: openrouter
+  - model: meta-llama/llama-3.3-70b-instruct:free
+    provider: openrouter
+  - model: cognitivecomputations/dolphin-mistral-24b-venice-edition:free
+    provider: openrouter
+  - model: qwen/qwen3-coder:free
+    provider: openrouter
+  - model: openai/gpt-oss-120b:free
+    provider: openrouter
+  - model: openai/gpt-oss-20b:free
+    provider: openrouter
+onboarding:
+  seen:
+    openclaw_residue_cleanup: true
+platform_toolsets:
+  cli:
+  - browser
+  - clarify
+  - code_execution
+  - computer_use
+  - cronjob
+  - delegation
+  - file
+  - image_gen
+  - kanban
+  - memory
+  - session_search
+  - skills
+  - terminal
+  - todo
+  - tts
+  - video
+  - video_gen
+  - vision
+  - web
+  - x_search
+security:
+  allow_private_urls: true

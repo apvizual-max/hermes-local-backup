@@ -1,0 +1,3 @@
+{"timestamp": "2026-07-12T12:12:45.837535", "user_feedback": "You said X but it is Y", "root_cause": "Assumed without verification", "violated_rule": "CURIOSITY_FIRST", "correct_action": "Should have searched first", "session_id": "b136611f"}
+{"timestamp": "2026-07-12T12:19:14.493872", "user_feedback": "You said X but it is Y", "root_cause": "Assumed without verification", "violated_rule": "CURIOSITY_FIRST", "correct_action": "Search first", "session_id": "b5ccda8b"}
+{"timestamp": "2026-07-12T12:19:21.133095", "user_feedback": "You said X but it is Y", "root_cause": "Assumed without verification", "violated_rule": "CURIOSITY_FIRST", "correct_action": "Search first", "session_id": "cefbb5cd"}

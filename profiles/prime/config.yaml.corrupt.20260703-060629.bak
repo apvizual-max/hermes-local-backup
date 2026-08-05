@@ -1,0 +1,44 @@
+﻿model:
+  # Named model with Prime persona embedded (gemma3:12b base)
+  default: sentinel-prime
+  provider: ollama
+  base_url: http://localhost:11434/v1
+  api_key: ollama`n  ollama_num_ctx: 65536`n  context_length: 65536
+  reasoning_effort: high
+
+providers:
+  ollama:
+    base_url: http://localhost:11434/v1
+    api_key: ollama`n  ollama_num_ctx: 65536`n  context_length: 65536
+  nous:
+    portal_url: https://portal.nousresearch.com
+  gemini:
+    base_url: https://generativelanguage.googleapis.com/v1beta/openai
+
+# MODEL SWITCHING (hermes model <name>):
+# - sentinel-prime (gemma3:12b - reasoning, default)
+# - gemma4:12b (when downloaded - latest Google, multimodal)
+# - gemma4:31b (when downloaded - largest thinking model, RAM offload)
+# - hermes3:8b (Nous Research, 128K context)
+
+fallback_providers: '["nous"]'
+
+agent:
+  tool_use_enforcement: auto
+  max_turns: 60
+
+memory:
+  memory_enabled: true
+  user_profile_enabled: true
+
+mcp_servers:
+  filesystem:
+    command: npx
+    args:
+      - "-y"
+      - "@modelcontextprotocol/server-filesystem@latest"
+      - "C:/"
+      - "E:/"
+      - "D:/Alex - KV Obsidian"
+      - "D:/Google Local Files - Personal Folder"
+

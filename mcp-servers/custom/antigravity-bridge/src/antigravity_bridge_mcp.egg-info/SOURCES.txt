@@ -1,0 +1,8 @@
+pyproject.toml
+src/antigravity_bridge/__init__.py
+src/antigravity_bridge/server.py
+src/antigravity_bridge_mcp.egg-info/PKG-INFO
+src/antigravity_bridge_mcp.egg-info/SOURCES.txt
+src/antigravity_bridge_mcp.egg-info/dependency_links.txt
+src/antigravity_bridge_mcp.egg-info/requires.txt
+src/antigravity_bridge_mcp.egg-info/top_level.txt
