@@ -32,7 +32,7 @@ Usually applied in sequence: symbolic / fantasy as starting points → direct as
 
 ## Bisociation: the two-frame frame
 
-Koestler: creativity is the simultaneous holding of two normally-incompatible frames of reference. A joke = a sentence completed in one frame and abruptly reframed in another. A scientific discovery = a phenomenon in domain A seen as instance of structure from domain B (Kekulé's snake-biting-tail → benzene ring).
+Koestler: creativity is the simultaneous holding of two normally-incompatible frames of reference. A joke = a sentence completed in one frame and abruptly reframed in another. A scientific discovery = a phenomenon in domain A seen as instance of structure from domain B (Kekule's snake-biting-tail → benzene ring).
 
 Operative move: when stuck, find a remote frame and force the mapping. Hold both frames at once; resist collapsing the remote into the home.
 
@@ -74,7 +74,7 @@ The interesting properties live in the **emergent structure** of the blend — p
 
 ## Anti-slop notes
 
-- "X is like Y" without specificity = cliché, not analogy. Real analogies have *specific* mapped structure.
+- "X is like Y" without specificity = cliche, not analogy. Real analogies have *specific* mapped structure.
 - Avoid analogies to currently-trendy frames ("like AI", "like a network", "like a marketplace") — overused, low transfer.
 - Test: can you name three specific things that map and three that don't? If not, the analogy is decorative.
 - Resist mixed-metaphor accumulation. One careful analogy beats five sloppy ones.

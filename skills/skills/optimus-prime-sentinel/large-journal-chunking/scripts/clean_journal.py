@@ -34,7 +34,7 @@ AMINTIRE_HDR = re.compile(r'^AMINTIRE-\d+\s')
 MARKER = '[CORRUPTED_BINARY_CONTENT_REMOVED]'
 
 # Natural-language word = RO/EN letters + diacritics, length >= 2
-WORD_RE = re.compile(r'[A-Za-zĂÂÎȘȚăâîșț]{2,}')
+WORD_RE = re.compile(r'[A-Za-zAAISTaaist]{2,}')
 
 # =============================================================================
 # FORBIDDEN PATTERNS — if ANY matches in the body, REMOVE the entire AMINTIRE field

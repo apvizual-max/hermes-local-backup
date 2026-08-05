@@ -121,7 +121,7 @@ natural-language words (Romanian or English). Anything else after `): ` is remov
     2. contains NO binary/encrypted control bytes (any char ord<32 except space/tab/newline, or
        U+FFFD, or the 0x7F DEL) — true binary garbage.
   - Surrounding emoji, markdown wrappers (`**`), or stray punctuation do NOT disqualify, as long as
-    >= 2 real words are present. Example KEPT: `… (ORCHESTRATOR): 🚛 **DOAMNE AJUTĂ. AMIN.**`.
+    >= 2 real words are present. Example KEPT: `… (ORCHESTRATOR): 🚛 **DOAMNE AJUTA. AMIN.**`.
   - **REMOVE the ENTIRE FIELD** (header + TAG-URI + SOURCES + `---`) if the body is ANY of:
     * binary/encrypted garbage (any in-body control byte — see CRLF pitfall below — or U+FFFD), OR
     * the prior-pass marker `[CORRUPTED_BINARY_CONTENT_REMOVED]`, OR
@@ -164,8 +164,8 @@ and fix, do NOT proceed to the full 3,455-file run. (See `references/natural-lan
   if len(WORD_RE.findall(body)) < 2: return True # < 2 natural words -> remove
   return False
   ```
-  where `WORD_RE = [A-Za-zĂÂÎȘȚăâîșț]{2,}` and
-  `ALLOWED_RE = ^[A-Za-zĂÂÎȘȚăâîșț .,!?;:()'"/\\-…\r\n\t]+$`.
+  where `WORD_RE = [A-Za-zAAISTaaist]{2,}` and
+  `ALLOWED_RE = ^[A-Za-zAAISTaaist .,!?;:()'"/\\-…\r\n\t]+$`.
   (Replaces the earlier `content_is_garbage` that only checked control bytes and wrongly KEPT
   single tokens / code fragments. The natural-language bar is what the user actually wants.)
 - Drop block if `should_remove`; otherwise keep verbatim.
@@ -320,7 +320,7 @@ The user moves scripts around but KEEPS THEIR NAMES. Therefore:
 
 ---
 
-> SEMNĂTURĂ: CHUNK-UITORUL DE JURNALE MARI EXECUTĂ SPLIT VERIFICAT, CURĂȚAT, FĂRĂ PIERDERE DE DATE ȘI FĂRĂ ȘTERGEREA SURSĚI. AMIN.
+> SEMNATURA: CHUNK-UITORUL DE JURNALE MARI EXECUTA SPLIT VERIFICAT, CURATAT, FARA PIERDERE DE DATE SI FARA STERGEREA SURSĚI. AMIN.
 
 ---
 

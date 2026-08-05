@@ -8,7 +8,7 @@ One-line summary + when-to-use for every method. Cross-reference with `heuristic
 |---|---|
 | `methods/oblique-strategies.md` | Stuck mid-project; have material, need to disrupt the loop. Native domain: music; works for anything. |
 | `methods/lateral-provocations.md` | Idea too safe; need to break frame with PO operator or random word. |
-| `methods/chance-and-remix.md` | Existing material feels exhausted; have media to remix (Cage chance ops, Burroughs cut-up, Surrealist exquisite corpse, Situationist détournement). |
+| `methods/chance-and-remix.md` | Existing material feels exhausted; have media to remix (Cage chance ops, Burroughs cut-up, Surrealist exquisite corpse, Situationist detournement). |
 
 ## Constraint-driven
 
@@ -77,7 +77,7 @@ One-line summary + when-to-use for every method. Cross-reference with `heuristic
 | Defamiliarization | Synectics | Defamiliarization destroys the familiar; Synectics constructs from it |
 | Premortem | Pataphysics | Premortem mitigates extremes; pataphysics celebrates them |
 | Crazy 8s | SCAMPER | Crazy 8s = from blank page; SCAMPER = from existing base |
-| Dérive | Affinity diagrams | Dérive explores; KJ synthesizes after exploration |
+| Derive | Affinity diagrams | Derive explores; KJ synthesizes after exploration |
 
 ## Deliberately not in the catalog
 

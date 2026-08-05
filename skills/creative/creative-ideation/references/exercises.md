@@ -38,7 +38,7 @@ Concrete exercises grouped by duration. Use when the user wants to *do* an exerc
 
 **Tharp's box** *(`methods/creative-discipline.md`)* — get a literal box; spend the day collecting everything related to your project (clippings, references, sketches, sources, objects); label it; keep adding for the project's duration. Output: physical archive + practice of returning.
 
-**Single-day dérive** *(`methods/derive-and-mapping.md`)* — pick a territory you don't know well; spend the day wandering, no agenda; follow attractions; at end, draw a Lynch-style map (paths, edges, districts, nodes, landmarks); note surprises. Output: map + surprises + possibly a project.
+**Single-day derive** *(`methods/derive-and-mapping.md`)* — pick a territory you don't know well; spend the day wandering, no agenda; follow attractions; at end, draw a Lynch-style map (paths, edges, districts, nodes, landmarks); note surprises. Output: map + surprises + possibly a project.
 
 **Hard-constraint writing day** *(`methods/oulipo.md`)* — pick one constraint (lipogram, univocalism, snowball, prisoner's, pilish); write 1000 words under it; resist abandoning when it gets hard. Output: 1000 constrained words.
 
@@ -65,7 +65,7 @@ Concrete exercises grouped by duration. Use when the user wants to *do* an exerc
 | "Want to make something but unsure what" | 30 min: constraint dispatch + 3 ideas |
 | "Stuck" | 5 min: single Oblique Strategy |
 | "Have ideas, can't pick" | 30 min: premortem on each |
-| "Need to know more about X" | 1 hour: James Webb Young compressed, OR 1 day: dérive |
+| "Need to know more about X" | 1 hour: James Webb Young compressed, OR 1 day: derive |
 | "Want a long-term practice" | multi-week: morning pages, image-bath, Tharp's box |
 
 Don't stack exercises on first invocation. Pick one, run it, see what comes back.

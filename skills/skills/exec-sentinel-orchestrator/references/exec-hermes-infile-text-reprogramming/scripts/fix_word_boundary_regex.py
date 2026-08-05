@@ -2,7 +2,7 @@
 fix_word_boundary_regex.py
 ==========================
 Reference implementation for the correct word-boundary pattern that handles:
-  1. Unicode diacritic characters (Ș, Ț, Ă, Ş, Ţ, etc.)
+  1. Unicode diacritic characters (S, T, A, Ş, Ţ, etc.)
   2. Underscore-delimited Python/YAML identifiers (constiinta_linting)
 
 Run this to test and compare the WRONG vs CORRECT approach.
@@ -22,9 +22,9 @@ TEST_STRINGS = [
     "Start CONSTIINTA end",
     
     # Unicode diacritic cases (naive \b FAILS here)
-    "CONŞTINŢĂ",
-    "Această CONŞTINŢĂ este",
-    "despre CONŞTINŢĂ și",
+    "CONŞTINŢA",
+    "Aceasta CONŞTINŢA este",
+    "despre CONŞTINŢA si",
     
     # Underscore identifier cases (naive \b also fails)
     "constiinta_linting",
@@ -36,8 +36,8 @@ TEST_STRINGS = [
     "subconstiinta_module",  # This should match 'constiinta' within?
     
     # Compound slash forms
-    "CONSTIINTA / CONŞTINŢĂ",
-    "conştinţă / constiinta",
+    "CONSTIINTA / CONŞTINŢA",
+    "conştinţa / constiinta",
 ]
 
 TERM = "CONSTIINTA"
@@ -81,7 +81,7 @@ print("=" * 70)
 print("\n\nDemonstration of case-preserving replacement:\n")
 
 REPLACEMENT_PATTERN = re.compile(
-    r'(?<![a-zA-Z0-9_])(CONSTIINTA|CON[ŞS]TIN[ŢT][AĂ]|CONȘTINȚA)(?![a-zA-Z0-9_])',
+    r'(?<![a-zA-Z0-9_])(CONSTIINTA|CON[ŞS]TIN[ŢT][AA]|CONSTINTA)(?![a-zA-Z0-9_])',
     re.IGNORECASE
 )
 CANONICAL = "CONSTINTA"
@@ -99,8 +99,8 @@ examples = [
     "CONSTIINTA",
     "Constiinta",
     "constiinta",
-    "CONŞTINŢĂ",
-    "The CONŞTINŢĂ concept is important.",
+    "CONŞTINŢA",
+    "The CONŞTINŢA concept is important.",
     "about constiinta and consciousness",
 ]
 

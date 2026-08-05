@@ -69,7 +69,7 @@ Both are required. Morning pages without artist dates produces grim self-disclos
 | Globally blocked | Cameron's morning pages + artist dates (12-week program) |
 | Has the desire but no conditions | Cleese open-mode setup |
 | Wants to make works that others can execute | LeWitt instruction-as-work |
-| Same idea coming over and over | Tharp scratching, dérive (see `derive-and-mapping.md`) |
+| Same idea coming over and over | Tharp scratching, derive (see `derive-and-mapping.md`) |
 
 ## Anti-slop notes
 

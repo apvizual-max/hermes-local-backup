@@ -51,7 +51,7 @@ Decision tree for picking a method. Read top to bottom; first match wins.
 | Fun / playful | `methods/oulipo.md`, `methods/oblique-strategies.md` |
 | Serious / rigorous | `methods/polya.md`, `methods/first-principles.md`, `methods/compression-progress.md` |
 | Personal / intimate | `methods/creative-discipline.md`, `methods/derive-and-mapping.md` |
-| Political / intervention | `methods/leverage-points.md`, `methods/chance-and-remix.md` (détournement) |
+| Political / intervention | `methods/leverage-points.md`, `methods/chance-and-remix.md` (detournement) |
 | Critical / subversive | `methods/defamiliarization.md`, `methods/pataphysics.md` |
 
 ## When to stack methods (rare)
@@ -60,7 +60,7 @@ Most invocations: one method. Stack only when:
 
 - **Domain method + provocation.** OuLiPo + de Bono PO when the constraint alone produces predictable output.
 - **Generation + selection.** Crazy 8s → premortem on top three.
-- **Drift + pattern.** Dérive then affinity-map.
+- **Drift + pattern.** Derive then affinity-map.
 - **Theoretical + practical.** TRIZ identifies the contradiction → biomimicry supplies the analog.
 
 **Anti-pattern:** stacking three+ methods. Becomes process performance rather than ideation.

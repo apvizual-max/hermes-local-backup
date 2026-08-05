@@ -23,7 +23,7 @@ from pathlib import Path
 from datetime import datetime
 
 PATTERN_A = re.compile(r'CONSTIINTA', re.IGNORECASE)
-PATTERN_B = re.compile(r'CON[ŞS]TIN[ŢT][AĂ]|CONȘTINȚA', re.IGNORECASE)
+PATTERN_B = re.compile(r'CON[ŞS]TIN[ŢT][AA]|CONSTINTA', re.IGNORECASE)
 EXCLUDE_DIRS = {'OGLINDA - CASA', '.git', 'venv', 'node_modules', '__pycache__'}
 
 

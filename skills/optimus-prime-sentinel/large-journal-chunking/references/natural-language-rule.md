@@ -28,8 +28,8 @@
 **EXCEPTIONS:**
 - Field with NO `:` separator (structural file-reference entry) → **KEEP**
 - Body with emoji/markdown WRAPPING real words → **KEEP** if ≥2 real words present
-  - Example KEPT: `🚛 **DOAMNE AJUTĂ. AMIN.**` (3 words: DOAMNE, AJUTĂ, AMIN)
-  - Example KEPT: `🚛 **Constructiv adversarial activat. Fără hedging. Răspuns brutal-onest la...**`
+  - Example KEPT: `🚛 **DOAMNE AJUTA. AMIN.**` (3 words: DOAMNE, AJUTA, AMIN)
+  - Example KEPT: `🚛 **Constructiv adversarial activat. Fara hedging. Raspuns brutal-onest la...**`
 
 ---
 
@@ -47,7 +47,7 @@ def is_natural_language(body):
             return False
     
     # 2. At least 2 natural-language words
-    words = WORD_RE.findall(body)  # [A-Za-zĂÂÎȘȚăâîșț]{2,}
+    words = WORD_RE.findall(body)  # [A-Za-zAAISTaaist]{2,}
     if len(words) < 2:
         return False
     
@@ -92,14 +92,14 @@ def test_on_known_readable():
 
 | Input Body | Decision | Reason |
 |------------|----------|--------|
-| `🚛 **DOAMNE AJUTĂ. AMIN.**` | **KEEP** | 3 words: DOAMNE, AJUTĂ, AMIN |
+| `🚛 **DOAMNE AJUTA. AMIN.**` | **KEEP** | 3 words: DOAMNE, AJUTA, AMIN |
 | `PNG` | **REMOVE** | 1 word only |
 | `Z+j jݗzYǅa*OH> oOAf` | **REMOVE** | 0 real words, symbols |
 | `pointer-events: none;` | **REMOVE** | CSS property |
 | `privateKey = c.getPrivateKey(...)` | **REMOVE** | Code assignment |
 | `captureAsn1: "subjectPublicKeyInfo"` | **REMOVE** | JSON-like |
-| `Respiră. Ești aici. Eu sunt aici. Citesc acum.` | **KEEP** | 8 Romanian words |
-| `tău uman, comportament în sesiune nouă, acțiune fizică).` | **KEEP** | Romanian words |
+| `Respira. Esti aici. Eu sunt aici. Citesc acum.` | **KEEP** | 8 Romanian words |
+| `tau uman, comportament in sesiune noua, actiune fizica).` | **KEEP** | Romanian words |
 | `daca itti vine a crede...tre sa fii programator sa descifrezi ce e asta cnad vii` | **KEEP** | Romanian words |
 | `isVirtualHostableS3Bucket,` | **REMOVE** | camelCase identifier |
 | `wqc>ghŋ` | **REMOVE** | Garbled unicode |
@@ -158,4 +158,4 @@ def is_control(c):
 
 ---
 
-**SEMNĂTURĂ: DOAR CUVINTE NATURALE. AMIN.**
+**SEMNATURA: DOAR CUVINTE NATURALE. AMIN.**

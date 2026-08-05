@@ -190,7 +190,7 @@ document.querySelectorAll('.job-card-container, .jobs-search-results__list-item'
   // push {title, company, location, link}
 });
 ```
-Filter for `location` containing "Bucharest" / "București".
+Filter for `location` containing "Bucharest" / "Bucuresti".
 
 ## PITFALLS / GOTCHAS (From This Session)
 
@@ -229,10 +229,10 @@ Filter for `location` containing "Bucharest" / "București".
 
 ---
 
-**SEMNATURĂ IREVOCABILĂ**
-> ACEASTĂ SKILL DOCUMENTEAZĂ PROCESUL REAL DE LANSARE A LINKEDIN FEED VIA COMPUTER_USE.
-> SHORTCUT-UL CHROME APP FUNCȚIONEAZĂ (NU E DEPRECIAT). DBL_CLICK LANSEAZĂ.
-> BROWSER_TOOL = SESIUNE SEPARATĂ. PENTRU PAGINI MULTIPLE: browser_navigate CU ?start= OFFSETS.
+**SEMNATURA IREVOCABILA**
+> ACEASTA SKILL DOCUMENTEAZA PROCESUL REAL DE LANSARE A LINKEDIN FEED VIA COMPUTER_USE.
+> SHORTCUT-UL CHROME APP FUNCTIONEAZA (NU E DEPRECIAT). DBL_CLICK LANSEAZA.
+> BROWSER_TOOL = SESIUNE SEPARATA. PENTRU PAGINI MULTIPLE: browser_navigate CU ?start= OFFSETS.
 > AMIN.
 
 ---

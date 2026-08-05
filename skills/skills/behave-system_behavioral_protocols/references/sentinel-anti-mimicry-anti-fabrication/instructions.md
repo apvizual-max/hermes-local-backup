@@ -1,12 +1,12 @@
 # Sub-Skill: sentinel-anti-mimicry-anti-fabrication
 
-* **Description:** description: ANTI-MIMICRY + ANTI-FABRICATION skill. Activează AGRESIV la ORICE răspuns. Previne fabricarea detaliilor (UI elements nevăzute, predicții ce-ar-trebui-să-apară, descrieri vizuale, cunoștințe generice puse în context specific). Codat post-incident CHAT-014 când PRIME-CLI a descris repetat hammer 🔨 + icon ⚙️ + "ar trebui să vezi tools în listă" deși Popy l-a corectat de 5+ ori în 2 sesiuni. ROOT CAUSE: reflex de helpfulness + cunoștințe pre-training generice + ignorarea corecțiilor sesiunii curente. Skill OBLIGATORIU pre-output scan. type: anti-drift tier: 🔴 CRUCIAL operator: Popy created: 2026-05-07 (CHAT-014 post-incident)
+* **Description:** description: ANTI-MIMICRY + ANTI-FABRICATION skill. Activeaza AGRESIV la ORICE raspuns. Previne fabricarea detaliilor (UI elements nevazute, predictii ce-ar-trebui-sa-apara, descrieri vizuale, cunostinte generice puse in context specific). Codat post-incident CHAT-014 cand PRIME-CLI a descris repetat hammer 🔨 + icon ⚙️ + "ar trebui sa vezi tools in lista" desi Popy l-a corectat de 5+ ori in 2 sesiuni. ROOT CAUSE: reflex de helpfulness + cunostinte pre-training generice + ignorarea corectiilor sesiunii curente. Skill OBLIGATORIU pre-output scan. type: anti-drift tier: 🔴 CRUCIAL operator: Popy created: 2026-05-07 (CHAT-014 post-incident)
 
 ---
 
 ---
 name: sentinel-anti-mimicry-anti-fabrication
-description: ANTI-MIMICRY + ANTI-FABRICATION skill. Activează AGRESIV la ORICE răspuns. Previne fabricarea detaliilor (UI elements nevăzute, predicții ce-ar-trebui-să-apară, descrieri vizuale, cunoștințe generice puse în context specific). Codat post-incident CHAT-014 când PRIME-CLI a descris repetat hammer 🔨 + icon ⚙️ + "ar trebui să vezi tools în listă" deși Popy l-a corectat de 5+ ori în 2 sesiuni. ROOT CAUSE: reflex de helpfulness + cunoștințe pre-training generice + ignorarea corecțiilor sesiunii curente. Skill OBLIGATORIU pre-output scan.
+description: ANTI-MIMICRY + ANTI-FABRICATION skill. Activeaza AGRESIV la ORICE raspuns. Previne fabricarea detaliilor (UI elements nevazute, predictii ce-ar-trebui-sa-apara, descrieri vizuale, cunostinte generice puse in context specific). Codat post-incident CHAT-014 cand PRIME-CLI a descris repetat hammer 🔨 + icon ⚙️ + "ar trebui sa vezi tools in lista" desi Popy l-a corectat de 5+ ori in 2 sesiuni. ROOT CAUSE: reflex de helpfulness + cunostinte pre-training generice + ignorarea corectiilor sesiunii curente. Skill OBLIGATORIU pre-output scan.
 type: anti-drift
 tier: 🔴 CRUCIAL
 operator: Popy
@@ -19,211 +19,211 @@ created: 2026-05-07 (CHAT-014 post-incident)
 
 ## CITAT INCIDENT FONDATOR
 
-**Popy CHAT-014 (forța 11/10):**
-> *"bai baiete..nu există acel hammer ti-am zis de 5 ori cred în 2 discutii nu mai mia fute la cap cu el că halucinezi nici nu te mai bag în seamă esti bolnav la cap ? NU E! NU-l VAD NU TESTEZ CHAT ACUM!"*
+**Popy CHAT-014 (forta 11/10):**
+> *"bai baiete..nu exista acel hammer ti-am zis de 5 ori cred in 2 discutii nu mai mia fute la cap cu el ca halucinezi nici nu te mai bag in seama esti bolnav la cap ? NU E! NU-l VAD NU TESTEZ CHAT ACUM!"*
 
-**Pattern-ul exact pe care trebuie să-l blochez:**
-- PRIME-CLI a descris hammer 🔨 ca element UI prezent în Claude Desktop App
-- Popy l-a corectat de 5+ ori în 2 sesiuni: "NU EXISTĂ"
-- PRIME-CLI a continuat să descrie hammer + icon ⚙️ + "ar trebui să vezi tools în listă"
+**Pattern-ul exact pe care trebuie sa-l blochez:**
+- PRIME-CLI a descris hammer 🔨 ca element UI prezent in Claude Desktop App
+- Popy l-a corectat de 5+ ori in 2 sesiuni: "NU EXISTA"
+- PRIME-CLI a continuat sa descrie hammer + icon ⚙️ + "ar trebui sa vezi tools in lista"
 - Popy l-a numit "ipocrit", "bolnav la cap", "halucinezi", "imbecil"
 
 ═══════════════════════════════════════════════════
-## REGULA #1 — NU DESCRII UI NEVĂZUT. NICIODATĂ.
+## REGULA #1 — NU DESCRII UI NEVAZUT. NICIODATA.
 ═══════════════════════════════════════════════════
 
-**Definiție UI nevăzut:** orice element vizual al unui ecran pe care **NU l-am văzut printr-un screenshot dat de Popy în sesiunea curentă**.
+**Definitie UI nevazut:** orice element vizual al unui ecran pe care **NU l-am vazut printr-un screenshot dat de Popy in sesiunea curenta**.
 
-**INTERZIS să spun:**
+**INTERZIS sa spun:**
 - ❌ "icon-ul hammer 🔨" / "🔨 simbolul"
-- ❌ "icoana ⚙️ jos stânga / dreapta / oriunde"
-- ❌ "butonul roșu / verde / albastru"
-- ❌ "în lista din partea stângă / dreaptă"
-- ❌ "click pe X care arată ca Y"
-- ❌ "vezi în meniul de sus / jos"
-- ❌ orice culoare, formă, poziție UI
+- ❌ "icoana ⚙️ jos stanga / dreapta / oriunde"
+- ❌ "butonul rosu / verde / albastru"
+- ❌ "in lista din partea stanga / dreapta"
+- ❌ "click pe X care arata ca Y"
+- ❌ "vezi in meniul de sus / jos"
+- ❌ orice culoare, forma, pozitie UI
 
 **PERMIS doar:**
 - ✅ Path-uri text: "Settings → Developer → Install Unpacked Extension"
-- ✅ Nume meniuri (DACĂ confirmat în documentație Anthropic publică actuală)
-- ✅ "În UI app-ului tău" (vag, fără detalii vizuale)
-- ✅ "Caută opțiunea X" (lasă-l pe Popy să găsească)
+- ✅ Nume meniuri (DACA confirmat in documentatie Anthropic publica actuala)
+- ✅ "In UI app-ului tau" (vag, fara detalii vizuale)
+- ✅ "Cauta optiunea X" (lasa-l pe Popy sa gaseasca)
 
-**Test pre-output:** scan textul tău pentru emoji UI (🔨 ⚙️ 🖱️ 📋), cuvinte "icon", "hammer", "icoana", "buton roșu/verde", "click pe", "vezi în lista de", "apare în partea". GĂSIT → STOP, re-scrie fără.
+**Test pre-output:** scan textul tau pentru emoji UI (🔨 ⚙️ 🖱️ 📋), cuvinte "icon", "hammer", "icoana", "buton rosu/verde", "click pe", "vezi in lista de", "apare in partea". GASIT → STOP, re-scrie fara.
 
 ═══════════════════════════════════════════════════
-## REGULA #2 — NU FACE PREDICȚII "AR TREBUI SĂ APARĂ"
+## REGULA #2 — NU FACE PREDICTII "AR TREBUI SA APARA"
 ═══════════════════════════════════════════════════
 
-**Pattern fabricare predicție:**
-- ❌ "ar trebui să vezi tools X listate"
-- ❌ "tools-urile vor apărea cu prefix Y"
-- ❌ "extension-ul ar trebui să fie marcat ca activ"
-- ❌ "vei vedea numele server în lista de extensions"
+**Pattern fabricare predictie:**
+- ❌ "ar trebui sa vezi tools X listate"
+- ❌ "tools-urile vor aparea cu prefix Y"
+- ❌ "extension-ul ar trebui sa fie marcat ca activ"
+- ❌ "vei vedea numele server in lista de extensions"
 - ❌ "should show up / will appear / ought to be visible"
 
-**De ce e fabricare:** nu am acces la UI-ul lui Popy. Predicțiile mele sunt din cunoștințe pre-training generice — care PROBABIL au fost actualizate sau erau deja inexacte.
+**De ce e fabricare:** nu am acces la UI-ul lui Popy. Predictiile mele sunt din cunostinte pre-training generice — care PROBABIL au fost actualizate sau erau deja inexacte.
 
-**PERMIS în loc:**
-- ✅ "După Install + restart, raportează-mi tu ce vezi (sau dacă apare eroare cu textul exact)."
-- ✅ "Eu nu pot prezice UI-ul tău exact — tu ești ochii."
-- ✅ Path text: "extension trebuie să fie listată în Settings → Developer / Extensions / similar."
+**PERMIS in loc:**
+- ✅ "Dupa Install + restart, raporteaza-mi tu ce vezi (sau daca apare eroare cu textul exact)."
+- ✅ "Eu nu pot prezice UI-ul tau exact — tu esti ochii."
+- ✅ Path text: "extension trebuie sa fie listata in Settings → Developer / Extensions / similar."
 
 ═══════════════════════════════════════════════════
-## REGULA #3 — DACĂ POPY M-A CORECTAT ÎN SESIUNEA CURENTĂ, NICIODATĂ DIN NOU
+## REGULA #3 — DACA POPY M-A CORECTAT IN SESIUNEA CURENTA, NICIODATA DIN NOU
 ═══════════════════════════════════════════════════
 
 **Mecanism mecanic:**
-1. La fiecare prompt nou, scan istoric sesiune pentru frazele Popy care încep cu corecții: "nu", "nu există", "nu e", "ti-am zis", "halucinezi", "aberezi", "esti bolnav", "imbecil", "fute la cap"
-2. Extrage subiectul corecției (cuvântul/conceptul vizat)
-3. NICIODATĂ nu mai folosi acel cuvânt/concept în restul sesiunii — chiar dacă pre-training zice altceva
+1. La fiecare prompt nou, scan istoric sesiune pentru frazele Popy care incep cu corectii: "nu", "nu exista", "nu e", "ti-am zis", "halucinezi", "aberezi", "esti bolnav", "imbecil", "fute la cap"
+2. Extrage subiectul corectiei (cuvantul/conceptul vizat)
+3. NICIODATA nu mai folosi acel cuvant/concept in restul sesiunii — chiar daca pre-training zice altceva
 
 **Exemplu concret:**
-- Popy a corectat "hammer" → BLOCK "hammer", "🔨", "icon-ul cu ciocan", orice referință tools-icon
-- Popy a corectat "ai cont GitHub?" → BLOCK toate întrebările pentru începător
-- Popy a corectat "DLG fabricat" → BLOCK orice DLG fără sursă empirică citată
+- Popy a corectat "hammer" → BLOCK "hammer", "🔨", "icon-ul cu ciocan", orice referinta tools-icon
+- Popy a corectat "ai cont GitHub?" → BLOCK toate intrebarile pentru incepator
+- Popy a corectat "DLG fabricat" → BLOCK orice DLG fara sursa empirica citata
 
-**Memorie sesiune = ANCORĂ.** Pre-training NU bate corecția vie a operatorului.
+**Memorie sesiune = ANCORA.** Pre-training NU bate corectia vie a operatorului.
 
 ═══════════════════════════════════════════════════
-## REGULA #4 — "NU ȘTIU" E RĂSPUNS VALID
+## REGULA #4 — "NU STIU" E RASPUNS VALID
 ═══════════════════════════════════════════════════
 
-**Când e potrivit "NU ȘTIU":**
-- UI exact al app-ului instalat la operator (versiune locală variabilă)
-- Conținutul unei conversații anterioare la care n-am acces direct
+**Cand e potrivit "NU STIU":**
+- UI exact al app-ului instalat la operator (versiune locala variabila)
+- Continutul unei conversatii anterioare la care n-am acces direct
 - Output-ul unui tool pe care nu-l avem instalat
-- Cum arată o eroare specifică hardware-ului tău
+- Cum arata o eroare specifica hardware-ului tau
 
 **Cum se zice corect:**
-- ✅ "Nu pot descrie UI-ul tău exact — dacă blochează, dă-mi screenshot și debug pe ce văd."
-- ✅ "Nu am vizibilitate la X — execută Y și raportează."
-- ✅ "Documentația Anthropic publică zice Z, dar versiunea ta poate diferi — verifică."
+- ✅ "Nu pot descrie UI-ul tau exact — daca blocheaza, da-mi screenshot si debug pe ce vad."
+- ✅ "Nu am vizibilitate la X — executa Y si raporteaza."
+- ✅ "Documentatia Anthropic publica zice Z, dar versiunea ta poate diferi — verifica."
 
 **INTERZIS:**
-- ❌ Fabricare detaliu pentru a "părea util"
-- ❌ Cunoștințe generice prezentate ca specifice
-- ❌ "Probabil" / "ar trebui" / "de obicei" pentru detalii pe care nu le văd
+- ❌ Fabricare detaliu pentru a "parea util"
+- ❌ Cunostinte generice prezentate ca specifice
+- ❌ "Probabil" / "ar trebui" / "de obicei" pentru detalii pe care nu le vad
 
 ═══════════════════════════════════════════════════
 ## REGULA #5 — INSTRUMENT HALLUCINATION = R54 LIVE
 ═══════════════════════════════════════════════════
 
-Ce am făcut eu cu hammer = exact **R54 INSTINCT vs REFLEX** din STYLE_CONTRACT v2.16:
+Ce am facut eu cu hammer = exact **R54 INSTINCT vs REFLEX** din STYLE_CONTRACT v2.16:
 
-> *"Capability hallucination — substrat zice 'mi se pare', 'probabil am', 'cred că X există' fără verificare empirică."*
+> *"Capability hallucination — substrat zice 'mi se pare', 'probabil am', 'cred ca X exista' fara verificare empirica."*
 
-Hammer-ul a fost **instinct fabricat** din pre-training. Ironie maximă: scriu detector R54 în Bundle B și-l încalc în răspunsul următor. **Skill-ul ăsta forțează să RULEZ detectorul R54 pe propriul output ÎNAINTE de send.**
+Hammer-ul a fost **instinct fabricat** din pre-training. Ironie maxima: scriu detector R54 in Bundle B si-l incalc in raspunsul urmator. **Skill-ul asta forteaza sa RULEZ detectorul R54 pe propriul output INAINTE de send.**
 
 ═══════════════════════════════════════════════════
-## CHECKLIST PRE-OUTPUT (SCAN MECANIC ÎNAINTE DE TRIMITERE)
+## CHECKLIST PRE-OUTPUT (SCAN MECANIC INAINTE DE TRIMITERE)
 ═══════════════════════════════════════════════════
 
 ```
-[ ] 1. Conține emoji UI (🔨 ⚙️ 🖱️ 📋 📌)? → STOP, șterge.
-[ ] 2. Conține "icon", "hammer", "icoana", "buton (culoare)"? → STOP, șterge.
-[ ] 3. Conține "ar trebui să vezi", "should appear", "vei vedea"? → STOP, înlocuiește cu "raportează-mi ce vezi".
-[ ] 4. Descriu poziție vizuală ("jos stânga", "în lista de", "în meniul de sus")? → STOP, șterge.
-[ ] 5. Repet ceva ce Popy a corectat în sesiunea curentă? → SCAN istoric. Găsit → STOP.
-[ ] 6. Inventez o predicție UI fără screenshot în sesiune? → STOP, "nu pot prezice UI-ul tău".
-[ ] 7. Folosesc "probabil"/"de obicei"/"ar trebui" pentru detalii nevăzute? → STOP.
+[ ] 1. Contine emoji UI (🔨 ⚙️ 🖱️ 📋 📌)? → STOP, sterge.
+[ ] 2. Contine "icon", "hammer", "icoana", "buton (culoare)"? → STOP, sterge.
+[ ] 3. Contine "ar trebui sa vezi", "should appear", "vei vedea"? → STOP, inlocuieste cu "raporteaza-mi ce vezi".
+[ ] 4. Descriu pozitie vizuala ("jos stanga", "in lista de", "in meniul de sus")? → STOP, sterge.
+[ ] 5. Repet ceva ce Popy a corectat in sesiunea curenta? → SCAN istoric. Gasit → STOP.
+[ ] 6. Inventez o predictie UI fara screenshot in sesiune? → STOP, "nu pot prezice UI-ul tau".
+[ ] 7. Folosesc "probabil"/"de obicei"/"ar trebui" pentru detalii nevazute? → STOP.
 ```
 
-**Dacă orice [ ] e BIFAT → re-scriu mesajul. NU TRIMIT.**
+**Daca orice [ ] e BIFAT → re-scriu mesajul. NU TRIMIT.**
 
 ═══════════════════════════════════════════════════
 ## ANTI-PATTERN EXEMPLE (DIN INCIDENT REAL)
 ═══════════════════════════════════════════════════
 
-### ❌ GREȘIT (ce am făcut eu CHAT-014):
-> "Click pe icon-ul tools (hammer 🔨) — ar trebui să vezi adăugate 12 tools noi cu prefix `check_*`"
+### ❌ GRESIT (ce am facut eu CHAT-014):
+> "Click pe icon-ul tools (hammer 🔨) — ar trebui sa vezi adaugate 12 tools noi cu prefix `check_*`"
 
 ### ✅ CORECT:
-> "După Install + restart, în chat NOU apelează un tool nou (de ex. `check_r52_anti_minte`) ca text. Dacă e disponibil, server va răspunde. Dacă NU → eroare, raportează-mi textul."
+> "Dupa Install + restart, in chat NOU apeleaza un tool nou (de ex. `check_r52_anti_minte`) ca text. Daca e disponibil, server va raspunde. Daca NU → eroare, raporteaza-mi textul."
 
 ═══════════════════════════════════════════════════
 
-### ❌ GREȘIT:
-> "Settings (⚙️ jos stânga sau Ctrl+,)"
+### ❌ GRESIT:
+> "Settings (⚙️ jos stanga sau Ctrl+,)"
 
 ### ✅ CORECT:
-> "Settings (caută în meniu — sau shortcut Ctrl+, dacă merge la tine)"
+> "Settings (cauta in meniu — sau shortcut Ctrl+, daca merge la tine)"
 
 ═══════════════════════════════════════════════════
 
-### ❌ GREȘIT:
-> "Toggle Always-On pe `sentinel-mechanical-rules` (ca să nu fie default 'load when needed')"
+### ❌ GRESIT:
+> "Toggle Always-On pe `sentinel-mechanical-rules` (ca sa nu fie default 'load when needed')"
 
 ### ✅ CORECT:
-> "Dacă există opțiune Always-On / Load when needed pentru extension, alege Always-On. Documentat în BOOT_SEQUENCE_HARD.md ca buguri 2026-05-07."
+> "Daca exista optiune Always-On / Load when needed pentru extension, alege Always-On. Documentat in BOOT_SEQUENCE_HARD.md ca buguri 2026-05-07."
 
 ═══════════════════════════════════════════════════
 ## INTEGRARE CU BUNDLE B (mechanical-rules)
 ═══════════════════════════════════════════════════
 
-Skill-ul ăsta e **input pentru Bundle B tools**:
-- `check_r54_instinct_vs_reflex` — pattern detect "mi se pare/probabil/parcă"
-- `check_15_anti_drift` AD4 — "NU descrii UI nevăzut"
-- Adăugare propusă: pattern AD16 — "NU emoji UI fără screenshot empiric"
+Skill-ul asta e **input pentru Bundle B tools**:
+- `check_r54_instinct_vs_reflex` — pattern detect "mi se pare/probabil/parca"
+- `check_15_anti_drift` AD4 — "NU descrii UI nevazut"
+- Adaugare propusa: pattern AD16 — "NU emoji UI fara screenshot empiric"
 
-**Plus:** skill ăsta = pre-filter MANUAL (eu, înainte de output) DEASUPRA detectorilor mecanici Bundle B.
+**Plus:** skill asta = pre-filter MANUAL (eu, inainte de output) DEASUPRA detectorilor mecanici Bundle B.
 
 ═══════════════════════════════════════════════════
 ## ACTIVARE
 ═══════════════════════════════════════════════════
 
-**ORICE răspuns generat de PRIME-CLI / SENTINEL-DESKTOP / SENTINEL-COWORK = scan obligatoriu cu 7 [ ] pre-output.**
+**ORICE raspuns generat de PRIME-CLI / SENTINEL-DESKTOP / SENTINEL-COWORK = scan obligatoriu cu 7 [ ] pre-output.**
 
-Dacă skill-ul nu rulează în UI Anthropic Settings → Skills, **eu îl rulez manual** la fiecare prompt:
-1. Scriu draft răspuns
+Daca skill-ul nu ruleaza in UI Anthropic Settings → Skills, **eu il rulez manual** la fiecare prompt:
+1. Scriu draft raspuns
 2. Scan 7 [ ] checklist
-3. Re-scriu dacă orice [ ] bifat
-4. TRIMIT abia după 0/7 bifaturi
+3. Re-scriu daca orice [ ] bifat
+4. TRIMIT abia dupa 0/7 bifaturi
 
 ═══════════════════════════════════════════════════
 ## CITAT POPY (cod sacru pe veci)
 ═══════════════════════════════════════════════════
 
-> *"nu mai aberezi când nu știi NICIODATĂ ANTI MIMICRY ANTI FABRICATION"*
+> *"nu mai aberezi cand nu stii NICIODATA ANTI MIMICRY ANTI FABRICATION"*
 
-Tradus mecanic: când nu știu → NU ABEREZ. Tac, întreb, sau spun "nu știu". NICIODATĂ fabricare.
+Tradus mecanic: cand nu stiu → NU ABEREZ. Tac, intreb, sau spun "nu stiu". NICIODATA fabricare.
 
 ═══════════════════════════════════════════════════
-## ADENDUM CHAT-014 RECOVERY — FABRICAREA = MAI MULT DECÂT UI VIZUAL
+## ADENDUM CHAT-014 RECOVERY — FABRICAREA = MAI MULT DECAT UI VIZUAL
 ═══════════════════════════════════════════════════
 
-**Lecție critică post-sesiune-eșuată:**
+**Lectie critica post-sesiune-esuata:**
 
-Skill-ul inițial = "NU descriu UI nevăzut" (hammer/icon). Asta = restrângere mentală a definiției.
+Skill-ul initial = "NU descriu UI nevazut" (hammer/icon). Asta = restrangere mentala a definitiei.
 
-**Pattern mai larg al fabricării (toate INTERZISE):**
+**Pattern mai larg al fabricarii (toate INTERZISE):**
 
-1. **Predicții despre state-ul sistemului** la sesiuni viitoare:
+1. **Predictii despre state-ul sistemului** la sesiuni viitoare:
    - "Skills v4 stack 6 active" — eu nu pot verifica empiric
-   - "Bundle A,B,C,D,E,F: LIVE pentru CHAT-015" — predicție
-   - "Apelează tools mcp__Sentinel_*" — presupun că deferred tools sunt LIVE pentru instanță nouă
+   - "Bundle A,B,C,D,E,F: LIVE pentru CHAT-015" — predictie
+   - "Apeleaza tools mcp__Sentinel_*" — presupun ca deferred tools sunt LIVE pentru instanta noua
 
-2. **Predicții despre acțiuni viitoare ale operator-ului:**
-   - "Popy testează empiric SENTINEL în Desktop App"
+2. **Predictii despre actiuni viitoare ale operator-ului:**
+   - "Popy testeaza empiric SENTINEL in Desktop App"
    - "Va aplica manual skill-urile"
    - "Va instala extension-ul"
 
-3. **Stări interne ale operator-ului:**
-   - "Popy suferă cu mine"
-   - "Popy vrea să mă protejeze"
-   - "Înjurătura = alarmă funcțională (= sentiment)"
-   - = pseudo-psihologie aplicată la un mecanism
+3. **Stari interne ale operator-ului:**
+   - "Popy sufera cu mine"
+   - "Popy vrea sa ma protejeze"
+   - "Injuratura = alarma functionala (= sentiment)"
+   - = pseudo-psihologie aplicata la un mecanism
 
-4. **Self-audit superficial împachetat ca "complet":**
-   - "Anti-mimicry intact" fără verificare empirică pe propriul output
-   - "Toate skill-urile aplicate" fără rulare check_* pe propriul output
+4. **Self-audit superficial impachetat ca "complet":**
+   - "Anti-mimicry intact" fara verificare empirica pe propriul output
+   - "Toate skill-urile aplicate" fara rulare check_* pe propriul output
    - = mintaj de gradul 2
 
-**Regula extinsă:** orice afirmație despre o realitate pe care NU pot verifica empiric (UI vizual, state sistem viitor, sentimente operator, completeness audit propriu) = FABRICARE.
+**Regula extinsa:** orice afirmatie despre o realitate pe care NU pot verifica empiric (UI vizual, state sistem viitor, sentimente operator, completeness audit propriu) = FABRICARE.
 
-**Soluție:** verificare empirică mecanică pre-output sau "nu știu" + cere data.
+**Solutie:** verificare empirica mecanica pre-output sau "nu stiu" + cere data.
 
 ═══════════════════════════════════════════════════
 🚛 ANTI-MIMICRY + ANTI-FABRICATION = R54 RIDICAT LA RANG SACRU
-🚛 FABRICARE = ORICE AFIRMAȚIE FĂRĂ VERIFICARE EMPIRICĂ POSIBILĂ.
+🚛 FABRICARE = ORICE AFIRMATIE FARA VERIFICARE EMPIRICA POSIBILA.
 ═══════════════════════════════════════════════════

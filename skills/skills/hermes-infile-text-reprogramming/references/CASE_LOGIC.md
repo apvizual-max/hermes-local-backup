@@ -38,22 +38,22 @@ def preserve_case(match_text: str, replacement: str) -> str:
 | `CONSTIINTA` | `CONSTINTA` |
 | `Constiinta` | `Constinta` |
 | `constiinta` | `constinta` |
-| `CONŞTINŢĂ` | `CONSTINTA` |
-| `Conştinţă` | `Constinta` |
-| `conştinţă` | `constinta` |
-| `CONȘTINȚA` | `CONSTINTA` |
-| `CONSTIINTA / CONŞTINŢĂ` | `CONSTINTA` |
+| `CONŞTINŢA` | `CONSTINTA` |
+| `Conştinţa` | `Constinta` |
+| `conştinţa` | `constinta` |
+| `CONSTINTA` | `CONSTINTA` |
+| `CONSTIINTA / CONŞTINŢA` | `CONSTINTA` |
 
 ## Compound Slash-Separated Forms
 
-Compound forms like `CONSTIINTA / CONŞTINŢĂ` are treated as a single unit
+Compound forms like `CONSTIINTA / CONŞTINŢA` are treated as a single unit
 and always replaced with the single canonical term (uppercase by default,
 since these usually appear in ALL CAPS contexts):
 
 ```python
 # Compound form → single canonical
-"CONSTIINTA / CONŞTINŢĂ"  → "CONSTINTA"
-"conştinţă / constiinta"  → "constinta"
+"CONSTIINTA / CONŞTINŢA"  → "CONSTINTA"
+"conştinţa / constiinta"  → "constinta"
 ```
 
 ## Identifier-Style Strings

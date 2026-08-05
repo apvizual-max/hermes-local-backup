@@ -283,7 +283,7 @@ model:
   default: nvidia/nemotron-3-ultra-550b-a55b:free
 ```
 
-**API Key (in `.env`):** `OPENROUTER_API_KEY=sk-or-[REDACTED]...`
+**API Key (in `.env`):** `OPENROUTER_API_KEY=sk-or-v1-...`
 
 **Changing active model:**
 ```bash

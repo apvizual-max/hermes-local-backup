@@ -50,11 +50,11 @@ from tokenizers.normalizers import NFD, NFC, NFKD, NFKC
 
 # NFD: Canonical decomposition
 tokenizer.normalizer = NFD()
-# "é" → "e" + "́" (separate characters)
+# "e" → "e" + "́" (separate characters)
 
 # NFC: Canonical composition (default)
 tokenizer.normalizer = NFC()
-# "e" + "́" → "é" (composed)
+# "e" + "́" → "e" (composed)
 
 # NFKD: Compatibility decomposition
 tokenizer.normalizer = NFKD()
@@ -71,7 +71,7 @@ from tokenizers.normalizers import StripAccents
 
 tokenizer.normalizer = StripAccents()
 
-# Input: "café"
+# Input: "cafe"
 # Output: "cafe"
 ```
 
@@ -109,9 +109,9 @@ tokenizer.normalizer = Sequence([
     StripAccents()   # Remove accents
 ])
 
-# Input: "Café au Lait"
-# After NFD: "Café au Lait" (e + ́)
-# After Lowercase: "café au lait"
+# Input: "Cafe au Lait"
+# After NFD: "Cafe au Lait" (e + ́)
+# After Lowercase: "cafe au lait"
 # After StripAccents: "cafe au lait"
 ```
 

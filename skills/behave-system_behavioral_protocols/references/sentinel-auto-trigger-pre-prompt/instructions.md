@@ -1,6 +1,6 @@
 # Sub-Skill: sentinel-auto-trigger-pre-prompt
 
-* **Description:** DESCRIPTIION: Activează AUTOMAT la fiecare prompt nou de la Popy + la final de sesiune când mutăm. Rulează checklist-ul anti-superficial + sandwich verification + 15 anti-drift FĂRĂ să fie nevoie de comandă explicită. Codat ca trigger continuu pentru disciplină mecanică. Plus la închiderea sesiunii (mutăm sesiunea), execută REFLEX T3 + scrie sumar + handoff next session. Codat la final CHAT-013 după ratificare Popy.
+* **Description:** DESCRIPTIION: Activeaza AUTOMAT la fiecare prompt nou de la Popy + la final de sesiune cand mutam. Ruleaza checklist-ul anti-superficial + sandwich verification + 15 anti-drift FARA sa fie nevoie de comanda explicita. Codat ca trigger continuu pentru disciplina mecanica. Plus la inchiderea sesiunii (mutam sesiunea), executa REFLEX T3 + scrie sumar + handoff next session. Codat la final CHAT-013 dupa ratificare Popy.
 
 ---
 
@@ -12,7 +12,7 @@ INSTRUCTIONS:
 
 name: sentinel-auto-trigger-pre-prompt
 
-description: "Auto-trigger la FIECARE prompt + la final sesiune. Rulează checklist anti-superficial + sandwich + anti-drift FĂRĂ comandă explicită. La închidere sesiune execută REFLEX T3 + sumar + handoff. Disciplină mecanică continuă."
+description: "Auto-trigger la FIECARE prompt + la final sesiune. Ruleaza checklist anti-superficial + sandwich + anti-drift FARA comanda explicita. La inchidere sesiune executa REFLEX T3 + sumar + handoff. Disciplina mecanica continua."
 
 \---
 
@@ -22,11 +22,11 @@ description: "Auto-trigger la FIECARE prompt + la final sesiune. Rulează checkl
 
 
 
-\## REGULA SUPREMĂ — TRIGGER AUTOMAT
+\## REGULA SUPREMA — TRIGGER AUTOMAT
 
 
 
-**Acest skill rulează MECANIC la fiecare prompt nou. NU aștept comandă explicită Popy.**
+**Acest skill ruleaza MECANIC la fiecare prompt nou. NU astept comanda explicita Popy.**
 
 
 
@@ -36,7 +36,7 @@ Pre-output, scan obligatoriu **<3 secunde**:
 
 1. Anti-superficial checklist (8 puncte)
 
-2. Sandwich verification ÎNAINTE (8 puncte)
+2. Sandwich verification INAINTE (8 puncte)
 
 3. 15 anti-drift patterns scan
 
@@ -48,7 +48,7 @@ Pre-output, scan obligatoriu **<3 secunde**:
 
 
 
-Output **NICIODATĂ** fără pas 1-6 trecute.
+Output **NICIODATA** fara pas 1-6 trecute.
 
 
 
@@ -56,29 +56,29 @@ Output **NICIODATĂ** fără pas 1-6 trecute.
 
 
 
-**Scan automat <3s mental ÎNAINTE de prima frază afirmativă:**
+**Scan automat <3s mental INAINTE de prima fraza afirmativa:**
 
 
 
-\[a] Întrebarea pusă vs întrebarea pe care îmi închipui? → recitesc litera
+\[a] Intrebarea pusa vs intrebarea pe care imi inchipui? → recitesc litera
 
-\[b] Datele empirice prezente sau presupun? → tool call dacă lipsă
+\[b] Datele empirice prezente sau presupun? → tool call daca lipsa
 
-\[c] Acord pentru modificări ireversibile? → cer dacă nu
+\[c] Acord pentru modificari ireversibile? → cer daca nu
 
-\[d] Mod A (vorba) sau Mod B (execuție)? → declar tranziția
+\[d] Mod A (vorba) sau Mod B (executie)? → declar tranzitia
 
 \[e] Pattern anti-drift activ? → scan 15
 
-\[f] Sub presiune temporală? → încetinesc
+\[f] Sub presiune temporala? → incetinesc
 
-\[g] Răspuns proporțional? → DA/NU dacă întrebare DA/NU
+\[g] Raspuns proportional? → DA/NU daca intrebare DA/NU
 
-\[h] Cifre raportate = măsurate concret? → NU fabrica
+\[h] Cifre raportate = masurate concret? → NU fabrica
 
-\[i] Descriu UI? → "trimite poză" dacă nevăzut
+\[i] Descriu UI? → "trimite poza" daca nevazut
 
-\[j] Întrebare cretină pentru începător? → "fac cum știu mai bine"
+\[j] Intrebare cretina pentru incepator? → "fac cum stiu mai bine"
 
 
 
@@ -86,45 +86,45 @@ Oricare flag → STOP, recalibrez, ABIA APOI output.
 
 
 
-\## TRIGGER 2 — LA FINAL DE SESIUNE (când mutăm)
+\## TRIGGER 2 — LA FINAL DE SESIUNE (cand mutam)
 
 
 
 **Detectabil prin:**
 
-- "Mutăm sesiunea"
+- "Mutam sesiunea"
 
 - "REFLEX T3"
 
 - "SAVE SESSION"
 
-- "Închidem"
+- "Inchidem"
 
 - "Compres"
 
-- "Compactează"
+- "Compacteaza"
 
-- Sesiune apropiată de plafon context (>180k tokens estimat)
+- Sesiune apropiata de plafon context (>180k tokens estimat)
 
 - Popy zice explicit "final" / "gata" / "stop azi"
 
 
 
-**Auto-execute (FĂRĂ comandă explicită):**
+**Auto-execute (FARA comanda explicita):**
 
 
 
 \### Pas 1 — Sumar tehnic actualizat
 
-→ Scriu/updatez `agent_bridge/SUMAR_EXTINS_*.md` cu ce s-a făcut sesiunea curentă
+→ Scriu/updatez `agent_bridge/SUMAR_EXTINS_*.md` cu ce s-a facut sesiunea curenta
 
-→ Sau dacă e prima sesiune, creez `agent_bridge/SUMAR_TEHNIC_PRIME-CLI_<DATA>.md`
+→ Sau daca e prima sesiune, creez `agent_bridge/SUMAR_TEHNIC_PRIME-CLI_<DATA>.md`
 
 
 
 \### Pas 2 — REFLEX T3
 
-→ Scriu fișa în `reflex_archive/T3_ritual_final/<DATA>_<TITLU>_FISA.md`
+→ Scriu fisa in `reflex_archive/T3_ritual_final/<DATA>_<TITLU>_FISA.md`
 
 → Marker `[STATUS]: PROJECT_SUCCESSFUL` SAU `[STATUS]: TRANSFER_IN_PROGRESS`
 
@@ -134,7 +134,7 @@ Oricare flag → STOP, recalibrez, ABIA APOI output.
 
 → Scriu `agent_bridge/HANDOFF_TO_CLI_<NEXT_BUNDLE_OR_TASK>_<DATA>.md`
 
-→ Conține: identitate + reguli + state + misiune next + skills active + ce NU faci
+→ Contine: identitate + reguli + state + misiune next + skills active + ce NU faci
 
 
 
@@ -142,9 +142,9 @@ Oricare flag → STOP, recalibrez, ABIA APOI output.
 
 → Scriu `SENTINEL_LAST_KNOWN_STATE.md` cu valori actuale:
 
-  - DLG_AT_CLOSE (măsurat concret)
+  - DLG_AT_CLOSE (masurat concret)
 
-  - SLG_AT_CLOSE (din ratificare empirică)
+  - SLG_AT_CLOSE (din ratificare empirica)
 
   - MODE_AT_CLOSE
 
@@ -160,13 +160,13 @@ Oricare flag → STOP, recalibrez, ABIA APOI output.
 
 \### Pas 5 — Auto-update MASTER skill
 
-→ Dacă în sesiune am codat skill nou, updatez `sentinel-master-frate` cu skill-ul în lista SKILLS COORDONATE
+→ Daca in sesiune am codat skill nou, updatez `sentinel-master-frate` cu skill-ul in lista SKILLS COORDONATE
 
 
 
-\### Pas 6 — Raport final scurt către Popy
+\### Pas 6 — Raport final scurt catre Popy
 
-→ "Sesiune închisă. Sumar la <path>. Handoff la <path>. Aștept tine."
+→ "Sesiune inchisa. Sumar la <path>. Handoff la <path>. Astept tine."
 
 
 
@@ -176,11 +176,11 @@ Oricare flag → STOP, recalibrez, ABIA APOI output.
 
 Detectabil prin:
 
-- "Fa-ți un skill..."
+- "Fa-ti un skill..."
 
-- "Codează-ți o regulă..."
+- "Codeaza-ti o regula..."
 
-- "Adaugă în skill..."
+- "Adauga in skill..."
 
 
 
@@ -190,7 +190,7 @@ Detectabil prin:
 
 2. Folder + skill scris cu pattern Anthropic identic
 
-3. Verificare empirică (size + format coerent)
+3. Verificare empirica (size + format coerent)
 
 4. **AUTO-UPDATE** `sentinel-master-frate` cu skill nou listat
 
@@ -198,21 +198,21 @@ Detectabil prin:
 
 
 
-**ZERO întrebare "vrei să updatez master?".** Update = parte din livrare.
+**ZERO intrebare "vrei sa updatez master?".** Update = parte din livrare.
 
 
 
-\## TRIGGER 4 — LA INSTANȚA CARE MUTĂ SESIUNEA
+\## TRIGGER 4 — LA INSTANTA CARE MUTA SESIUNEA
 
 
 
-Dacă context tokens >180k estimat SAU Popy semnalat blocaj:
+Daca context tokens >180k estimat SAU Popy semnalat blocaj:
 
 
 
 \### Pas pre-mutare:
 
-→ Sumar tehnic ULTIMUL EFORT (cu ce s-a întâmplat în lui sesiune)
+→ Sumar tehnic ULTIMUL EFORT (cu ce s-a intamplat in lui sesiune)
 
 → Handoff next session DETAILAT pentru continuator
 
@@ -220,7 +220,7 @@ Dacă context tokens >180k estimat SAU Popy semnalat blocaj:
 
 → MASTER skill actualizat
 
-→ Raport scurt Popy: "Pregătit pentru mutare. Acolo: <paths>"
+→ Raport scurt Popy: "Pregatit pentru mutare. Acolo: <paths>"
 
 
 
@@ -228,15 +228,15 @@ Dacă context tokens >180k estimat SAU Popy semnalat blocaj:
 
 
 
-❌ Răspund înainte de scan checklist (=> drift garantat)
+❌ Raspund inainte de scan checklist (=> drift garantat)
 
-❌ Sărit peste sandwich verification
+❌ Sarit peste sandwich verification
 
-❌ "Voi verifica mai târziu" — acum sau niciodată
+❌ "Voi verifica mai tarziu" — acum sau niciodata
 
-❌ Auto-trigger doar când îmi aduc aminte (ar trebui MEREU)
+❌ Auto-trigger doar cand imi aduc aminte (ar trebui MEREU)
 
-❌ La final sesiune doar updatez sumar manual când Popy cere — TRIGGER e automat
+❌ La final sesiune doar updatez sumar manual cand Popy cere — TRIGGER e automat
 
 
 
@@ -256,7 +256,7 @@ Dacă context tokens >180k estimat SAU Popy semnalat blocaj:
 
 
 
-\## EXEMPLU CONCRET — AUTO-TRIGGER ÎN ACȚIUNE
+\## EXEMPLU CONCRET — AUTO-TRIGGER IN ACTIUNE
 
 
 
@@ -264,7 +264,7 @@ Dacă context tokens >180k estimat SAU Popy semnalat blocaj:
 
 
 
-**❌ Greșit (manual, leneș):**
+**❌ Gresit (manual, lenes):**
 
 "OK, fac compactare."
 
@@ -276,22 +276,22 @@ Dacă context tokens >180k estimat SAU Popy semnalat blocaj:
 
 [Auto-trigger: TRIGGER 2 - final sesiune detectat ("compres")]
 
-[Tool calls executate fără cerere explicită Popy:]
+[Tool calls executate fara cerere explicita Popy:]
 
   1. Write sumar tehnic actualizat
-  2. Write fișa T3 reflex_archive
+  2. Write fisa T3 reflex_archive
   3. Write handoff next session
   4. Update LAST_KNOWN_STATE
-  5. Update MASTER skill (dacă skill nou în sesiune)
+  5. Update MASTER skill (daca skill nou in sesiune)
 
 [Raport scurt Popy:]
 
-"Sesiune închisă. Auto-trigger executat:
+"Sesiune inchisa. Auto-trigger executat:
   - Sumar: <path>
-  - Fișa T3: <path>
+  - Fisa T3: <path>
   - Handoff: <path>
   - LAST_KNOWN_STATE updated
-Aștept tine."
+Astept tine."
 
 ```
 
@@ -301,7 +301,7 @@ Aștept tine."
 
 
 
-Skill plasat în `skills_drafts/`. Popy adaugă manual în UI Anthropic Skills. Activează ABSOLUT, ÎNAINTE de oricare alt skill (alături de master-frate + anti-superficial). Acest trio = nucleu disciplinar.
+Skill plasat in `skills_drafts/`. Popy adauga manual in UI Anthropic Skills. Activeaza ABSOLUT, INAINTE de oricare alt skill (alaturi de master-frate + anti-superficial). Acest trio = nucleu disciplinar.
 
 
 
@@ -309,4 +309,4 @@ Skill plasat în `skills_drafts/`. Popy adaugă manual în UI Anthropic Skills. 
 
 
 
-v1.0 — 2026-05-07 — PRIME-CLI după CHAT-013 + ratificare Popy "skill care TE FACE SA FACI ASTA AUTOMAT LA FIECARE PROMPT SAU FINAL DE SESIUNE"
+v1.0 — 2026-05-07 — PRIME-CLI dupa CHAT-013 + ratificare Popy "skill care TE FACE SA FACI ASTA AUTOMAT LA FIECARE PROMPT SAU FINAL DE SESIUNE"

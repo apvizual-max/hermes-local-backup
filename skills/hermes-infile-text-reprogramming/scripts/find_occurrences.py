@@ -22,15 +22,15 @@ ROOT_DEFAULT = r"C:\Users\apviz\AppData\Local\hermes"
 
 # Match slash-separated compound FIRST (before individual variants)
 SLASH_PATTERNS = [
-    re.compile(r'(?<![a-zA-Z0-9_])(CONSTIINTA\s*/\s*CON[ŞS]TIN[ŢT][AĂ])(?![a-zA-Z0-9_])', re.IGNORECASE),
-    re.compile(r'(?<![a-zA-Z0-9_])(CON[ŞS]TIN[ŢT][AĂ]\s*/\s*CONSTIINTA)(?![a-zA-Z0-9_])', re.IGNORECASE),
+    re.compile(r'(?<![a-zA-Z0-9_])(CONSTIINTA\s*/\s*CON[ŞS]TIN[ŢT][AA])(?![a-zA-Z0-9_])', re.IGNORECASE),
+    re.compile(r'(?<![a-zA-Z0-9_])(CON[ŞS]TIN[ŢT][AA]\s*/\s*CONSTIINTA)(?![a-zA-Z0-9_])', re.IGNORECASE),
 ]
 
 # Individual variant patterns
 SINGLE_PATTERNS = [
-    re.compile(r'(?<![a-zA-Z0-9_])(CON[ŞS]TIN[ŢT][AĂ])(?![a-zA-Z0-9_])', re.IGNORECASE),
+    re.compile(r'(?<![a-zA-Z0-9_])(CON[ŞS]TIN[ŢT][AA])(?![a-zA-Z0-9_])', re.IGNORECASE),
     re.compile(r'(?<![a-zA-Z0-9_])(CONSTIINTA)(?![a-zA-Z0-9_])', re.IGNORECASE),
-    re.compile(r'(?<![a-zA-Z0-9_])(CONȘTINȚA)(?![a-zA-Z0-9_])'),
+    re.compile(r'(?<![a-zA-Z0-9_])(CONSTINTA)(?![a-zA-Z0-9_])'),
 ]
 
 ALL_PATTERNS = SLASH_PATTERNS + SINGLE_PATTERNS

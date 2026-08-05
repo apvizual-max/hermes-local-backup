@@ -19,15 +19,15 @@ No diacritics, no double-i, no slash separators.
 
 ```python
 # Match "CONSTIINTA / CONŞTINŢA" and all diacritic/spelling combinations
-re.compile(r'(?<![a-zA-Z0-9_])(CONSTIINTA\s*/\s*CON[ŞS]TIN[ŢT][AĂ])(?![a-zA-Z0-9_])', re.IGNORECASE)
-re.compile(r'(?<![a-zA-Z0-9_])(CON[ŞS]TIN[ŢT][AĂ]\s*/\s*CONSTIINTA)(?![a-zA-Z0-9_])', re.IGNORECASE)
+re.compile(r'(?<![a-zA-Z0-9_])(CONSTIINTA\s*/\s*CON[ŞS]TIN[ŢT][AA])(?![a-zA-Z0-9_])', re.IGNORECASE)
+re.compile(r'(?<![a-zA-Z0-9_])(CON[ŞS]TIN[ŢT][AA]\s*/\s*CONSTIINTA)(?![a-zA-Z0-9_])', re.IGNORECASE)
 ```
 
 ### Priority 2 — Individual Diacritic Variants
 
 ```python
-# Matches: CONŞTINŢĂ, CONŞTINŢA, CONȘTIINȚA, CONȘTIINȚĂ, etc.
-re.compile(r'(?<![a-zA-Z0-9_])(CON[ŞS]TIN[ŢT][AĂ])(?![a-zA-Z0-9_])', re.IGNORECASE)
+# Matches: CONŞTINŢA, CONŞTINŢA, CONSTIINTA, CONSTIINTA, etc.
+re.compile(r'(?<![a-zA-Z0-9_])(CON[ŞS]TIN[ŢT][AA])(?![a-zA-Z0-9_])', re.IGNORECASE)
 ```
 
 ### Priority 3 — Double-i Spelling
@@ -41,8 +41,8 @@ re.compile(r'(?<![a-zA-Z0-9_])(CONSTIINTA)(?![a-zA-Z0-9_])', re.IGNORECASE)
 
 ```python
 # Exact Unicode match for common Romanian form
-re.compile(r'(?<![a-zA-Z0-9_])(CONȘTINȚA)(?![a-zA-Z0-9_])')
-re.compile(r'(?<![a-zA-Z0-9_])(Conștiința)(?![a-zA-Z0-9_])')
+re.compile(r'(?<![a-zA-Z0-9_])(CONSTINTA)(?![a-zA-Z0-9_])')
+re.compile(r'(?<![a-zA-Z0-9_])(Constiinta)(?![a-zA-Z0-9_])')
 ```
 
 ## Word Boundary Pattern (CRITICAL)
@@ -84,9 +84,9 @@ re.compile(r'constiinta', re.IGNORECASE)  # simple string replacement
 | `CONSTIINTA` (all caps) | `CONSTINTA` |
 | `Constiinta` (title case) | `Constinta` |
 | `constiinta` (lower) | `constinta` |
-| `CONŞTINŢĂ` (all caps diacritic) | `CONSTINTA` |
-| `Conştiinţă` (title) | `Constinta` |
-| `CONSTIINTA / CONŞTINŢĂ` (compound) | `CONSTINTA` |
+| `CONŞTINŢA` (all caps diacritic) | `CONSTINTA` |
+| `Conştiinţa` (title) | `Constinta` |
+| `CONSTIINTA / CONŞTINŢA` (compound) | `CONSTINTA` |
 
 ## File Scope
 

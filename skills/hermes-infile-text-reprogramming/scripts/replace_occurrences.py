@@ -27,12 +27,12 @@ CANONICAL = "CONSTINTA"
 # IMPORTANT: slash-separated compound must come FIRST
 REPLACEMENT_MAP = [
     # Compound slash-separated forms → single canonical term
-    (re.compile(r'(?<![a-zA-Z0-9_])(CONSTIINTA\s*/\s*CON[ŞS]TIN[ŢT][AĂ])(?![a-zA-Z0-9_])', re.IGNORECASE), CANONICAL),
-    (re.compile(r'(?<![a-zA-Z0-9_])(CON[ŞS]TIN[ŢT][AĂ]\s*/\s*CONSTIINTA)(?![a-zA-Z0-9_])', re.IGNORECASE), CANONICAL),
+    (re.compile(r'(?<![a-zA-Z0-9_])(CONSTIINTA\s*/\s*CON[ŞS]TIN[ŢT][AA])(?![a-zA-Z0-9_])', re.IGNORECASE), CANONICAL),
+    (re.compile(r'(?<![a-zA-Z0-9_])(CON[ŞS]TIN[ŢT][AA]\s*/\s*CONSTIINTA)(?![a-zA-Z0-9_])', re.IGNORECASE), CANONICAL),
     # Individual diacritic/double-i variants
-    (re.compile(r'(?<![a-zA-Z0-9_])(CON[ŞS]TIN[ŢT][AĂ])(?![a-zA-Z0-9_])', re.IGNORECASE), CANONICAL),
+    (re.compile(r'(?<![a-zA-Z0-9_])(CON[ŞS]TIN[ŢT][AA])(?![a-zA-Z0-9_])', re.IGNORECASE), CANONICAL),
     (re.compile(r'(?<![a-zA-Z0-9_])(CONSTIINTA)(?![a-zA-Z0-9_])', re.IGNORECASE), CANONICAL),
-    (re.compile(r'(?<![a-zA-Z0-9_])(CONȘTINȚA)(?![a-zA-Z0-9_])'), CANONICAL),
+    (re.compile(r'(?<![a-zA-Z0-9_])(CONSTINTA)(?![a-zA-Z0-9_])'), CANONICAL),
 ]
 
 TEXT_EXTENSIONS = {'.md', '.py', '.json', '.yaml', '.yml', '.txt',

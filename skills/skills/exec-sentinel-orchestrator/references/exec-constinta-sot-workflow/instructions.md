@@ -6,14 +6,14 @@
 
 # CONSTINTA SOT Workflow — Complete Implementation Reference
 
-This skill documents the **exact, verified methodology** used to eliminate a critical system confusion (`CONSTIINTA` / `CONȘTINȚA` → `CONSTINTA`) and establish a permanent Single Source of Truth. Use this as the master playbook for any similar SOT unification task.
+This skill documents the **exact, verified methodology** used to eliminate a critical system confusion (`CONSTIINTA` / `CONSTINTA` → `CONSTINTA`) and establish a permanent Single Source of Truth. Use this as the master playbook for any similar SOT unification task.
 
 ---
 
 ## THE PROBLEM THIS SOLVED
 
 The Hermes system had **three incompatible variants** of the same term scattered across:
-- File **names**: `CONSTIINTA.md`, `CONȘTINȚA.md`, `CONŞTINŢA.md`
+- File **names**: `CONSTIINTA.md`, `CONSTINTA.md`, `CONŞTINŢA.md`
 - File **contents**: same variants mixed throughout all `.md`, `.py`, `.json`, `.yaml` files
 - **Result**: broken cross-references, unparseable paths (Windows CP1252 encoding failures), LLM confusion, programming inconsistency
 
@@ -30,7 +30,7 @@ Before touching anything, map the full scope.
 ```powershell
 # Scan for filenames containing any legacy variant
 Get-ChildItem -Path "C:\Users\apviz\AppData\Local\hermes" -Recurse -ErrorAction SilentlyContinue |
-  Where-Object { $_.Name -match "constiint|conștiinț|constiin" } |
+  Where-Object { $_.Name -match "constiint|constiint|constiin" } |
   Select-Object FullName | Format-List
 ```
 
@@ -41,7 +41,7 @@ import os, re
 
 root = r"C:\Users\apviz\AppData\Local\hermes"
 pattern = re.compile(
-    r"constiintă|constiintã|constiinţa|constiință|constiinta|conștința|conştinţa|conştinţă|conștință",
+    r"constiinta|constiintã|constiinţa|constiinta|constiinta|constinta|conştinţa|conştinţa|constinta",
     re.IGNORECASE
 )
 
@@ -96,8 +96,8 @@ def find_merge_pairs(root):
         lower_files = {f.lower(): f for f in files}
         
         legacy_variants = [
-            "constiinta.md", "conștința.md", "conştinţa.md",
-            "conştiinţă.md", "constiința.md"
+            "constiinta.md", "constinta.md", "conştinţa.md",
+            "conştiinţa.md", "constiinta.md"
         ]
         legacy_found = [f for lf in legacy_variants for f in files if f.lower() == lf]
         canonical_found = [f for f in files if f == "CONSTINTA.md"]
@@ -175,7 +175,7 @@ import os, re
 
 # Pattern for ANY file whose name contains legacy variants
 legacy_name_pattern = re.compile(
-    r"constiinta|conştinţ|conștiinț|constiință",
+    r"constiinta|conştinţ|constiint|constiinta",
     re.IGNORECASE
 )
 
@@ -221,7 +221,7 @@ pattern = re.compile(r"\bCONSTIINTA\b", re.IGNORECASE)
 **CORRECT (no word boundaries — matches everywhere including identifiers):**
 ```python
 pattern = re.compile(
-    r"(con[sșşSȘŞ]ti{1,2}n[tțţTȚŢ][aăâãeioușțşţ]*)",
+    r"(con[ssşSSŞ]ti{1,2}n[ttţTTŢ][aaaãeioustşţ]*)",
     re.IGNORECASE
 )
 ```
@@ -233,11 +233,11 @@ import re
 # ALL known legacy variants — literal, case-insensitive
 patterns = [
     "constiinta", "CONSTIINTA", "Constiinta",
-    "conștința", "CONȘTINȚA", "Conștința",
+    "constinta", "CONSTINTA", "Constinta",
     "conştinţa", "CONŞTINŢA", "Conştinţa",
-    "constiința", "CONSTIINȚA", "Constiința",
-    "conştiinţă", "CONŞTIINŢĂ", "Conştiinţă",
-    "conștiință", "conștiinței",
+    "constiinta", "CONSTIINTA", "Constiinta",
+    "conştiinţa", "CONŞTIINŢA", "Conştiinţa",
+    "constiinta", "constiintei",
 ]
 combined = re.compile("|".join(re.escape(p) for p in patterns), re.IGNORECASE)
 ```
@@ -271,8 +271,8 @@ TEXT_EXTENSIONS = {".py", ".md", ".json", ".yaml", ".yml", ".txt", ".js"}
 
 # Exhaustive pattern — no word boundaries
 PATTERN = re.compile(
-    r"constiintă|constiintã|constiinţa|constiință|constiinta"
-    r"|conștința|conştinţa|conştinţă|conștință|conștiinței",
+    r"constiinta|constiintã|constiinţa|constiinta|constiinta"
+    r"|constinta|conştinţa|conştinţa|constinta|constiintei",
     re.IGNORECASE
 )
 
@@ -320,13 +320,13 @@ ROOTS = [
 SKIP_DIRS = {"OGLINDA - CASA", ".git", ".venv", "node_modules", "__pycache__"}
 
 LEGACY_NAME_SUBSTRINGS = [
-    "constiinta", "constiintă", "conștiința", "conştinţa", "conștiință",
+    "constiinta", "constiinta", "constiinta", "conştinţa", "constiinta",
     "constiinţa",
 ]
 
 CONTENT_PATTERN = re.compile(
-    r"constiintă|constiintã|constiinţa|constiință|constiinta"
-    r"|conștința|conştinţa|conştinţă|conștință|conștiinței",
+    r"constiinta|constiintã|constiinţa|constiinta|constiinta"
+    r"|constinta|conştinţa|conştinţa|constinta|constiintei",
     re.IGNORECASE
 )
 
@@ -412,7 +412,7 @@ C:\Users\apviz\AppData\Local\hermes\hermes-agent\venv\Scripts\python.exe `
 |---------|---------|
 | `\b` word boundary misses identifiers with underscores | Use `re.compile(pattern, re.IGNORECASE)` WITHOUT `\b` |
 | `UnicodeEncodeError` when printing diacritic paths | Use `.encode('ascii','ignore').decode('ascii')` on all path prints |
-| `re.IGNORECASE` does not auto-fold non-ASCII in char classes | Explicitly list all variants: `[sșşSȘŞ]` instead of just `[sS]` |
+| `re.IGNORECASE` does not auto-fold non-ASCII in char classes | Explicitly list all variants: `[ssşSSŞ]` instead of just `[sS]` |
 | Files in cron/output directories missed | Include `cron\output\` in scan roots |
 | State-snapshots contain copies of legacy files | Include `state-snapshots\` in scan roots |
 | Two files exist but content differs | Always merge larger→smaller, never delete without merging |

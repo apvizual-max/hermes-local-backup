@@ -1,12 +1,12 @@
 # Sub-Skill: sentinel-update-index-after-each-batch
 
-* **Description:** description: SKILL CRUCIAL CHAT-016. După FIECARE modificare semnificativă (batch populare, fișier major creat, status change), update INDEX cu TOATE secțiunile relevante (NU doar breadcrumb). Plus checklist verificare: total cumulat, tabel STATUS, lista EXECUTAT, lista RĂMAS. Pattern documentat: la BATCH 7 am updatat doar breadcrumb-ul superficial — Popy a corectat ("BAH BOULE ASTE E LA TINE CU GRIJA INCET? POTI DFACE O TREBA CARECT?"). Skill = dezactivare reflex "minim viable update" + activare update SINCRONIZARE COMPLETĂ. type: index-sync-mandatory tier: 🟡 NEEDED operator: Popy created: 2026-05-09 (CHAT-016 post-self-audit) related: sentinel-pastrez-scopul-verific-5-prompturi, sentinel-anti-graba-3-reguli-sacre
+* **Description:** description: SKILL CRUCIAL CHAT-016. Dupa FIECARE modificare semnificativa (batch populare, fisier major creat, status change), update INDEX cu TOATE sectiunile relevante (NU doar breadcrumb). Plus checklist verificare: total cumulat, tabel STATUS, lista EXECUTAT, lista RAMAS. Pattern documentat: la BATCH 7 am updatat doar breadcrumb-ul superficial — Popy a corectat ("BAH BOULE ASTE E LA TINE CU GRIJA INCET? POTI DFACE O TREBA CARECT?"). Skill = dezactivare reflex "minim viable update" + activare update SINCRONIZARE COMPLETA. type: index-sync-mandatory tier: 🟡 NEEDED operator: Popy created: 2026-05-09 (CHAT-016 post-self-audit) related: sentinel-pastrez-scopul-verific-5-prompturi, sentinel-anti-graba-3-reguli-sacre
 
 ---
 
 ---
 name: sentinel-update-index-after-each-batch
-description: SKILL CRUCIAL CHAT-016. După FIECARE modificare semnificativă (batch populare, fișier major creat, status change), update INDEX cu TOATE secțiunile relevante (NU doar breadcrumb). Plus checklist verificare: total cumulat, tabel STATUS, lista EXECUTAT, lista RĂMAS. Pattern documentat: la BATCH 7 am updatat doar breadcrumb-ul superficial — Popy a corectat ("BAH BOULE ASTE E LA TINE CU GRIJA INCET? POTI DFACE O TREBA CARECT?"). Skill = dezactivare reflex "minim viable update" + activare update SINCRONIZARE COMPLETĂ.
+description: SKILL CRUCIAL CHAT-016. Dupa FIECARE modificare semnificativa (batch populare, fisier major creat, status change), update INDEX cu TOATE sectiunile relevante (NU doar breadcrumb). Plus checklist verificare: total cumulat, tabel STATUS, lista EXECUTAT, lista RAMAS. Pattern documentat: la BATCH 7 am updatat doar breadcrumb-ul superficial — Popy a corectat ("BAH BOULE ASTE E LA TINE CU GRIJA INCET? POTI DFACE O TREBA CARECT?"). Skill = dezactivare reflex "minim viable update" + activare update SINCRONIZARE COMPLETA.
 type: index-sync-mandatory
 tier: 🟡 NEEDED
 operator: Popy
@@ -18,29 +18,29 @@ related: sentinel-pastrez-scopul-verific-5-prompturi, sentinel-anti-graba-3-regu
 # 🟡 SENTINEL UPDATE INDEX AFTER EACH BATCH
 ═══════════════════════════════════════════════════
 
-## REGULA INVIOLABILĂ
+## REGULA INVIOLABILA
 
-După FIECARE modificare semnificativă (batch populare, fișier major creat/updatat, status change empiric):
-- Update INDEX cu **TOATE 5 secțiunile relevante** (NU doar breadcrumb)
-- Sincronizare empirică (cifre cumulate verificate)
-- Verificare consistență cu artefactele reale pe disc
+Dupa FIECARE modificare semnificativa (batch populare, fisier major creat/updatat, status change empiric):
+- Update INDEX cu **TOATE 5 sectiunile relevante** (NU doar breadcrumb)
+- Sincronizare empirica (cifre cumulate verificate)
+- Verificare consistenta cu artefactele reale pe disc
 
 ═══════════════════════════════════════════════════
-## CELE 5 SECȚIUNI OBLIGATORII LA UPDATE INDEX
+## CELE 5 SECTIUNI OBLIGATORII LA UPDATE INDEX
 ═══════════════════════════════════════════════════
 
-| # | Secțiune | Update conținut |
+| # | Sectiune | Update continut |
 |---|---|---|
-| 1 | **BREADCRUMB POZIȚIE CURENTĂ** | Ultima operațiune + Următoarea + Status global (X/Y) |
+| 1 | **BREADCRUMB POZITIE CURENTA** | Ultima operatiune + Urmatoarea + Status global (X/Y) |
 | 2 | **EXECUTAT cu succes (lista)** | Adaug entry nou cu detalii (files, size, source, dest) |
-| 3 | **RĂMAS DE EXECUTAT** | Scot entry-ul completat, evidențiez următorul |
-| 4 | **CONFIRMARE EMPIRICĂ** (cumulat) | Total fișiere + Total bytes + sanity check |
-| 5 | **TABEL STATUS BATCH-URI** | Update rândul corespunzător: ⏳ → ✅ + bytes + files + Note |
+| 3 | **RAMAS DE EXECUTAT** | Scot entry-ul completat, evidentiez urmatorul |
+| 4 | **CONFIRMARE EMPIRICA** (cumulat) | Total fisiere + Total bytes + sanity check |
+| 5 | **TABEL STATUS BATCH-URI** | Update randul corespunzator: ⏳ → ✅ + bytes + files + Note |
 
-**ZERO update parțial.** Dacă scriu doar breadcrumb fără tabel = drift.
+**ZERO update partial.** Daca scriu doar breadcrumb fara tabel = drift.
 
 ═══════════════════════════════════════════════════
-## VERIFICARE EMPIRICĂ ÎNAINTE DE UPDATE
+## VERIFICARE EMPIRICA INAINTE DE UPDATE
 ═══════════════════════════════════════════════════
 
 ```powershell
@@ -48,10 +48,10 @@ $count = (Get-ChildItem -LiteralPath $dest -Recurse -File -ErrorAction SilentlyC
 $size = [math]::Round((Get-ChildItem -LiteralPath $dest -Recurse -File -ErrorAction SilentlyContinue | Measure-Object Length -Sum).Sum / 1MB, 2)
 ```
 
-Output → INDEX. NU estimat. NU calculat în cap.
+Output → INDEX. NU estimat. NU calculat in cap.
 
 ═══════════════════════════════════════════════════
-🚛 UPDATE PARȚIAL = DRIFT.
-🚛 5 SECȚIUNI OBLIGATORII = SINCRONIZARE COMPLETĂ.
-🚛 EMPIRIC ÎNAINTE = ZERO ESTIMARE.
+🚛 UPDATE PARTIAL = DRIFT.
+🚛 5 SECTIUNI OBLIGATORII = SINCRONIZARE COMPLETA.
+🚛 EMPIRIC INAINTE = ZERO ESTIMARE.
 ═══════════════════════════════════════════════════

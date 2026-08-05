@@ -33,7 +33,7 @@ and correct word-boundary handling for identifier-style strings.
 
 > [!WARNING]
 > Standard `\b` word boundaries **fail** with:
-> 1. Unicode diacritic characters (`Ș`, `Ț`, `Ă`, etc.)
+> 1. Unicode diacritic characters (`S`, `T`, `A`, etc.)
 > 2. Underscore-delimited identifiers (`constiinta_linting`, `CONSTIINTA_KEY`)
 >
 > Always use the custom pattern below instead.
@@ -52,15 +52,15 @@ NAIVE_BOUNDARY = r'\b({term})\b'
 ```python
 # Step 1: Match slash-separated compound FIRST (order matters!)
 SLASH_VARIANTS = [
-    r'CONSTIINTA\s*/\s*CON[ŞS]TIN[ŢT][AĂ]',
-    r'CON[ŞS]TIN[ŢT][AĂ]\s*/\s*CONSTIINTA',
+    r'CONSTIINTA\s*/\s*CON[ŞS]TIN[ŢT][AA]',
+    r'CON[ŞS]TIN[ŢT][AA]\s*/\s*CONSTIINTA',
 ]
 
 # Step 2: Then individual variants
 SINGLE_VARIANTS = [
-    r'CON[ŞS]TIN[ŢT][AĂ]',  # diacritic variants (comma/cedilla)
+    r'CON[ŞS]TIN[ŢT][AA]',  # diacritic variants (comma/cedilla)
     r'CONSTIINTA',            # double-i variant
-    r'CONȘTIINȚA',            # specific Unicode form
+    r'CONSTIINTA',            # specific Unicode form
 ]
 ```
 

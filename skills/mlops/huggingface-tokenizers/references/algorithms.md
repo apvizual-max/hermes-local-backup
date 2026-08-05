@@ -589,7 +589,7 @@ from tokenizers.normalizers import NFKC
 
 tokenizer.normalizer = NFKC()
 
-"é" (composed) ↔ "é" (decomposed) → normalized to one form
+"e" (composed) ↔ "e" (decomposed) → normalized to one form
 ```
 
 ## Troubleshooting

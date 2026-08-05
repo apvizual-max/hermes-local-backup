@@ -34,12 +34,12 @@ agy auth login
 - **Antigravity CLI**: `~/.gemini/oauth_creds.json` (primary)
   ```json
   {
-    "access_token": "[REDACTED_YA29]",
+    "access_token": "ya29.a0ARG...",
     "scope": "https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email openid https://www.googleapis.com/auth/cloud-platform",
     "token_type": "Bearer",
     "id_token": "eyJhbG...",
     "expiry_date": 1785362656119,  # milliseconds since epoch
-    "refresh_token": "[REDACTED_GOOGLE_TOKEN]"
+    "refresh_token": "1//03iA-jNpBnq6fCgYIARAAGAMSNwF-L9IrjZCSZsujqFaNsMYMSPBTtso4lIEgVstdPYyIJ_G_xcb3y33NE3-Vbhs22BjEeVxFjdA"
   }
   ```
 

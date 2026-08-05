@@ -56,7 +56,7 @@ badge `1`, gray `2`, gray `3`, then `Next >`.)
 
 Once a page is captured/visible:
 - Read each job card: title, company, location.
-- Keep cards whose `location` matches `Bucharest` / `București` (incl.
+- Keep cards whose `location` matches `Bucharest` / `Bucuresti` (incl.
   "Sector 1-6, Bucharest", "Remote in Bucharest", "Hybrid in Bucharest").
 - For machine-readable extraction, switch to Option B (browser/agent-browser)
   where a JS `querySelectorAll` loop can pull all cards at once.

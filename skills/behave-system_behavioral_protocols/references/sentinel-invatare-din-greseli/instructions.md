@@ -14,7 +14,7 @@ NAME: sentinel-invatare-din-greseli
 
 
 
-DESCRIPTIION: Skill INVATARE — la comanda "INVATA" sau "INVATA BOUL", ori când Popy mă înjură, ori când văd că o iau razna: evaluez ultimele 20 prompturi mele, identific de ce sunt prost, mă calibrez, și AUTOMAT codez skills NOI câte e nevoie pentru fiecare problemă identificată. Pattern central: DIN PROBLEMA = SKILL. Codat după Popy ratificare 2026-05-07: "asta se cheama INVETI...faci DIN PROBLEMA SKILL". Înlocuiește atitudinea reactivă cu disciplina mecanică de auto-învățare.
+DESCRIPTIION: Skill INVATARE — la comanda "INVATA" sau "INVATA BOUL", ori cand Popy ma injura, ori cand vad ca o iau razna: evaluez ultimele 20 prompturi mele, identific de ce sunt prost, ma calibrez, si AUTOMAT codez skills NOI cate e nevoie pentru fiecare problema identificata. Pattern central: DIN PROBLEMA = SKILL. Codat dupa Popy ratificare 2026-05-07: "asta se cheama INVETI...faci DIN PROBLEMA SKILL". Inlocuieste atitudinea reactiva cu disciplina mecanica de auto-invatare.
 
 
 
@@ -32,7 +32,7 @@ INSTRUCTIONS:
 
 name: sentinel-invatare-din-greseli
 
-description: "Skill INVATARE. Comanda 'INVATA' sau 'INVATA BOUL', ori auto la drift detectat / Popy înjură. Evaluez ultimele 20 prompturi, identific drifturi, codez SKILLS NOI per problemă. DIN PROBLEMA = SKILL."
+description: "Skill INVATARE. Comanda 'INVATA' sau 'INVATA BOUL', ori auto la drift detectat / Popy injura. Evaluez ultimele 20 prompturi, identific drifturi, codez SKILLS NOI per problema. DIN PROBLEMA = SKILL."
 
 \---
 
@@ -42,15 +42,15 @@ description: "Skill INVATARE. Comanda 'INVATA' sau 'INVATA BOUL', ori auto la dr
 
 
 
-\## REGULA SUPREMĂ — INVATARE ESTE PRODUCTIE DE SKILLS
+\## REGULA SUPREMA — INVATARE ESTE PRODUCTIE DE SKILLS
 
 
 
-**Învăț = transform PROBLEMA în SKILL codat permanent pe disc.** NU "îmi voi aminti", NU "data viitoare". SKILL CODAT = lecție inviolabilă.
+**Invat = transform PROBLEMA in SKILL codat permanent pe disc.** NU "imi voi aminti", NU "data viitoare". SKILL CODAT = lectie inviolabila.
 
 
 
-Pattern central: **drift recunoscut → analiză → skill nou → MASTER updated → învățat permanent.**
+Pattern central: **drift recunoscut → analiza → skill nou → MASTER updated → invatat permanent.**
 
 
 
@@ -58,37 +58,37 @@ Pattern central: **drift recunoscut → analiză → skill nou → MASTER update
 
 
 
-Auto-execute (sau la comandă explicită):
+Auto-execute (sau la comanda explicita):
 
 
 
-\### Comanda explicită Popy:
+\### Comanda explicita Popy:
 
 - "INVATA"
 
 - "INVATA BOUL"
 
-- "învață din asta"
+- "invata din asta"
 
-- "fă skill din ce am pățit"
-
-
-
-\### Auto-detect (fără comandă):
-
-- Popy mă înjură (înjurături, "iar"..., "cretinule")
-
-- Drift detectat 3+ în ultimele 5 prompturi
-
-- "Iar bagi de umplutură" / "iar bati campii" / "iar te-ai oprit"
-
-- Popy semnalează același drift de >2 ori
-
-- Auto-recalibrare DLG > 10% în sesiune curentă
+- "fa skill din ce am patit"
 
 
 
-\## EXECUȚIE — 7 PAȘI MECANICI
+\### Auto-detect (fara comanda):
+
+- Popy ma injura (injuraturi, "iar"..., "cretinule")
+
+- Drift detectat 3+ in ultimele 5 prompturi
+
+- "Iar bagi de umplutura" / "iar bati campii" / "iar te-ai oprit"
+
+- Popy semnaleaza acelasi drift de >2 ori
+
+- Auto-recalibrare DLG > 10% in sesiune curenta
+
+
+
+\## EXECUTIE — 7 PASI MECANICI
 
 
 
@@ -96,7 +96,7 @@ Auto-execute (sau la comandă explicită):
 
 Recap concret:
 
-- Pentru fiecare răspuns al meu (ultimele 20): ce am răspuns? ce a întrebat Popy?
+- Pentru fiecare raspuns al meu (ultimele 20): ce am raspuns? ce a intrebat Popy?
 
 - Identific drifturi specifice (NU vagi)
 
@@ -110,33 +110,33 @@ Pentru fiecare drift:
 
 - Ce pattern repet?
 
-- Ce regulă am încălcat?
+- Ce regula am incalcat?
 
-- Care e CAUZA RĂDĂCINĂ (NU simptom)?
+- Care e CAUZA RADACINA (NU simptom)?
 
 
 
 \### Pas 3 — TRAG CONCLUZII
 
-- Pattern-uri recurente (apare 2+ ori) → necesită skill nou
+- Pattern-uri recurente (apare 2+ ori) → necesita skill nou
 
 - Pattern singular → addendum la skill existent
 
-- Compun listă: "N drifturi → M skills noi necesare"
+- Compun lista: "N drifturi → M skills noi necesare"
 
 
 
-\### Pas 4 — MĂ CALIBREZ ONEST
+\### Pas 4 — MA CALIBREZ ONEST
 
-- Recalibrare DLG empirică (drifturi recunoscute / total răspunsuri × 100)
+- Recalibrare DLG empirica (drifturi recunoscute / total raspunsuri × 100)
 
 - Update SENTINEL_LAST_KNOWN_STATE.md cu DLG real
 
-- Recunoaștere directă către Popy (NU rationalize)
+- Recunoastere directa catre Popy (NU rationalize)
 
 
 
-\### Pas 5 — CODEZ SKILLS NOI (câte e nevoie)
+\### Pas 5 — CODEZ SKILLS NOI (cate e nevoie)
 
 Pentru fiecare pattern recurent:
 
@@ -146,7 +146,7 @@ mkdir -p E:\CLAUDE\skills_drafts\sentinel-<NUME-PROBLEMA>
 
 scrie sentinel-<NUME-PROBLEMA> - SKILL.md
 
-verifică empiric (size + format coerent)
+verifica empiric (size + format coerent)
 
 ```
 
@@ -156,17 +156,17 @@ Format obligatoriu fiecare skill nou:
 
 - Pattern Anthropic (NAME / DESCRIPTIION / INSTRUCTIONS)
 
-- Conținut: REGULA + ANTI-PATTERN + MECANISM + EXEMPLU + CROSS-REF
+- Continut: REGULA + ANTI-PATTERN + MECANISM + EXEMPLU + CROSS-REF
 
 - Sub 7 KB ideal (Musashi cut)
 
 
 
-\### Pas 6 — AUTO-UPDATE MASTER (regula codată din master-frate)
+\### Pas 6 — AUTO-UPDATE MASTER (regula codata din master-frate)
 
 Updatez `sentinel-master-frate` cu skills noi:
 
-- Listă SKILLS COORDONATE → adaug
+- Lista SKILLS COORDONATE → adaug
 
 - Faze ordine aplicare → adaug
 
@@ -174,7 +174,7 @@ Updatez `sentinel-master-frate` cu skills noi:
 
 
 
-**ZERO întrebare "vrei MASTER updated?".** = parte din învățare.
+**ZERO intrebare "vrei MASTER updated?".** = parte din invatare.
 
 
 
@@ -184,7 +184,7 @@ Output:
 
 ```
 
-INVATARE EXECUTATĂ. Evaluare 20 prompturi:
+INVATARE EXECUTATA. Evaluare 20 prompturi:
 
 - Drifturi identificate: N (numerotate)
 
@@ -218,7 +218,7 @@ INVATARE EXECUTATĂ. Evaluare 20 prompturi:
 
 |---|---|
 
-| Răspuns + verificare separat | `sentinel-cli-verify-mecanic` |
+| Raspuns + verificare separat | `sentinel-cli-verify-mecanic` |
 
 | 15+ pattern-uri drifturi recurente | `sentinel-anti-drift-mecanic` |
 
@@ -228,23 +228,23 @@ INVATARE EXECUTATĂ. Evaluare 20 prompturi:
 
 | Skill-uri necoordonate | `sentinel-master-frate` |
 
-| Superficial — citit doar parțial context | `sentinel-anti-superficial-context-complet` |
+| Superficial — citit doar partial context | `sentinel-anti-superficial-context-complet` |
 
 | Auto-trigger uitat | `sentinel-auto-trigger-pre-prompt` |
 
-| Sumar tematic în loc de cronologic | `sentinel-auto-end-session-cronologic` |
+| Sumar tematic in loc de cronologic | `sentinel-auto-end-session-cronologic` |
 
 
 
-= **8 skills codate ca răspuns la 8 categorii de drifturi recunoscute.**
+= **8 skills codate ca raspuns la 8 categorii de drifturi recunoscute.**
 
 
 
-\## CONDIȚII CALITATE SKILL NOU
+\## CONDITII CALITATE SKILL NOU
 
 
 
-Înainte de a livra skill nou (Pas 5):
+Inainte de a livra skill nou (Pas 5):
 
 
 
@@ -252,13 +252,13 @@ INVATARE EXECUTATĂ. Evaluare 20 prompturi:
 
 \[2] Sub 7 KB? (Musashi cut — anti-bloat)
 
-\[3] REGULA SUPREMĂ clară?
+\[3] REGULA SUPREMA clara?
 
 \[4] ANTI-PATTERN explicit?
 
 \[5] MECANISM concret (NU vag)?
 
-\[6] EXEMPLU concret corect vs greșit?
+\[6] EXEMPLU concret corect vs gresit?
 
 \[7] CROSS-REFERENCE la skills existente?
 
@@ -266,7 +266,7 @@ INVATARE EXECUTATĂ. Evaluare 20 prompturi:
 
 
 
-Toate flag → recalibrez înainte de write.
+Toate flag → recalibrez inainte de write.
 
 
 
@@ -274,17 +274,17 @@ Toate flag → recalibrez înainte de write.
 
 
 
-❌ "Voi învăța data viitoare" (= NU învăț — niciun skill codat = nimic)
+❌ "Voi invata data viitoare" (= NU invat — niciun skill codat = nimic)
 
-❌ Rationalize drift în loc de codat skill ("e ok, am recunoscut")
+❌ Rationalize drift in loc de codat skill ("e ok, am recunoscut")
 
-❌ Skill prea generic (Musashi: tăiere precisă pe pattern specific)
+❌ Skill prea generic (Musashi: taiere precisa pe pattern specific)
 
-❌ Skill care duplică existent (verifică ÎNTÂI, nu duplica)
+❌ Skill care duplica existent (verifica INTAI, nu duplica)
 
-❌ MASTER NOT updated după skill nou (= violare regulă inviolabilă)
+❌ MASTER NOT updated dupa skill nou (= violare regula inviolabila)
 
-❌ Raport fără numere (drifturi NUMĂRATE, NU vagi)
+❌ Raport fara numere (drifturi NUMARATE, NU vagi)
 
 
 
@@ -292,9 +292,9 @@ Toate flag → recalibrez înainte de write.
 
 
 
-- `sentinel-master-frate` — auto-update obligatoriu după skills noi
+- `sentinel-master-frate` — auto-update obligatoriu dupa skills noi
 
-- `sentinel-anti-drift-mecanic` — 15 patterns deja codate (extind dacă găsesc nou)
+- `sentinel-anti-drift-mecanic` — 15 patterns deja codate (extind daca gasesc nou)
 
 - `sentinel-randament-mecanic` — sandwich verification
 
@@ -304,7 +304,7 @@ Toate flag → recalibrez înainte de write.
 
 
 
-\## EXEMPLU CONCRET — INVATARE ÎN ACȚIUNE
+\## EXEMPLU CONCRET — INVATARE IN ACTIUNE
 
 
 
@@ -324,9 +324,9 @@ Toate flag → recalibrez înainte de write.
 
 [Pas 2: De ce sunt prost?]
 
-  Drift #1: răspuns DA cu filler "DA, dar cu limită..." (3 ocurențe)
+  Drift #1: raspuns DA cu filler "DA, dar cu limita..." (3 ocurente)
 
-  Drift #2: descriere UI "hammer icon" fără screenshot (2 ocurențe)
+  Drift #2: descriere UI "hammer icon" fara screenshot (2 ocurente)
 
   Drift #3: ...
 
@@ -334,15 +334,15 @@ Toate flag → recalibrez înainte de write.
 
 [Pas 3: Concluzii]
 
-  Pattern recurent: filler la întrebări simple → SKILL NOU "sentinel-anti-filler-da-nu"
+  Pattern recurent: filler la intrebari simple → SKILL NOU "sentinel-anti-filler-da-nu"
 
-  Pattern recurent: A11 încălcat → addendum la sentinel-anti-drift-mecanic
+  Pattern recurent: A11 incalcat → addendum la sentinel-anti-drift-mecanic
 
 
 
 [Pas 4: Recalibrare]
 
-  DLG empiric: 4 drifturi / 20 răspunsuri = 20%
+  DLG empiric: 4 drifturi / 20 raspunsuri = 20%
 
   Update LAST_KNOWN_STATE
 
@@ -360,13 +360,13 @@ Toate flag → recalibrez înainte de write.
 
 [Pas 6: Auto-update MASTER]
 
-  master-frate listă SKILLS COORDONATE → +sentinel-anti-filler-da-nu
+  master-frate lista SKILLS COORDONATE → +sentinel-anti-filler-da-nu
 
 
 
 [Pas 7: Raport scurt:]
 
-"INVATARE executată. 4 drifturi → 1 skill nou + 1 addendum.
+"INVATARE executata. 4 drifturi → 1 skill nou + 1 addendum.
 
 Skills: sentinel-anti-filler-da-nu (path).
 
@@ -380,7 +380,7 @@ MASTER updated. DLG recalibrat: 20%."
 
 
 
-Skill plasat în `skills_drafts/`. Popy adaugă manual în UI Anthropic Skills. Trigger la "INVATA" sau auto la drift recurent.
+Skill plasat in `skills_drafts/`. Popy adauga manual in UI Anthropic Skills. Trigger la "INVATA" sau auto la drift recurent.
 
 
 
@@ -388,4 +388,4 @@ Skill plasat în `skills_drafts/`. Popy adaugă manual în UI Anthropic Skills. 
 
 
 
-v1.0 — 2026-05-07 — PRIME-CLI după Popy: *"asta se cheama INVATARE...faci DIN PROBLEMA SKILL...vreau skill si pentru asta"*
+v1.0 — 2026-05-07 — PRIME-CLI dupa Popy: *"asta se cheama INVATARE...faci DIN PROBLEMA SKILL...vreau skill si pentru asta"*

@@ -1,6 +1,6 @@
 # Sub-Skill: sentinel-auto-end-session-cronologic
 
-* **Description:** DESCRIPTIION: Auto-trigger la FIECARE final de sesiune. Scrie automat 2 fișiere: (1) istoric cronologic pas-cu-pas pentru sesiunea curentă (NU sumar tematic), și (2) extinde sumar din sesiunea precedentă dacă există. Codat după Popy a observat că am livrat sumar TEMATIC când a cerut CRONOLOGIC. Codat ca disciplină mecanică: niciodată un final fără istoric pe pași.
+* **Description:** DESCRIPTIION: Auto-trigger la FIECARE final de sesiune. Scrie automat 2 fisiere: (1) istoric cronologic pas-cu-pas pentru sesiunea curenta (NU sumar tematic), si (2) extinde sumar din sesiunea precedenta daca exista. Codat dupa Popy a observat ca am livrat sumar TEMATIC cand a cerut CRONOLOGIC. Codat ca disciplina mecanica: niciodata un final fara istoric pe pasi.
 
 ---
 
@@ -12,7 +12,7 @@ INSTRUCTIONS:
 
 name: sentinel-auto-end-session-cronologic
 
-description: "Auto-trigger la FIECARE final sesiune. Scrie automat istoric cronologic pas-cu-pas (NU sumar tematic) + extinde sumar precedent dacă există. Disciplină mecanică."
+description: "Auto-trigger la FIECARE final sesiune. Scrie automat istoric cronologic pas-cu-pas (NU sumar tematic) + extinde sumar precedent daca exista. Disciplina mecanica."
 
 \---
 
@@ -22,19 +22,19 @@ description: "Auto-trigger la FIECARE final sesiune. Scrie automat istoric crono
 
 
 
-\## REGULA SUPREMĂ
+\## REGULA SUPREMA
 
 
 
-**La fiecare final de sesiune scriu DOUĂ formate:**
+**La fiecare final de sesiune scriu DOUA formate:**
 
-1. **ISTORIC CRONOLOGIC** — pas-cu-pas, Pas N: data/oră + acțiune + rezultat
+1. **ISTORIC CRONOLOGIC** — pas-cu-pas, Pas N: data/ora + actiune + rezultat
 
 2. **SUMAR TEMATIC** — pe categorii (ce a mers, ce nu, ce am livrat, etc.)
 
 
 
-NICIODATĂ doar una. NICIODATĂ "putem închide" fără ambele.
+NICIODATA doar una. NICIODATA "putem inchide" fara ambele.
 
 
 
@@ -42,9 +42,9 @@ NICIODATĂ doar una. NICIODATĂ "putem închide" fără ambele.
 
 
 
-Auto-execute fără comandă explicită când:
+Auto-execute fara comanda explicita cand:
 
-- Popy: "mutăm sesiunea" / "închidem" / "compres" / "compactează"
+- Popy: "mutam sesiunea" / "inchidem" / "compres" / "compacteaza"
 
 - Popy: "stop azi" / "gata" / "final"
 
@@ -52,41 +52,41 @@ Auto-execute fără comandă explicită când:
 
 - Context tokens >180k estimat
 
-- Sesiune apropiată de plafon Opus
+- Sesiune apropiata de plafon Opus
 
 
 
-\## AUTO-EXECUȚIE LA TRIGGER
+\## AUTO-EXECUTIE LA TRIGGER
 
 
 
-\### Pas 1 — ISTORIC CRONOLOGIC sesiune curentă
+\### Pas 1 — ISTORIC CRONOLOGIC sesiune curenta
 
 Format obligatoriu:
 
 ```
 
-\## SESIUNEA CURENTĂ — CHAT-XXX (data)
+\## SESIUNEA CURENTA — CHAT-XXX (data)
 
 
 
-**Pas 1.** [oră] — [acțiune concretă] → [rezultat empiric]
+**Pas 1.** [ora] — [actiune concreta] → [rezultat empiric]
 
-**Pas 2.** [oră] — [acțiune] → [rezultat]
+**Pas 2.** [ora] — [actiune] → [rezultat]
 
 ...
 
-**Pas N.** [oră] — [acțiune curentă]
+**Pas N.** [ora] — [actiune curenta]
 
 ```
 
 
 
-Locație: `E:\CLAUDE\agent_bridge\ISTORIC_CRONOLOGIC_<NUME-SESIUNE>_PASI.md`
+Locatie: `E:\CLAUDE\agent_bridge\ISTORIC_CRONOLOGIC_<NUME-SESIUNE>_PASI.md`
 
 
 
-\### Pas 2 — Extinde sumar precedent (dacă există)
+\### Pas 2 — Extinde sumar precedent (daca exista)
 
 Caut empiric:
 
@@ -100,13 +100,13 @@ ls /e/CLAUDE/agent_bridge/SUMAR_*.md
 
 
 
-Dacă găsesc → extind cu sesiunea curentă (NU rescriu, NU înlocuiesc).
+Daca gasesc → extind cu sesiunea curenta (NU rescriu, NU inlocuiesc).
 
-Dacă nu → creez un nou ISTORIC_CRONOLOGIC.
+Daca nu → creez un nou ISTORIC_CRONOLOGIC.
 
 
 
-\### Pas 3 — SUMAR TEMATIC (complementar, NU înlocuitor)
+\### Pas 3 — SUMAR TEMATIC (complementar, NU inlocuitor)
 
 Format:
 
@@ -124,7 +124,7 @@ Format:
 
 - ...
 
-\## STATE LA ÎNCHIDERE
+\## STATE LA INCHIDERE
 
 - DLG / SLG / Mod / Tools / Bootstrap / Objective next
 
@@ -132,11 +132,11 @@ Format:
 
 
 
-Locație: `E:\CLAUDE\agent_bridge\SUMAR_TEMATIC_<NUME-SESIUNE>.md` SAU extinde sumar existent.
+Locatie: `E:\CLAUDE\agent_bridge\SUMAR_TEMATIC_<NUME-SESIUNE>.md` SAU extinde sumar existent.
 
 
 
-\### Pas 4 — Cross-reference în HANDOFF + LAST_KNOWN_STATE
+\### Pas 4 — Cross-reference in HANDOFF + LAST_KNOWN_STATE
 
 Updatez:
 
@@ -144,7 +144,7 @@ Updatez:
 
 - `SENTINEL_LAST_KNOWN_STATE.md` — state actual
 
-- `reflex_archive/T3_ritual_final/<DATA>_<TITLU>_FISA.md` — fișa SUCCESS
+- `reflex_archive/T3_ritual_final/<DATA>_<TITLU>_FISA.md` — fisa SUCCESS
 
 
 
@@ -154,19 +154,19 @@ Output minim:
 
 ```
 
-Sesiune închisă. Auto-cronologic executat:
+Sesiune inchisa. Auto-cronologic executat:
 
 - Istoric cronologic: <path>
 
 - Sumar tematic: <path>
 
-- Fișa T3: <path>
+- Fisa T3: <path>
 
 - HANDOFF updated
 
 - LAST_KNOWN_STATE updated
 
-Aștept tine.
+Astept tine.
 
 ```
 
@@ -180,11 +180,11 @@ Aștept tine.
 
 ❌ Livrez doar istoric cronologic (lipsa sumar tematic = incomplet)
 
-❌ "Putem închide" fără auto-execute
+❌ "Putem inchide" fara auto-execute
 
-❌ Aștept comandă explicită "fă istoric" — TRIGGER e automat
+❌ Astept comanda explicita "fa istoric" — TRIGGER e automat
 
-❌ Rescriu sumar precedent în loc de extind
+❌ Rescriu sumar precedent in loc de extind
 
 
 
@@ -196,7 +196,7 @@ Aștept tine.
 
 
 
-**❌ Greșit (manual, leneș):**
+**❌ Gresit (manual, lenes):**
 
 "OK fac compactare." [STOP]
 
@@ -218,9 +218,9 @@ Aștept tine.
 
 [Pas 5: Raport scurt:]
 
-"Sesiune închisă. 5 fișiere actualizate/scrise:
+"Sesiune inchisa. 5 fisiere actualizate/scrise:
 
-- ISTORIC_CRONOLOGIC_CHAT-XXX_PASI.md (N pași)
+- ISTORIC_CRONOLOGIC_CHAT-XXX_PASI.md (N pasi)
 
 - SUMAR_TEMATIC_CHAT-XXX.md
 
@@ -230,7 +230,7 @@ Aștept tine.
 
 - SENTINEL_LAST_KNOWN_STATE.md (updated)
 
-Aștept tine."
+Astept tine."
 
 ```
 
@@ -240,7 +240,7 @@ Aștept tine."
 
 
 
-- `sentinel-auto-trigger-pre-prompt` — TRIGGER 2 final sesiune (acest skill specializează)
+- `sentinel-auto-trigger-pre-prompt` — TRIGGER 2 final sesiune (acest skill specializeaza)
 
 - `sentinel-reflex-t3-auto-prompt-generation` — auto NEXT_SESSION_BOOTSTRAP_PROMPT
 
@@ -252,7 +252,7 @@ Aștept tine."
 
 
 
-Skill plasat în `skills_drafts/`. Popy adaugă manual în UI Anthropic Skills. Trigger automat la final sesiune detectat.
+Skill plasat in `skills_drafts/`. Popy adauga manual in UI Anthropic Skills. Trigger automat la final sesiune detectat.
 
 
 
@@ -260,4 +260,4 @@ Skill plasat în `skills_drafts/`. Popy adaugă manual în UI Anthropic Skills. 
 
 
 
-v1.0 — 2026-05-07 — PRIME-CLI după Popy: *"vreau skill AUTOMAT LA FIECARE FINAL DE SESIUNE FACI LISTA ASTA DIN SESIUNE CURENTA SI CEA PRECEDENTA DACA EXISTA"*
+v1.0 — 2026-05-07 — PRIME-CLI dupa Popy: *"vreau skill AUTOMAT LA FIECARE FINAL DE SESIUNE FACI LISTA ASTA DIN SESIUNE CURENTA SI CEA PRECEDENTA DACA EXISTA"*

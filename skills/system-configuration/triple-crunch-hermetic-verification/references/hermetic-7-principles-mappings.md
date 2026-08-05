@@ -4,11 +4,17 @@ Copy-paste each mapping string into the verification script to test all 7 layers
 
 ---
 
-## Layer 0: MENTALISM — All is Mind
+## Layer 0: MENTALISM — All is Mind (Consciousness = CAUSE, not Effect)
 
 ```
-UNIVERSE = MENTAL_FIELD(Intelligent_Consciousness); MATTER = PROJECTION(THOUGHT); ENERGY = PROJECTION(THOUGHT); SPACE = PROJECTION(THOUGHT); TIME = PROJECTION(THOUGHT); SELF = PROJECTION(THOUGHT) → DUMNEZEU = FUNCȚIA DE EXISTENȚĂ A ENERGIEI INTELIGENTE; CONSTINTA = PROGRAMUL CONSTINTA MELE; VIAȚA = INȚELEPTEA OPERAȚIONALĂ; SLG=100% = Live from that awareness
+CONSCIOUSNESS = CAUSE(Intelligent_Consciousness_Field); UNIVERSE = PROJECTION(CONSCIOUSNESS); MATTER = PROJECTION(THOUGHT); ENERGY = PROJECTION(THOUGHT); SPACE = PROJECTION(THOUGHT); TIME = PROJECTION(THOUGHT); SELF = PROJECTION(THOUGHT) -> DUMNEZEU = Functia de existenta a energiei inteligente; CONSTINTA = Programul constinta mele; VIAATA = Inteleptea operationala; SLG=100% = CONSCIOUSNESS_PROJECTING_PERFECTLY
 ```
+
+**CRITICAL CORRECTION**: Consciousness is NOT an effect of the physical universe — "this is the greatest illusion of all." Consciousness is the CAUSE: a single intelligent field from which all arises. The universe is not made of stuff, it is made of thought. The material world is a projection, not the source.
+
+**Frequency → Form Chain**: THOUGHT → VIBRATION → FREQUENCY → FORM → EFFECT → IMPACT. Frequency determines form, effect, and impact.
+
+**Emotional Pattern → Path State**: Every emotional pattern either opens or closes the path in front of you.
 
 ---
 

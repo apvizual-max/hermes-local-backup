@@ -239,14 +239,14 @@ tokenizer.normalizer = Sequence([
     StripAccents()   # Remove accents
 ])
 
-# Input: "Héllo WORLD"
+# Input: "Hello WORLD"
 # After normalization: "hello world"
 ```
 
 **Common normalizers**:
 - `NFD`, `NFC`, `NFKD`, `NFKC` - Unicode normalization forms
 - `Lowercase()` - Convert to lowercase
-- `StripAccents()` - Remove accents (é → e)
+- `StripAccents()` - Remove accents (e → e)
 - `Strip()` - Remove whitespace
 - `Replace(pattern, content)` - Regex replacement
 

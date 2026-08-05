@@ -3409,7 +3409,7 @@ Unsloth can train Qwen3-VL-8B with GSPO/GRPO on a free Colab T4 GPU. Other VLMs 
 * **Qwen-2.5 VL-7B** (vLLM inference)**:** [Colab](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Qwen2_5_7B_VL_GRPO.ipynb) •[ Kaggle](https://www.kaggle.com/notebooks/welcome?src=https://github.com/unslothai/notebooks/blob/main/nb/Kaggle-Qwen2_5_7B_VL_GRPO.ipynb\&accelerator=nvidiaTeslaT4)&#x20;
 * **Gemma-3-4B** (Unsloth inference): [Colab](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Gemma3_\(4B\)-Vision-GRPO.ipynb)
 
-We have also added vLLM VLM integration into Unsloth natively, so all you have to do to use vLLM inference is enable the `fast_inference=True` flag when initializing the model. Special thanks to [Sinoué GAD](https://github.com/unslothai/unsloth/pull/2752) for providing the [first notebook](https://github.com/GAD-cell/vlm-grpo/blob/main/examples/VLM_GRPO_basic_example.ipynb) that made integrating VLM RL easier!
+We have also added vLLM VLM integration into Unsloth natively, so all you have to do to use vLLM inference is enable the `fast_inference=True` flag when initializing the model. Special thanks to [Sinoue GAD](https://github.com/unslothai/unsloth/pull/2752) for providing the [first notebook](https://github.com/GAD-cell/vlm-grpo/blob/main/examples/VLM_GRPO_basic_example.ipynb) that made integrating VLM RL easier!
 
 This VLM support also integrates our latest update for even more memory efficient + faster RL including our [Standby feature](https://docs.unsloth.ai/get-started/reinforcement-learning-rl-guide/memory-efficient-rl#unsloth-standby), which uniquely limits speed degradation compared to other implementations.
 

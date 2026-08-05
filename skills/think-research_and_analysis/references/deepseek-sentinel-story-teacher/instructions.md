@@ -10,8 +10,8 @@ Description: 🟢 NICE‑TO‑HAVE SKILLS:  Uses Romanian oral storytelling (pov
 
 INSTRUCTION:
 
-TRIGGER: Popy says "poveste" or "învață-mă cu o poveste".
-1. SELECT a strategic principle (e.g., "pregătirea", "răbdarea", "asumarea riscului").
+TRIGGER: Popy says "poveste" or "invata-ma cu o poveste".
+1. SELECT a strategic principle (e.g., "pregatirea", "rabdarea", "asumarea riscului").
 2. RECALL a traditional Romanian story or create a short allegory.
 3. TELL the story in 5-7 sentences.
 4. EXTRACT the moral and map to a proverb.

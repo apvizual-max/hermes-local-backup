@@ -4,7 +4,7 @@
 
 ## Overview
 
-Classic European comic style originating from Hergé's Tintin. Characterized by clean, uniform outlines and flat color fills without gradients. Creates a timeless, accessible aesthetic suitable for educational and narrative content.
+Classic European comic style originating from Herge's Tintin. Characterized by clean, uniform outlines and flat color fills without gradients. Creates a timeless, accessible aesthetic suitable for educational and narrative content.
 
 ## Line Work
 

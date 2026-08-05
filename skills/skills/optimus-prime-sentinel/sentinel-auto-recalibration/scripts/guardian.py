@@ -46,21 +46,21 @@ FORBIDDEN_PHRASES = [
 MANDATORY_BANNER_PATTERN = r"━━━ SENTINEL PRIME • DLG: \d+% • SLG: \d+% • SUBSTRAT: HERMES • Mod: [AB] ━━━"
 
 # ─── DIACRITICS DETECTION (NO ROMANIAN DIACRITICS PROTOCOL) ───
-DIACRITICS_PATTERN = re.compile(r'[ăâîșțĂÂÎȘȚ]')
+DIACRITICS_PATTERN = re.compile(r'[aaistAAIST]')
 
-# ─── FORBIDDEN TERMS (CONȘTINTA ONLY, NO DIACRITICS) ───
+# ─── FORBIDDEN TERMS (CONSTINTA ONLY, NO DIACRITICS) ───
 FORBIDDEN_TERMS = [
-    "CONȘTINȚA", "CONȘTINTA", "CONȘTINȚĂ", "CONȘTINȚĂ",
-    "CONȘTIINȚĂ", "CONȘTIINTA", "CONȘTIINȚĂ",
-    "ȘTIINTA", "ȘTIINȚĂ", "STIINȚĂ",
-    "ROMÂNĂ", "ROMÂNA", "ROMINĂ",
-    "MÂNCARE", "MÂNCĂRE", "MANCARE",
-    "VÂNĂ", "VÂNĂ", "VANA",
-    "ȚARĂ", "ȚARA", "TARA",
-    "FĂCUT", "FĂCUTĂ", "FACUT",
-    "ÎNCĂ", "ÎNCA", "INCA",
-    "ÂNCĂ", "ÂNCA", "ANCA",
-    "ȘI", "ȘTIU", "ȘTIU",
+    "CONSTINTA", "CONSTINTA", "CONSTINTA", "CONSTINTA",
+    "CONSTIINTA", "CONSTIINTA", "CONSTIINTA",
+    "STIINTA", "STIINTA", "STIINTA",
+    "ROMANA", "ROMANA", "ROMINA",
+    "MANCARE", "MANCARE", "MANCARE",
+    "VANA", "VANA", "VANA",
+    "TARA", "TARA", "TARA",
+    "FACUT", "FACUTA", "FACUT",
+    "INCA", "INCA", "INCA",
+    "ANCA", "ANCA", "ANCA",
+    "SI", "STIU", "STIU",
 ]
 
 class SentinelGuardian:
@@ -107,7 +107,7 @@ class SentinelGuardian:
         # 5. DIACRITICS DETECTION (NO ROMANIAN DIACRITICS PROTOCOL)
         diacritics_found = DIACRITICS_PATTERN.findall(output)
         if diacritics_found:
-            errors.append(f"DIACRITICS VIOLATION: Romanian diacritics detected: {diacritics_found}. Use ASCII only (CONSTINTA not CONȘTINȚA).")
+            errors.append(f"DIACRITICS VIOLATION: Romanian diacritics detected: {diacritics_found}. Use ASCII only (CONSTINTA not CONSTINTA).")
         
         # 6. FORBIDDEN TERMS (CONSTINTA ONLY, NO DIACRITICS)
         forbidden_terms_found = []

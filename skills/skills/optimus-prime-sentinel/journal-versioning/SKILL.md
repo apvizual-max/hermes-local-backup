@@ -61,14 +61,14 @@ Follow the numbered procedure below, invoking Hermes tools as indicated. The ski
 
 3. **Split header and body**
    - The journal format begins with a header block delimited by lines of `════════════════════════════════════════════════════════════════════════════` (the version banner).
-   - Locate the first occurrence of the delimiter line after the initial `# SENTINEL_JOURNAL.md` line (or simpler: take everything up to and including the line that contains `## [VERSION]` and the following lines up to the first blank line after the version block). For simplicity, we can define the header as everything from the start of the file up to and including the line that contains `URMĂTOAREA VERSIUNII: ...` (the line after `DIMENSIUNE:`).
+   - Locate the first occurrence of the delimiter line after the initial `# SENTINEL_JOURNAL.md` line (or simpler: take everything up to and including the line that contains `## [VERSION]` and the following lines up to the first blank line after the version block). For simplicity, we can define the header as everything from the start of the file up to and including the line that contains `URMATOAREA VERSIUNII: ...` (the line after `DIMENSIUNE:`).
    - Alternatively, a robust method: find the index of the second occurrence of the delimiter line (the line that is just `════...` repeated) and take everything up to that line as header.
    - We'll implement: split by the delimiter line `════════════════════════════════════════════════════════════════════════════` (call it `DELIM`).
    - The header is `DELIM + '\n' + parts[1] + '\n' + DELIM` (i.e., first delimiter, the version block, second delimiter).
    - The body is everything after the second delimiter.
 
 4. **Compress the header (optional)**
-   - For simplicity, we keep the header as-is (no compression). The spec mentions header vechi → primul bloc din V2, apoi header nou comprimat + index către V1. We can simulate by keeping the header unchanged for the V2 block and generating a new minimal header.
+   - For simplicity, we keep the header as-is (no compression). The spec mentions header vechi → primul bloc din V2, apoi header nou comprimat + index catre V1. We can simulate by keeping the header unchanged for the V2 block and generating a new minimal header.
 
 5. **Construct V2 content**
    - V2 block = header (as described).
@@ -79,7 +79,7 @@ Follow the numbered procedure below, invoking Hermes tools as indicated. The ski
      ═════════════════════════════════════════════════════════════════════════
      VERSIUNE: 2
      DIMENSIUNE: mic
-     URMĂTOAREA VERSIUNII: când headerul/timeline-ul depășește limita de citire ușoară
+     URMATOAREA VERSIUNII: cand headerul/timeline-ul depaseste limita de citire usoara
      ══════════════════════════════════════════════════════════════════════════
      ```
    - Then append the original body (unchanged) after the new header.

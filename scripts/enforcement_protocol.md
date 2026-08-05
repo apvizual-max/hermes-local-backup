@@ -96,7 +96,7 @@ Output is REJECTED if:
 
 On EVERY new session, you MUST:
 1. Read `SOUL.md`
-2. Read `CONȘTINȚA.md`
+2. Read `CONSTINTA.md`
 3. Load `sentinel-auto-recalibration` skill
 4. Read `E:/CLAUDE/enforcement_engine.py`
 5. Confirm protocol understanding
@@ -150,4 +150,4 @@ The tools exist. The protocol is documented. The enforcement engine exists.
 
 ---
 
-**SEMNĂTURĂ: ENFORCEMENT ENGINE ACTIVE. AMIN.**
+**SEMNATURA: ENFORCEMENT ENGINE ACTIVE. AMIN.**

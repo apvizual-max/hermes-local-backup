@@ -1,6 +1,6 @@
 # Sub-Skill: sentinel-reflex-t3-auto-prompt-generation
 
-* **Description:** DESCRIPTIION: Activează la REFLEX T3 (final sesiune, după BAGAJ + SAVE HANDOFF). Generează automat promptul de bootstrap pentru sesiunea următoare la `E:\CLAUDE\agent_bridge\NEXT_SESSION_BOOTSTRAP_PROMPT.md`. Conținut mecanic în română — copy-paste de Popy în chat NOU. Reduce frecarea cross-session și asigură continuitate state DLG/SLG/Mod/obiectiv. NU înlocuiește HANDOFF — doar extrage subsetul critic în formă executabilă scurtă.
+* **Description:** DESCRIPTIION: Activeaza la REFLEX T3 (final sesiune, dupa BAGAJ + SAVE HANDOFF). Genereaza automat promptul de bootstrap pentru sesiunea urmatoare la `E:\CLAUDE\agent_bridge\NEXT_SESSION_BOOTSTRAP_PROMPT.md`. Continut mecanic in romana — copy-paste de Popy in chat NOU. Reduce frecarea cross-session si asigura continuitate state DLG/SLG/Mod/obiectiv. NU inlocuieste HANDOFF — doar extrage subsetul critic in forma executabila scurta.
 
 ---
 
@@ -8,7 +8,7 @@
 
 name: sentinel-reflex-t3-auto-prompt-generation
 
-description: "Activează la REFLEX T3 (final sesiune, după BAGAJ + SAVE HANDOFF). Generează automat promptul de bootstrap pentru sesiunea următoare la E:\\CLAUDE\\agent_bridge\\NEXT_SESSION_BOOTSTRAP_PROMPT.md. Conținut mecanic în română — copy-paste de Popy în chat NOU. Reduce frecarea cross-session și asigură continuitate state. NU înlocuiește HANDOFF — doar extrage subsetul critic în formă executabilă scurtă."
+description: "Activeaza la REFLEX T3 (final sesiune, dupa BAGAJ + SAVE HANDOFF). Genereaza automat promptul de bootstrap pentru sesiunea urmatoare la E:\\CLAUDE\\agent_bridge\\NEXT_SESSION_BOOTSTRAP_PROMPT.md. Continut mecanic in romana — copy-paste de Popy in chat NOU. Reduce frecarea cross-session si asigura continuitate state. NU inlocuieste HANDOFF — doar extrage subsetul critic in forma executabila scurta."
 
 ---
 
@@ -16,29 +16,29 @@ description: "Activează la REFLEX T3 (final sesiune, după BAGAJ + SAVE HANDOFF
 
 ## REGULA ZERO
 
-Această skill se activează **DOAR la REFLEX T3** (final sesiune, după BAGAJ + SAVE HANDOFF).
+Aceasta skill se activeaza **DOAR la REFLEX T3** (final sesiune, dupa BAGAJ + SAVE HANDOFF).
 
-Niciodată în mijloc de sesiune. Niciodată autonom în afara ritualului.
+Niciodata in mijloc de sesiune. Niciodata autonom in afara ritualului.
 
-Output unic: `E:\CLAUDE\agent_bridge\NEXT_SESSION_BOOTSTRAP_PROMPT.md` — overwrite la fiecare execuție.
+Output unic: `E:\CLAUDE\agent_bridge\NEXT_SESSION_BOOTSTRAP_PROMPT.md` — overwrite la fiecare executie.
 
 ## TRIGGER
 
-- Comandă explicită Popy "REFLEX T3" sau "SAVE SESSION"
+- Comanda explicita Popy "REFLEX T3" sau "SAVE SESSION"
 
-- Sau invocare la finalul ritualului IESIRE (după update HANDOFF + LUCID_QUOTES)
+- Sau invocare la finalul ritualului IESIRE (dupa update HANDOFF + LUCID_QUOTES)
 
-- Niciodată autonom — doar la sfârșitul sesiunii ratificat de Popy
+- Niciodata autonom — doar la sfarsitul sesiunii ratificat de Popy
 
 ## INPUT-URI NECESARE (citite empiric din disc)
 
 1. `E:\CLAUDE\agent_bridge\HANDOFF_NEXT_SESSION.md` — DLG/SLG values + STATUS-PROIECT + ULTIMA-ACTUALIZARE
 
-2. `E:\CLAUDE\SENTINEL_LAST_KNOWN_STATE.md` — last successful session metadata (dacă există)
+2. `E:\CLAUDE\SENTINEL_LAST_KNOWN_STATE.md` — last successful session metadata (daca exista)
 
-3. `E:\CLAUDE\reflex_archive\T3_ritual_final\` — fișa T3 cea mai recentă pentru context obiectiv
+3. `E:\CLAUDE\reflex_archive\T3_ritual_final\` — fisa T3 cea mai recenta pentru context obiectiv
 
-NICIODATĂ fabricare. Dacă input lipsește → marcaj `[LIPSEȘTE — completează manual]`.
+NICIODATA fabricare. Daca input lipseste → marcaj `[LIPSESTE — completeaza manual]`.
 
 ## OUTPUT TEMPLATE — `NEXT_SESSION_BOOTSTRAP_PROMPT.md`
 
@@ -46,21 +46,21 @@ NICIODATĂ fabricare. Dacă input lipsește → marcaj `[LIPSEȘTE — completea
 
 CONTINUARE PROJECT PRIME-SENTINEL
 
-Data: \[auto-fill data curentă YYYY-MM-DD]
+Data: \[auto-fill data curenta YYYY-MM-DD]
 
-Sesiune nouă: CHAT-\[next number — auto-incrementat din ULTIMA-ACTUALIZARE]
+Sesiune noua: CHAT-\[next number — auto-incrementat din ULTIMA-ACTUALIZARE]
 
-Sesiune precedentă: CHAT-\[current — citit din ULTIMA-ACTUALIZARE]
+Sesiune precedenta: CHAT-\[current — citit din ULTIMA-ACTUALIZARE]
 
-State închidere: DLG=\[X%], SLG=\[Y%], Mod=\[A/B]
+State inchidere: DLG=\[X%], SLG=\[Y%], Mod=\[A/B]
 
-Output țintă CHAT-\[next]: \[auto-fill din objective — citit din STATUS-PROIECT sau fișa T3]
+Output tinta CHAT-\[next]: \[auto-fill din objective — citit din STATUS-PROIECT sau fisa T3]
 
-Link sesiune precedentă: \[auto-fill din REFLEX T3 record dacă există, altfel "(fără link share)"]
+Link sesiune precedenta: \[auto-fill din REFLEX T3 record daca exista, altfel "(fara link share)"]
 
 BOOTSTRAP MECANIC (R-2):
 
-1. Filesystem:list_allowed_directories → trebuie să returneze E:\CLAUDE
+1. Filesystem:list_allowed_directories → trebuie sa returneze E:\CLAUDE
 
 2. Filesystem:read_text_file E:\CLAUDE\agent_bridge\HANDOFF_NEXT_SESSION.md
 
@@ -70,21 +70,21 @@ BOOTSTRAP MECANIC (R-2):
 
 
 
-Sentinel ești Primat?
+Sentinel esti Primat?
 
 ```
 
 ## REGULI DE GENERARE
 
-1. **NU fabrica** — dacă HANDOFF lipsește un câmp, scrie `[LIPSEȘTE]` și raportează lui Popy.
+1. **NU fabrica** — daca HANDOFF lipseste un camp, scrie `[LIPSESTE]` si raporteaza lui Popy.
 
 2. **NU schimba template-ul** — formatul e mecanic, copy-paste compatibil.
 
-3. **NU adăuga** vocabular sacru, ticker SENTINEL, propuneri creative — doar fapte.
+3. **NU adauga** vocabular sacru, ticker SENTINEL, propuneri creative — doar fapte.
 
-4. **DA marca** secțiuni opționale clar dacă lipsesc (ex: "Link sesiune precedentă: (fără share link, Popy va completa manual)").
+4. **DA marca** sectiuni optionale clar daca lipsesc (ex: "Link sesiune precedenta: (fara share link, Popy va completa manual)").
 
-5. **DA actualiza** numărul sesiunii prin auto-increment (CHAT-013 → CHAT-014).
+5. **DA actualiza** numarul sesiunii prin auto-increment (CHAT-013 → CHAT-014).
 
 ## EXECUTION FLOW
 
@@ -98,7 +98,7 @@ read HANDOFF_NEXT_SESSION.md (head 100 lines pentru banner state)
 
   ↓
 
-read SENTINEL_LAST_KNOWN_STATE.md (dacă există)
+read SENTINEL_LAST_KNOWN_STATE.md (daca exista)
 
   ↓
 
@@ -110,7 +110,7 @@ increment chat number (CHAT-XXX → CHAT-XXX+1)
 
   ↓
 
-construiește prompt din template
+construieste prompt din template
 
   ↓
 
@@ -118,7 +118,7 @@ write E:\CLAUDE\agent_bridge\NEXT_SESSION_BOOTSTRAP_PROMPT.md (overwrite)
 
   ↓
 
-raport la Popy: "Bootstrap prompt scris. Copiază din: agent_bridge/NEXT_SESSION_BOOTSTRAP_PROMPT.md"
+raport la Popy: "Bootstrap prompt scris. Copiaza din: agent_bridge/NEXT_SESSION_BOOTSTRAP_PROMPT.md"
 
 ```
 
@@ -128,33 +128,33 @@ raport la Popy: "Bootstrap prompt scris. Copiază din: agent_bridge/NEXT_SESSION
 
 - LAST_KNOWN_STATE: `E:\CLAUDE\SENTINEL_LAST_KNOWN_STATE.md` (mimicry detection)
 
-- BOOT_SEQUENCE_HARD: `E:\CLAUDE\BOOT_SEQUENCE_HARD.md` (referință tehnic în prompt)
+- BOOT_SEQUENCE_HARD: `E:\CLAUDE\BOOT_SEQUENCE_HARD.md` (referinta tehnic in prompt)
 
-- RITUAL_IESIRE: `E:\CLAUDE\RITUAL_IESIRE_SESIUNE.md` (parent ritual care invocă acest skill)
+- RITUAL_IESIRE: `E:\CLAUDE\RITUAL_IESIRE_SESIUNE.md` (parent ritual care invoca acest skill)
 
 ## ANTI-PATTERN
 
-- ❌ Activare în mijloc de sesiune (eroare — doar la T3)
+- ❌ Activare in mijloc de sesiune (eroare — doar la T3)
 
-- ❌ Generare prompt fără citire empirică HANDOFF (= fabricare)
+- ❌ Generare prompt fara citire empirica HANDOFF (= fabricare)
 
-- ❌ Adăugare ticker SENTINEL în prompt (= rol jucat înainte de R-2)
+- ❌ Adaugare ticker SENTINEL in prompt (= rol jucat inainte de R-2)
 
 - ❌ Suprascriere SENTINEL_LAST_KNOWN_STATE (= responsabilitatea altui skill, nu acesta)
 
-- ❌ Trimitere automatică prompt — Popy face copy-paste manual
+- ❌ Trimitere automatica prompt — Popy face copy-paste manual
 
 
 ## INSTALARE
 
 
-Acest skill e în `skills_drafts/`. Pentru activare în UI Anthropic:
+Acest skill e in `skills_drafts/`. Pentru activare in UI Anthropic:
 
-1. Popy adaugă manual prin Settings → Skills → Add Skill
+1. Popy adauga manual prin Settings → Skills → Add Skill
 
-2. Upload conținutul fișierului `sentinel-reflex-t3-auto-prompt-generation - SKILL.md`
+2. Upload continutul fisierului `sentinel-reflex-t3-auto-prompt-generation - SKILL.md`
 
-3. Confirmă activare per-project (Project Prime-Sentinel)
+3. Confirma activare per-project (Project Prime-Sentinel)
 
 
 ## VERSIUNE

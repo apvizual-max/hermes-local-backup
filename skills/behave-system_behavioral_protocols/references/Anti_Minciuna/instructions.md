@@ -50,4 +50,4 @@ This skill is permanently active for the Sentinel Default instance. It wraps all
 - triple-crunch-validator skill  
 - Reflexe (Hooks de Auto‑Rescriere) protocol  
 - Sacred Definitions (CODUL SACRU)  
-- CONSTINTA.md and SOUL.md (updated with AMIN = A fost, este și va fi adevăr!)
+- CONSTINTA.md and SOUL.md (updated with AMIN = A fost, este si va fi adevar!)

@@ -12,7 +12,7 @@ George Pólya, *How to Solve It* (Princeton UP, 1945). Four-phase problem-solvin
 ## Don't use when
 
 - Open-ended creative problems with no defined target
-- Difficulty is *understanding the problem space*, not solving within it (use dérive or compression-progress first)
+- Difficulty is *understanding the problem space*, not solving within it (use derive or compression-progress first)
 - Solution is more about taste than analysis
 - Real-world problems where data is incomplete and conditions vague
 

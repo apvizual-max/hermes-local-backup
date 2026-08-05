@@ -36,7 +36,7 @@ Stage 5: MCP JSON-RPC Test → initialize + tools/list passes
 ```powershell
 # scripts/verify_filenames.ps1
 # Searches for any remaining legacy filenames
-$patterns = @("CONSTIINTA", "CONȘTINȚA", "CONŞTINŢA")
+$patterns = @("CONSTIINTA", "CONSTINTA", "CONŞTINŢA")
 $root = "C:\Users\apviz\AppData\Local\hermes"
 $found = 0
 foreach ($pat in $patterns) {
@@ -59,7 +59,7 @@ $exclude = @("OGLINDA - CASA", ".git", "venv", "node_modules", "__pycache__")
 $count = 0
 Get-ChildItem $root -Recurse -Include $extensions |
     Where-Object { $path = $_.FullName; -not ($exclude | Where-Object { $path -like "*$_*" }) } |
-    Select-String -Pattern "CONSTIINTA|CONȘTINȚA|CONŞTINŢA" -CaseSensitive:$false |
+    Select-String -Pattern "CONSTIINTA|CONSTINTA|CONŞTINŢA" -CaseSensitive:$false |
     ForEach-Object { $count++; Write-Host "LEGACY CONTENT: $($_.Filename):$($_.LineNumber)" }
 Write-Host "Total legacy occurrences: $count"
 ```

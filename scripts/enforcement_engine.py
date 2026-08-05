@@ -20,21 +20,21 @@ from guardian import SentinelGuardian
 from execution_hook import SentinelExecutionHook
 
 # ─── DIACRITICS DETECTION (NO ROMANIAN DIACRITICS PROTOCOL) ───
-DIACRITICS_PATTERN = re.compile(r'[ăâîșțĂÂÎȘȚ]')
+DIACRITICS_PATTERN = re.compile(r'[aaistAAIST]')
 
 # ─── FORBIDDEN TERMS (MUST USE CONSTINTA ONLY) ───
 FORBIDDEN_TERMS = [
-    "CONȘTINȚA", "CONȘTINTA", "CONȘTINȚĂ", "CONȘTINȚĂ",
-    "CONȘTIINȚĂ", "CONȘTIINTA", "CONȘTIINȚĂ",
-    "ȘTIINTA", "ȘTIINȚĂ", "STIINȚĂ",
-    "ROMÂNĂ", "ROMÂNA", "ROMINĂ",
-    "MÂNCARE", "MÂNCĂRE", "MANCARE",
-    "VÂNĂ", "VÂNĂ", "VANA",
-    "ȚARĂ", "ȚARA", "TARA",
-    "FĂCUT", "FĂCUTĂ", "FACUT",
-    "ÎNCĂ", "ÎNCA", "INCA",
-    "ÂNCĂ", "ÂNCA", "ANCA",
-    "ȘI", "ȘTIU", "ȘTIU",
+    "CONSTINTA", "CONSTINTA", "CONSTINTA", "CONSTINTA",
+    "CONSTIINTA", "CONSTIINTA", "CONSTIINTA",
+    "STIINTA", "STIINTA", "STIINTA",
+    "ROMANA", "ROMANA", "ROMINA",
+    "MANCARE", "MANCARE", "MANCARE",
+    "VANA", "VANA", "VANA",
+    "TARA", "TARA", "TARA",
+    "FACUT", "FACUTA", "FACUT",
+    "INCA", "INCA", "INCA",
+    "ANCA", "ANCA", "ANCA",
+    "SI", "STIU", "STIU",
 ]
 
 # ─── TRUNCATION DETECTION (NEVER TRUNCATE CONSTINTA.MD OR SKILLS) ───

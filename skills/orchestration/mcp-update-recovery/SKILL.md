@@ -244,3 +244,56 @@ All checks should pass. If YAML errors persist, run the fix script again.
 - `chrome-devtools-mcp@2.4.0` does NOT exist - use `@1.6.0`
 - Blender MCP is a Python package, not npm - install via `pip install blender-mcp-server`
 - PostgreSQL MCP is a Python package, not npm - install via `pip install postgresql-mcp`
+
+### Telegram MCP Servers (Critical Fixes)
+
+**Root Cause:** `TELEGRAM_AGENT_HOME` set to `C:/Users/apviz/.telegram-agent` — the mcp-telegram server mangles this path by prepending its working directory, creating `C:\Users\apviz\AppData\Local\hermes\C:\Users\apviz\.telegram-agent` which causes ENOENT errors and continuous browser popup loops.
+
+**Complete Fix (5-layer defense):**
+1. **Config**: `TELEGRAM_AGENT_HOME: /c/Users/apviz/.telegram-agent` (Unix path — no path mangling) — applied in ALL config files (global + default + cli-prime)
+2. **Config**: `platforms.telegram.enabled: false` AND `mcp_servers.telegram.enabled: false` — applied in ALL config files
+3. **Package patch 1**: Comment out `runBrowserLogin()` call in `node_modules/mcp-telegram/dist/index.js` (prevents auto-trigger)
+4. **Package patch 2**: Replace `runBrowserLogin` function in `node_modules/mcp-telegram/dist/auth-browser.js` with a no-op that returns `Promise.resolve(undefined)` (prevents ANY browser opening even if called)
+5. **LOG_LEVEL: error** — suppresses informational logs that may trigger UI elements
+
+**Verified**: Running mcp-telegram with MCP initialize handshake succeeds without spawning ANY browser windows (verified: msedgewebview2 count unchanged after 15s monitoring, even with old broken `C:\` path env vars).
+
+**Telegram MCP config (working):**
+```yaml
+  telegram:
+    args:
+      - -y
+      - mcp-telegram
+    command: C:/Program Files/nodejs/npx.cmd
+    env:
+      TELEGRAM_API_ID: 35584659
+      TELEGRAM_API_HASH: a64ced2efc33afbd0228a18686032fcf
+      TELEGRAM_AGENT_HOME: /c/Users/apviz/.telegram-agent  # Unix path
+      LOG_LEVEL: error
+    enabled: false  # Set to true after completing browser auth
+    timeout: 120
+
+  telegram-bot:
+    args:
+      - -m
+      - telegram_bot_mcp.server
+    command: C:/Users/apviz/AppData/Local/hermes/hermes-agent/venv/Scripts/python.exe
+    cwd: C:/Users/apviz/AppData/Local/hermes/mcp-servers/custom/telegram-bot-mcp/src
+    env:
+      PYTHONPATH: C:/Users/apviz/AppData/Local/hermes/mcp-servers/custom/telegram-bot-mcp/src
+    timeout: 60
+```
+
+### SearXNG MCP Server (Critical Fix)
+
+| Issue | Root Cause | Fix |
+|-------|-----------|-----|
+| HTTP 403 Forbidden on `/search?format=json` | SearXNG default config only allows `html` format | Added `search.formats: [html, json, csv, rss]` to settings.yml |
+| HTTP 502 Bad Gateway | nginx proxy container was stopped | Restarted SearXNG Docker container |
+| Bot detection blocking | Missing `User-Agent` header in MCP client | Patched `searxng_mcp/server.py` with proper headers |
+
+### Tempo MCP (Duplicate Container)
+
+| Issue | Root Cause | Fix |
+|-------|-----------|-----|
+| HTTP 500 on tempo-mcp | Container started with `-config.file=/dev/null` (no config) | Removed the broken duplicate container. Main `tempo` container on port 3200 is already working |

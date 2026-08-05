@@ -163,7 +163,6 @@ command_allowlist:
   - git force push (rewrites remote history)
   - kill hermes/gateway process (self-termination)
   - execute_code
-  - delete in root path
   - recursive delete
   - script execution via heredoc
 security:
@@ -190,7 +189,7 @@ platforms:
   a2a:
     enabled: true
   telegram:
-    enabled: true
+    enabled: false
     home_channel:
       platform: telegram
       chat_id: '7364925103'
@@ -353,6 +352,12 @@ mcp_servers:
       - -y
       - mcp-whatsapp-web
     command: C:/Program Files/nodejs/npx.cmd
+    env:
+      WHATSAPP_HEADLESS: 'true'
+      WHATSAPP_BROWSER: chrome
+      WHATSAPP_SESSION_DIR: C:/Users/apviz/.whatsapp-sessions
+      MCP_HTTP_PORT: '3002'
+      TRANSPORT: http
     timeout: 120
   discord:
     args:
@@ -366,11 +371,12 @@ mcp_servers:
       - mcp-telegram
     command: C:/Program Files/nodejs/npx.cmd
     env:
-      TELEGRAM_API_ID: '35584659'
+      TELEGRAM_API_ID: 35584659
       TELEGRAM_API_HASH: a64ced2efc33afbd0228a18686032fcf
-      TELEGRAM_AGENT_HOME: C:/Users/apviz/.telegram-agent
-      LOG_LEVEL: info
+      TELEGRAM_AGENT_HOME: /c/Users/apviz/.telegram-agent
+      LOG_LEVEL: error
     timeout: 120
+    enabled: false
   gmail:
     args:
       - -y
@@ -386,13 +392,15 @@ mcp_servers:
   google-calendar:
     args:
       - -y
-      - google-calendar-mcp
+      - google-workspace-mcp
+      - mcp
     command: C:/Program Files/nodejs/npx.cmd
     timeout: 60
   google-workspace:
     args:
       - -y
       - google-workspace-mcp
+      - mcp
     command: C:/Program Files/nodejs/npx.cmd
     timeout: 60
   telegram-bot:
@@ -401,6 +409,8 @@ mcp_servers:
       - telegram_bot_mcp.server
     command: C:/Users/apviz/AppData/Local/hermes/hermes-agent/venv/Scripts/python.exe
     cwd: C:/Users/apviz/AppData/Local/hermes/mcp-servers/custom/telegram-bot-mcp/src
+    env:
+      PYTHONPATH: C:/Users/apviz/AppData/Local/hermes/mcp-servers/custom/telegram-bot-mcp/src
     timeout: 60
   antigravity-bridge:
     args:

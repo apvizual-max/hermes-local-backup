@@ -141,8 +141,17 @@ These cannot be set via Bot API — must use `@BotFather` chat:
       WHATSAPP_SESSION_DIR: C:/Users/apviz/.whatsapp-sessions
       WHATSAPP_HEADLESS: "true"
       WHATSAPP_BROWSER: chrome
+      MCP_HTTP_PORT: "3002"
+      TRANSPORT: sse
+      # For auto pairing code generation (optional):
+      WHATSAPP_PAIRING_PHONE_NUMBER: "40722121752"
     timeout: 120
 ```
+
+> **Note:** For stdio mode (no HTTP server), omit `MCP_HTTP_PORT` and `TRANSPORT`.
+> For HTTP/SSE mode (recommended for multi-call sessions), set `TRANSPORT=sse`
+> and `MCP_HTTP_PORT` — this enables `sessionId` query parameter authentication
+> required by the MCP HTTP protocol.
 
 ### Available Tools
 
@@ -155,17 +164,24 @@ download_media, ping
 
 ### Authentication
 
-**QR Code:** Call `get_qr_code` → scan with WhatsApp mobile → Settings → Linked Devices → Link a Device
+**QR Code (stdio mode):** Call `get_qr_code` → scan with WhatsApp mobile → Settings → Linked Devices → Link a Device
 
-**Pairing Code:** Call `request_pairing_code` with phone number → enter code on phone
+**Pairing Code (auto):** Set `WHATSAPP_PAIRING_PHONE_NUMBER` env var → restart server → code printed to stderr
 
-Session persists in `~/.whatsapp-sessions/` for future uses.
+**Pairing Code (MCP tool):** Call `request_pairing_code` with phone number via MCP `tools/call` → enter code on phone
+
+Session persists in `WHATSAPP_SESSION_DIR` (default: `~/.whatsapp-sessions/`) for future uses.
+
+> **See `references/whatsapp-pairing-code-authentication.md` for the complete pairing code workflow**, including the known issue with Baileys 7.0.0-rc13 ("Connection Closed" errors) and why `mcp-whatsapp-web` is the reliable path.
 
 ### Key Points
 
 - **Timeout: 120s** (not 60s) — browser startup takes 10-30s
 - Server needs **~30s to initialize** before first response
 - Use `check_auth_status` before sending messages
+- Use **HTTP/SSE transport** (`TRANSPORT=sse`, `MCP_HTTP_PORT=3002`) for reliable session management across MCP calls
+- Always send `notifications/initialized` after `initialize` before calling tools
+- Kill stale node processes (`taskkill /IM node.exe /F`) before starting fresh
 
 ## Step 4: MCP Protocol Communication via Subprocess
 

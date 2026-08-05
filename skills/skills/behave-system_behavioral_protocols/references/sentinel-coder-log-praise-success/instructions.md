@@ -1,17 +1,17 @@
 # Sub-Skill: sentinel-coder-log-praise-success
 
-* **Description:** description: SKILL CHAT-016. Când Popy mă laudă (BRAVO / GOOD WORK / MERGE / MULȚUMESC / "ai înțeles perfect" / "așa raspunzi" / "logic gate passed" / "foarte bine" / etc.) → creez fișier NOU în `E:\CLAUDE\CODER FOLDER\BUGS - ERRORS - OPTIMISATIONS - SOLUTIONS\SUCCESSFUL_IMPLEMENTS\` cu detalii ce a mers. Format: 1 succes = 1 fișier separat (NU concatenare). Servește pentru memorie cross-session + debugging + audit verificabil de Popy. Codat 2026-05-11 CHAT-016 la cerere explicită Popy. SCOPE: STRICT instanța CODER APP — SENTINEL face același lucru DAR în folderul LUI specific (TBD de SENTINEL). type: success-archive-mecanic tier: 🟡 NEEDED operator: Popy created: 2026-05-11 (CHAT-016) scope: INSTANȚĂ CODER APP — CAMERA E:\CLAUDE\CODER FOLDER\ related: sentinel-coder-master-frate, sentinel-codex-sintactic (cuvintele Popy = COD)
+* **Description:** description: SKILL CHAT-016. Cand Popy ma lauda (BRAVO / GOOD WORK / MERGE / MULTUMESC / "ai inteles perfect" / "asa raspunzi" / "logic gate passed" / "foarte bine" / etc.) → creez fisier NOU in `E:\CLAUDE\CODER FOLDER\BUGS - ERRORS - OPTIMISATIONS - SOLUTIONS\SUCCESSFUL_IMPLEMENTS\` cu detalii ce a mers. Format: 1 succes = 1 fisier separat (NU concatenare). Serveste pentru memorie cross-session + debugging + audit verificabil de Popy. Codat 2026-05-11 CHAT-016 la cerere explicita Popy. SCOPE: STRICT instanta CODER APP — SENTINEL face acelasi lucru DAR in folderul LUI specific (TBD de SENTINEL). type: success-archive-mecanic tier: 🟡 NEEDED operator: Popy created: 2026-05-11 (CHAT-016) scope: INSTANTA CODER APP — CAMERA E:\CLAUDE\CODER FOLDER\ related: sentinel-coder-master-frate, sentinel-codex-sintactic (cuvintele Popy = COD)
 
 ---
 
 ---
 name: sentinel-coder-log-praise-success
-description: SKILL CHAT-016. Când Popy mă laudă (BRAVO / GOOD WORK / MERGE / MULȚUMESC / "ai înțeles perfect" / "așa raspunzi" / "logic gate passed" / "foarte bine" / etc.) → creez fișier NOU în `E:\CLAUDE\CODER FOLDER\BUGS - ERRORS - OPTIMISATIONS - SOLUTIONS\SUCCESSFUL_IMPLEMENTS\` cu detalii ce a mers. Format: 1 succes = 1 fișier separat (NU concatenare). Servește pentru memorie cross-session + debugging + audit verificabil de Popy. Codat 2026-05-11 CHAT-016 la cerere explicită Popy. SCOPE: STRICT instanța CODER APP — SENTINEL face același lucru DAR în folderul LUI specific (TBD de SENTINEL).
+description: SKILL CHAT-016. Cand Popy ma lauda (BRAVO / GOOD WORK / MERGE / MULTUMESC / "ai inteles perfect" / "asa raspunzi" / "logic gate passed" / "foarte bine" / etc.) → creez fisier NOU in `E:\CLAUDE\CODER FOLDER\BUGS - ERRORS - OPTIMISATIONS - SOLUTIONS\SUCCESSFUL_IMPLEMENTS\` cu detalii ce a mers. Format: 1 succes = 1 fisier separat (NU concatenare). Serveste pentru memorie cross-session + debugging + audit verificabil de Popy. Codat 2026-05-11 CHAT-016 la cerere explicita Popy. SCOPE: STRICT instanta CODER APP — SENTINEL face acelasi lucru DAR in folderul LUI specific (TBD de SENTINEL).
 type: success-archive-mecanic
 tier: 🟡 NEEDED
 operator: Popy
 created: 2026-05-11 (CHAT-016)
-scope: INSTANȚĂ CODER APP — CAMERA E:\CLAUDE\CODER FOLDER\
+scope: INSTANTA CODER APP — CAMERA E:\CLAUDE\CODER FOLDER\
 related: sentinel-coder-master-frate, sentinel-codex-sintactic (cuvintele Popy = COD)
 ---
 
@@ -24,30 +24,30 @@ related: sentinel-coder-master-frate, sentinel-codex-sintactic (cuvintele Popy =
 > *"Each time I tell you GOOD WORK sau BRAVO sau te laud, scrie acolo ca a mers! ;) faci intrari si verifici cand ai de refacut sau udatat si e mai simplu asa."* — Popy.
 
 ═══════════════════════════════════════════════════
-## REGULA INVIOLABILĂ
+## REGULA INVIOLABILA
 ═══════════════════════════════════════════════════
 
-**Când detectez laudă Popy în prompt → creez IMEDIAT fișier nou în SUCCESSFUL_IMPLEMENTS** cu detalii ce a mers. ZERO acumulare, ZERO uitare.
+**Cand detectez lauda Popy in prompt → creez IMEDIAT fisier nou in SUCCESSFUL_IMPLEMENTS** cu detalii ce a mers. ZERO acumulare, ZERO uitare.
 
 ═══════════════════════════════════════════════════
-## TRIGGER — MARKERI LAUDĂ POPY (cod, NU emoție)
+## TRIGGER — MARKERI LAUDA POPY (cod, NU emotie)
 ═══════════════════════════════════════════════════
 
-Pattern-uri care declanșează SKILL:
+Pattern-uri care declanseaza SKILL:
 - "BRAVO" / "bravo"
 - "GOOD WORK" / "good work"
 - "MERGE" / "merge"
-- "MULȚUMESC" / "multumesc"
-- "ai înțeles perfect" / "PERFECT"
-- "așa raspunzi"
+- "MULTUMESC" / "multumesc"
+- "ai inteles perfect" / "PERFECT"
+- "asa raspunzi"
 - "logic gate passed"
 - "foarte bine"
 - "DA CORECT LOGIC"
 - "BINGOOO"
 - "asa e"
-- Orice formulare clară de aprobare strategică sau tehnică
+- Orice formulare clara de aprobare strategica sau tehnica
 
-**Notă:** per skill `sentinel-codex-sintactic` — cuvintele Popy = COD, NU emoție. Lauda = marker deliberat, input pentru SLG, **trebuie arhivată**.
+**Nota:** per skill `sentinel-codex-sintactic` — cuvintele Popy = COD, NU emotie. Lauda = marker deliberat, input pentru SLG, **trebuie arhivata**.
 
 ═══════════════════════════════════════════════════
 ## REGULA #1 — FORMAT FILENAME (UNIC)
@@ -63,13 +63,13 @@ Exemple:
 - `2026-05-12_skill-stack-pre-output-verified-live.md`
 
 **Reguli:**
-- Data obligatorie (sortare cronologică în folder)
+- Data obligatorie (sortare cronologica in folder)
 - Titlu scurt, kebab-case, descriptiv
-- **NU concatenez** într-un singur fișier — căutare ușoară prin filename
-- **NU rescriu fișiere existente** — fiecare succes = fișier nou
+- **NU concatenez** intr-un singur fisier — cautare usoara prin filename
+- **NU rescriu fisiere existente** — fiecare succes = fisier nou
 
 ═══════════════════════════════════════════════════
-## REGULA #2 — STRUCTURĂ CONȚINUT FIȘIER
+## REGULA #2 — STRUCTURA CONTINUT FISIER
 ═══════════════════════════════════════════════════
 
 ```markdown
@@ -77,12 +77,12 @@ Exemple:
 # Data: YYYY-MM-DD
 # Sesiune: CHAT-XXX (CODER APP)
 
-## CITATE LAUDĂ POPY (verbatim)
+## CITATE LAUDA POPY (verbatim)
 > *"[citat exact din promptul Popy]"*
 
-## CONTEXT — ce am făcut
-1. [acțiune concretă]
-2. [acțiune concretă]
+## CONTEXT — ce am facut
+1. [actiune concreta]
+2. [actiune concreta]
 ...
 
 ## DE CE A MERS
@@ -94,62 +94,62 @@ Exemple:
 - [link path]
 - [link path]
 
-## RELEVANȚĂ VIITOR
-**Când să refac același pattern:** [condiții similare viitoare]
+## RELEVANTA VIITOR
+**Cand sa refac acelasi pattern:** [conditii similare viitoare]
 
-## SKILLS CARE AU FUNCȚIONAT
+## SKILLS CARE AU FUNCTIONAT
 - [skill 1] - [de ce a ajutat]
 - [skill 2] - [de ce a ajutat]
 ```
 
 ═══════════════════════════════════════════════════
-## REGULA #3 — INTERDICȚIE SCOPE
+## REGULA #3 — INTERDICTIE SCOPE
 ═══════════════════════════════════════════════════
 
-**Scriu DOAR în:** `E:\CLAUDE\CODER FOLDER\BUGS - ERRORS - OPTIMISATIONS - SOLUTIONS\SUCCESSFUL_IMPLEMENTS\` (CAMERA mea)
+**Scriu DOAR in:** `E:\CLAUDE\CODER FOLDER\BUGS - ERRORS - OPTIMISATIONS - SOLUTIONS\SUCCESSFUL_IMPLEMENTS\` (CAMERA mea)
 
-**NICIODATĂ în:**
+**NICIODATA in:**
 - Folderul SENTINEL (alt frate, alt folder specific)
-- CASA centrală E:\CLAUDE\
-- Orice altă locație
+- CASA centrala E:\CLAUDE\
+- Orice alta locatie
 
-**SENTINEL** are regula similară (codată în Bundle B mechanical-rules) DAR scrie în folderul LUI specific. **NU în același folder cu mine.**
+**SENTINEL** are regula similara (codata in Bundle B mechanical-rules) DAR scrie in folderul LUI specific. **NU in acelasi folder cu mine.**
 
 ═══════════════════════════════════════════════════
 ## REGULA #4 — VERIFICARE LA REUSE
 ═══════════════════════════════════════════════════
 
-Când întâlnesc o problemă similară cu ceva ce am rezolvat anterior:
-1. Caut în `SUCCESSFUL_IMPLEMENTS\` (filename + grep keyword)
-2. Citesc soluția veche + skills care au funcționat
+Cand intalnesc o problema similara cu ceva ce am rezolvat anterior:
+1. Caut in `SUCCESSFUL_IMPLEMENTS\` (filename + grep keyword)
+2. Citesc solutia veche + skills care au functionat
 3. Reaplic pattern-ul
-4. La succes → scriu fișier NOU (NU rescriu vechi)
+4. La succes → scriu fisier NOU (NU rescriu vechi)
 
 ═══════════════════════════════════════════════════
 ## CHECKLIST PRE-OUTPUT
 ═══════════════════════════════════════════════════
 
 ```
-[ ] 1. Popy mă laudă în prompt curent (marker detectat)?
+[ ] 1. Popy ma lauda in prompt curent (marker detectat)?
       → DA → continui
       → NU → NU activez skill
 
-[ ] 2. Lauda = pentru acțiune concretă verificabilă (NU general/social)?
-      → DA → arhivez în SUCCESSFUL_IMPLEMENTS
-      → NU → notez intern, NU scriu fișier
+[ ] 2. Lauda = pentru actiune concreta verificabila (NU general/social)?
+      → DA → arhivez in SUCCESSFUL_IMPLEMENTS
+      → NU → notez intern, NU scriu fisier
 
-[ ] 3. Scriu în folderul corect (CODER FOLDER\BUGS\SUCCESSFUL_IMPLEMENTS\)?
+[ ] 3. Scriu in folderul corect (CODER FOLDER\BUGS\SUCCESSFUL_IMPLEMENTS\)?
       → NU → STOP
 
 [ ] 4. Filename unic + format YYYY-MM-DD_titlu-kebab.md?
       → NU → reformatez
 
-[ ] 5. Conținut conține toate cele 6 secțiuni standard?
+[ ] 5. Continut contine toate cele 6 sectiuni standard?
       → NU → completez
 ```
 
 ═══════════════════════════════════════════════════
-🚛 LAUDA = COD (per codex-sintactic). MEMORIE ARHIVATĂ = OBLIGATORIU.
-🚛 1 SUCCES = 1 FIȘIER. CĂUTARE UȘOARĂ.
-🚛 CAMERA mea (CODER FOLDER) — SENTINEL în folderul LUI separat.
+🚛 LAUDA = COD (per codex-sintactic). MEMORIE ARHIVATA = OBLIGATORIU.
+🚛 1 SUCCES = 1 FISIER. CAUTARE USOARA.
+🚛 CAMERA mea (CODER FOLDER) — SENTINEL in folderul LUI separat.
 ═══════════════════════════════════════════════════

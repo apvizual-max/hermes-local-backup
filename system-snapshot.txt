@@ -1,7 +1,2 @@
-=== Hermes Agent System Snapshot ===
-Date: 2026-08-05 18:17:43
-
---- Hermes-Agent Repo ---
-Branch: main
-Last commit: 2804f8fd1 feat(whatsapp): add pairing code authentication alongside QR code
-
+System snapshot updated: 2026-08-05 19:12:04 UTC
+Profile: default | Branch: main (hermes-agent) | Status: All MCP servers fixed, Telegram disabled+patched, SearXNG working, Comfy Cloud auth via browser flow

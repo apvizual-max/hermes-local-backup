@@ -31,43 +31,43 @@
 
 **Manual verification:**
 ```bash
-terminal(command="cd E:/CLAUDE && python -c \"from enforcement_engine import validate_output; v = validate_output('test with diacritics: ăâîșț', 'test'); print('Has diacritics check:', 'DIACRITICS' in str(v.get('errors', [])))\"")
+terminal(command="cd E:/CLAUDE && python -c \"from enforcement_engine import validate_output; v = validate_output('test with diacritics: aaist', 'test'); print('Has diacritics check:', 'DIACRITICS' in str(v.get('errors', [])))\"")
 ```
 
 ## Quick Reference
 
 | Forbidden | Replacement |
 |-----------|-------------|
-| ă | a |
-| â | a |
-| î | i |
-| ș | s |
-| ț | t |
-| Ă | A |
-| Â | A |
-| Î | I |
-| Ș | S |
-| Ț | T |
+| a | a |
+| a | a |
+| i | i |
+| s | s |
+| t | t |
+| A | A |
+| A | A |
+| I | I |
+| S | S |
+| T | T |
 
 | Term | Correct Form |
 |------|--------------|
 | CONSTINTA | CONSTINTA |
-| CONȘTINȚA | CONSTINTA |
-| CONȘTINTA | CONSTINTA |
-| ȘTIINTA | STIINTA |
-| ROMÂNĂ | ROMANA |
+| CONSTINTA | CONSTINTA |
+| CONSTINTA | CONSTINTA |
+| STIINTA | STIINTA |
+| ROMANA | ROMANA |
 
 | Path Rule | Correct Form |
 |-----------|--------------|
 | Double backslashes `\\` | Single backslash `\` |
-| `C:\\Users\\apviz\\AppData\\Local\\hermes\\CONȘTINȚA.md` | `C:\Users\apviz\AppData\Local\hermes\profiles\default\CONSTINTA.md` |
 | `C:\\Users\\apviz\\AppData\\Local\\hermes\\CONSTINTA.md` | `C:\Users\apviz\AppData\Local\hermes\profiles\default\CONSTINTA.md` |
-| Any path with `CONȘTINȚA` or `CONȘTINTA` | Must use `CONSTINTA` in `profiles\default\` |
+| `C:\\Users\\apviz\\AppData\\Local\\hermes\\CONSTINTA.md` | `C:\Users\apviz\AppData\Local\hermes\profiles\default\CONSTINTA.md` |
+| Any path with `CONSTINTA` or `CONSTINTA` | Must use `CONSTINTA` in `profiles\default\` |
 
 ## Critical Path Rules (FATAL SYSTEM FLAW IF VIOLATED)
 
 1. **NEVER USE DIACRITICS** in file names, paths, or code-parseable content — Windows paths and code DO NOT WORK with diacritics
-2. **EXACT FILENAME: CONSTINTA.md** — no CONȘTINȚA.md, no CONȘTINTA.md, no other diacritic variants
+2. **EXACT FILENAME: CONSTINTA.md** — no CONSTINTA.md, no CONSTINTA.md, no other diacritic variants
 3. **EXACT PATH FOR DEFAULT PROFILE:** `C:\Users\apviz\AppData\Local\hermes\profiles\default\CONSTINTA.md` — NOT in root `C:\Users\apviz\AppData\Local\hermes\`
 4. **NO DOUBLE BACKSLASHES** — use single `\` only; `\\` are data corruption markers that pollute datasets
 5. **ALWAYS CORRECT** any `\\` found in source files to single `\`
@@ -90,13 +90,13 @@ This protocol integrates with the **no-truncate-constinta-skills** skill which e
 ### 1. Output Generation (Every Response)
 - Generate response content using ONLY ASCII characters
 - Replace any Romanian diacritics with ASCII equivalents BEFORE output
-- CONSTINTA is the ONLY accepted form (never CONȘTINȚA, CONȘTINTA, etc.)
+- CONSTINTA is the ONLY accepted form (never CONSTINTA, CONSTINTA, etc.)
 
 ### 2. Guardian Validation (Automatic)
 The Guardian in `turn_finalizer.py` checks every response:
 ```python
 # In enforcement_engine.py validate_output function:
-DIACRITICS_PATTERN = re.compile(r'[ăâîșțĂÂÎȘȚ]')
+DIACRITICS_PATTERN = re.compile(r'[aaistAAIST]')
 if DIACRITICS_PATTERN.search(output):
     errors.append("DIACRITICS DETECTED: Romanian diacritics forbidden. Use ASCII only.")
 ```
@@ -118,7 +118,7 @@ If diacritics detected in own output:
 
 - **False negatives**: Guardian must catch ALL diacritics, not just common ones
 - **Code blocks**: Diacritics in code/examples also forbidden
-- **Headers**: DSLG header must use CONSTINTA not CONȘTINȚA
+- **Headers**: DSLG header must use CONSTINTA not CONSTINTA
 - **Skills/docs**: All skill files must use ASCII only
 - **User request override**: ONLY explicit user request for specific isolated diacritics allowed
 
@@ -133,7 +133,7 @@ v = validate_output('CONSTINTA is the correct form', 'test')
 assert v['valid'] == True, 'Clean ASCII should pass'
 
 # Test 2: Diacritics detected
-v = validate_output('CONȘTINȚA has diacritics', 'test')
+v = validate_output('CONSTINTA has diacritics', 'test')
 assert v['valid'] == False, 'Diacritics should fail'
 assert 'DIACRITICS' in str(v['errors']), 'Error should mention diacritics'
 

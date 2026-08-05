@@ -42,7 +42,7 @@ The canonical (SOT) name for the CONSTINTA concept is: `CONSTINTA.md`
 | Legacy Name | Canonical |
 |-------------|-----------|
 | `CONSTIINTA.md` | `CONSTINTA.md` |
-| `CONȘTINȚA.md` | `CONSTINTA.md` |
+| `CONSTINTA.md` | `CONSTINTA.md` |
 | `CONŞTINŢA.md` | `CONSTINTA.md` |
 | `constiinta.md` | `constinta.md` |
 

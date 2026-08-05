@@ -4,7 +4,7 @@ Four traditions of surrendering authorial control to procedure:
 - **Surrealist exquisite corpse** — Breton et al., 1925. Folded-paper collaborative writing/drawing.
 - **John Cage's chance operations** — *Music of Changes* (1951). Composed via *I Ching* coin tosses.
 - **Burroughs–Gysin cut-up** — *Minutes to Go* (1960). Cut existing text, rearrange.
-- **Situationist détournement** — Debord & Wolman, 1956. Re-edit existing media to subvert original meaning.
+- **Situationist detournement** — Debord & Wolman, 1956. Re-edit existing media to subvert original meaning.
 
 ## When to use
 
@@ -12,7 +12,7 @@ Four traditions of surrendering authorial control to procedure:
 - Stuck inside an authorial voice
 - Want to interrupt your own taste (Cage: your taste is what limits the work)
 - Producing experimental work
-- Subverting source material (détournement)
+- Subverting source material (detournement)
 
 ## Don't use when
 
@@ -23,7 +23,7 @@ Four traditions of surrendering authorial control to procedure:
 
 ## Exquisite corpse
 
-Surrealists, 1925, rue du Château apartment. The name comes from the first sentence: *"Le cadavre exquis boira le vin nouveau"*.
+Surrealists, 1925, rue du Chateau apartment. The name comes from the first sentence: *"Le cadavre exquis boira le vin nouveau"*.
 
 **Procedure**: 3+ participants. First writes a sentence fragment, folds the paper to hide it, passes. Second sees only the last few words and continues. Repeat. Unfold at end.
 
@@ -53,7 +53,7 @@ Gysin, Beat Hotel Paris, 1959. Bowie used it for *Diamond Dogs*, *Heroes*, *Outs
 
 Variants: fold-in (Burroughs — fold one page over another). Voice cut-ups (tape splice). Algorithmic cut-up (script).
 
-## Détournement
+## Detournement
 
 Debord & Wolman, 1956. Take an existing piece of media and re-edit / re-caption / re-purpose to invert its meaning. The political stakes are explicit: dominant-culture critique using its own materials.
 
@@ -63,13 +63,13 @@ Debord & Wolman, 1956. Take an existing piece of media and re-edit / re-caption 
 3. Apply: re-caption, re-edit, re-frame, re-context.
 4. Distribute.
 
-Examples: Debord's *La Société du spectacle* film (1973) is largely détourned feature footage with new voiceover. May 1968 Paris graffiti détourned advertising copy. Adbusters subvertising tradition.
+Examples: Debord's *La Societe du spectacle* film (1973) is largely detourned feature footage with new voiceover. May 1968 Paris graffiti detourned advertising copy. Adbusters subvertising tradition.
 
 ## Anti-slop notes
 
 - "Generate randomly" without a specified procedure is slop. State *what* is randomized, by *what* mechanism.
 - Don't generate cut-up text by guessing what cut-up sounds like. Run the actual procedure on real text.
 - Don't romanticize. The procedures are specific.
-- Détournement requires a target. Generic "subversive remixes" without specific source-and-target are vibe.
+- Detournement requires a target. Generic "subversive remixes" without specific source-and-target are vibe.
 
-Sources: Cage, *Silence* (Wesleyan, 1961); Burroughs & Gysin, *The Third Mind* (Viking, 1978); Debord & Wolman, "Mode d'emploi du détournement" (*Les Lèvres Nues* 8, 1956).
+Sources: Cage, *Silence* (Wesleyan, 1961); Burroughs & Gysin, *The Third Mind* (Viking, 1978); Debord & Wolman, "Mode d'emploi du detournement" (*Les Lèvres Nues* 8, 1956).

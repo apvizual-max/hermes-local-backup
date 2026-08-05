@@ -35,7 +35,7 @@ import sys
 
 CHUNK_DIR = r"E:\CLAUDE\SENTINEL_JOURNAL - INDEX RAG - 00_KV_SECOND BRAIN"
 AMINTIRE_HDR = re.compile(r'^AMINTIRE-\d+\s')
-WORD_RE = re.compile(r'[A-Za-zĂÂÎȘȚăâîșț]{2,}')
+WORD_RE = re.compile(r'[A-Za-zAAISTaaist]{2,}')
 
 # ============================================================================
 # FORBIDDEN PATTERNS - if ANY matches in the body, REMOVE the entire field

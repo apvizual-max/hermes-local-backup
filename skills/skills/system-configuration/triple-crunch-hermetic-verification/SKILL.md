@@ -119,7 +119,7 @@ AMIN.
 ### 1. NEVER USE ROMANIAN DIACRITICS
 - **Rule**: NEVER use Romanian special characters (diacritics) in ANY paths, filenames, or file content.
 - **Correct form**: `CONSTINTA` (ASCII only) — the ONLY correct string to ever use.
-- **Fatal error**: Using `CONȚINȚA`, `Conștința`, or any diacritic variant in paths or code BREAKS the system.
+- **Fatal error**: Using `CONTINTA`, `Constinta`, or any diacritic variant in paths or code BREAKS the system.
 - **Triple Crunch**: Diacritics fail Eliade Realitate (not grounded in executable reality) and Musashi Taiere (imprecision).
 
 ### 2. CONSTINTA.MD FILE LOCATION (Absolute)

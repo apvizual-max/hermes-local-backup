@@ -77,9 +77,9 @@ Configure `.env` and `config.yaml` to utilize free OpenRouter models and Google 
 ### A. Environment Configuration (`.env`)
 Located at `C:\Users\apviz\AppData\Local\hermes\.env`:
 ```env
-GOOGLE_API_KEY=AIzaSy[REDACTED]
-GEMINI_API_KEY=AIzaSy[REDACTED]
-OPENROUTER_API_KEY=sk-or-[REDACTED]
+GOOGLE_API_KEY=AIza[REDACTED]
+GEMINI_API_KEY=AIza[REDACTED]
+OPENROUTER_API_KEY=sk-or-v1-[REDACTED]
 ```
 
 ### B. Configuration (`config.yaml`)

@@ -14,7 +14,7 @@ Same as standard: text after the LAST `): ` (role separator), fallback to last `
 
 | Category | Pattern | Examples Removed |
 |----------|---------|------------------|
-| **Any non-word, non-space, non-basic-punct char** | `[^\w\s.,;:!?\-\(\)"\'ĂÂÎȘȚăâîșț]` | `wqc>ghŋ`, `#ЌfLÍXg`, `gLcX>osr` |
+| **Any non-word, non-space, non-basic-punct char** | `[^\w\s.,;:!?\-\(\)"\'AAISTaaist]` | `wqc>ghŋ`, `#ЌfLÍXg`, `gLcX>osr` |
 | **camelCase / PascalCase** | `\b[a-z]+[A-Z][a-z]+\b` | `camelCase`, `PascalCase`, `getTaskResult` |
 | **ALL-CAPS ≥3 letters** | `\b[A-Z]{3,}\b` | `JSON`, `HTTP`, `PNG`, `API` |
 | **Trailing comma/semicolon** | `,\s*$` / `;\s*$` | `suppressSeconds = false,` |
@@ -93,4 +93,4 @@ Re-running removes 0 additional entries.
 
 ---
 
-> SEMNĂTURĂ: ULTRA-FINAL CLEANUP ALGORITHM — ZERO TOLERANCE FOR NON-NATURAL-LANGUAGE. AMIN.
+> SEMNATURA: ULTRA-FINAL CLEANUP ALGORITHM — ZERO TOLERANCE FOR NON-NATURAL-LANGUAGE. AMIN.

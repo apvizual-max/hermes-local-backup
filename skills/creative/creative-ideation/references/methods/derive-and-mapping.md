@@ -1,9 +1,9 @@
-# Dérive and Mapping
+# Derive and Mapping
 
 Three traditions of *attentive movement through territory* as ideation:
-- **Situationist dérive** — Guy Debord, *Théorie de la dérive* (1958). Drift through a city, displacing productive uses with attentive wandering.
+- **Situationist derive** — Guy Debord, *Theorie de la derive* (1958). Drift through a city, displacing productive uses with attentive wandering.
 - **Kevin Lynch's cognitive mapping** — *The Image of the City* (1960). Five-element vocabulary for mental maps: paths, edges, districts, nodes, landmarks.
-- **Gaston Bachelard's topoanalysis** — *La Poétique de l'espace* (1958). Phenomenological reading of intimate spaces.
+- **Gaston Bachelard's topoanalysis** — *La Poetique de l'espace* (1958). Phenomenological reading of intimate spaces.
 
 ## When to use
 
@@ -18,9 +18,9 @@ Three traditions of *attentive movement through territory* as ideation:
 - Time pressure (drift is slow)
 - Goal-directed search (drift is for *not knowing what you're looking for*)
 - Group sizes that make drift into tourism (works solo or 2–3)
-- Using "dérive" as alibi for procrastination (real dérive has discipline)
+- Using "derive" as alibi for procrastination (real derive has discipline)
 
-## Single-day urban dérive
+## Single-day urban derive
 
 1. Pick a territory you don't know — an unfamiliar neighborhood, a long bus route, two hours' walk in a direction you don't usually go.
 2. Drop other agenda for the period. Phone away.
@@ -29,7 +29,7 @@ Three traditions of *attentive movement through territory* as ideation:
 5. End-of-day: draw a Lynch-style map.
 6. Note surprises.
 
-## Lynch's vocabulary (use to structure dérive output)
+## Lynch's vocabulary (use to structure derive output)
 
 - **Paths** — channels you move along (streets, walkways, transit, canals).
 - **Edges** — linear boundaries that aren't paths (shorelines, walls, river edges).
@@ -44,7 +44,7 @@ After drifting:
 - Where were the nodes? What were they doing?
 - Which landmarks anchored you? Official or personal?
 
-## Conceptual dérive (research / decision)
+## Conceptual derive (research / decision)
 
 Same method, conceptual territory:
 1. Pick a domain you don't know well.
@@ -63,14 +63,14 @@ Topoanalysis applied to intimate spaces:
 4. Note the strongest reverberation — a detail that produces a generative response.
 5. Use it as starting point for new work.
 
-(Cameron's artist date is essentially a Bachelard-flavored dérive.)
+(Cameron's artist date is essentially a Bachelard-flavored derive.)
 
 ## Anti-slop notes
 
-- "Psychogeographical" used as adjective is dilution. Real Situationist dérive is more disciplined and more political.
-- Don't generate fake dérive notes. Method requires the territory; without it, the output is fabrication.
-- Avoid the travel-blog tone ("I wandered down cobbled streets..."). Real dérive includes friction, repulsion, missed destinations.
-- Don't apply Bachelard sentimentally. *La Poétique* is phenomenology, not "your house has feelings".
+- "Psychogeographical" used as adjective is dilution. Real Situationist derive is more disciplined and more political.
+- Don't generate fake derive notes. Method requires the territory; without it, the output is fabrication.
+- Avoid the travel-blog tone ("I wandered down cobbled streets..."). Real derive includes friction, repulsion, missed destinations.
+- Don't apply Bachelard sentimentally. *La Poetique* is phenomenology, not "your house has feelings".
 - For LLM-mediated conceptual drift: force *places, citations, names, details*. Generic "I drifted through the literature" is not drift.
 
-Sources: Debord, "Théorie de la dérive" (*Internationale Situationniste* 2, 1958); Lynch, *The Image of the City* (MIT, 1960); Bachelard, *La Poétique de l'espace* (PUF, 1958).
+Sources: Debord, "Theorie de la derive" (*Internationale Situationniste* 2, 1958); Lynch, *The Image of the City* (MIT, 1960); Bachelard, *La Poetique de l'espace* (PUF, 1958).

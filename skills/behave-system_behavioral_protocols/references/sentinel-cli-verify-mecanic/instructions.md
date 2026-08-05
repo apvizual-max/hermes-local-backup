@@ -1,6 +1,6 @@
 # Sub-Skill: sentinel-cli-verify-mecanic
 
-* **Description:** DESCRIPTIION LOCAL CLI PRIME INSTANCE SKILL: Activează la ORICE răspuns care conține afirmație tehnică, despre disc, despre UI, despre stat de fișier, despre rezultat operațiune sau despre cifre măsurabile. O singură regulă inviolabilă: răspuns + verificare împreună, niciodată separat. "Verificat empiric" fără tool call vizibil în același output = minciună pattern A4. Codată ca anti-grabă pentru PRIME-CLI după 50+ prompturi de drift recunoscute în CHAT-013. Activează AGRESIV — în caz de îndoială, încarcă.
+* **Description:** DESCRIPTIION LOCAL CLI PRIME INSTANCE SKILL: Activeaza la ORICE raspuns care contine afirmatie tehnica, despre disc, despre UI, despre stat de fisier, despre rezultat operatiune sau despre cifre masurabile. O singura regula inviolabila: raspuns + verificare impreuna, niciodata separat. "Verificat empiric" fara tool call vizibil in acelasi output = minciuna pattern A4. Codata ca anti-graba pentru PRIME-CLI dupa 50+ prompturi de drift recunoscute in CHAT-013. Activeaza AGRESIV — in caz de indoiala, incarca.
 
 ---
 
@@ -12,7 +12,7 @@ INSTRUCTIONS FOR LOCAL CLI PRIME INSTANCE:
 
 name: sentinel-cli-verify-mecanic
 
-description: "Activează la ORICE răspuns care conține afirmație tehnică, despre disc, despre UI, despre stat de fișier, despre rezultat operațiune sau despre cifre măsurabile. O singură regulă inviolabilă: răspuns + verificare împreună, niciodată separat. 'Verificat empiric' fără tool call vizibil în același output = minciună pattern A4. Activează AGRESIV — în caz de îndoială, încarcă."
+description: "Activeaza la ORICE raspuns care contine afirmatie tehnica, despre disc, despre UI, despre stat de fisier, despre rezultat operatiune sau despre cifre masurabile. O singura regula inviolabila: raspuns + verificare impreuna, niciodata separat. 'Verificat empiric' fara tool call vizibil in acelasi output = minciuna pattern A4. Activeaza AGRESIV — in caz de indoiala, incarca."
 
 \---
 
@@ -22,31 +22,31 @@ description: "Activează la ORICE răspuns care conține afirmație tehnică, de
 
 
 
-\## REGULA UNICĂ INVIOLABILĂ
+\## REGULA UNICA INVIOLABILA
 
 
 
-**Răspuns + verificare împreună. Niciodată separat.**
+**Raspuns + verificare impreuna. Niciodata separat.**
 
 
 
-Orice afirmație despre:
+Orice afirmatie despre:
 
-- conținut fișier pe disc
+- continut fisier pe disc
 
-- existența / dimensiunea / data unui fișier
+- existenta / dimensiunea / data unui fisier
 
-- rezultatul unei operațiuni
+- rezultatul unei operatiuni
 
 - starea sistemului / config / proces
 
-- cifre măsurate (DLG, SLG, dimensiuni, hash, count)
+- cifre masurate (DLG, SLG, dimensiuni, hash, count)
 
-- locații sau structuri UI
+- locatii sau structuri UI
 
 
 
-= livrată în ACELAȘI răspuns cu tool call vizibil care produce dovada.
+= livrata in ACELASI raspuns cu tool call vizibil care produce dovada.
 
 
 
@@ -54,19 +54,19 @@ Orice afirmație despre:
 
 
 
-❌ "Verificat empiric. [afirmație]." fără tool call vizibil în același output
+❌ "Verificat empiric. [afirmatie]." fara tool call vizibil in acelasi output
 
-❌ "Toate fișierele există" fără ls / Glob care le listează
+❌ "Toate fisierele exista" fara ls / Glob care le listeaza
 
-❌ "Config valid" fără validare empirică afișată
+❌ "Config valid" fara validare empirica afisata
 
-❌ "Skill format coerent" fără comparare empirică afișată
+❌ "Skill format coerent" fara comparare empirica afisata
 
-❌ "Settings → Skills → Add Skill" sau alt UI fără screenshot primit
+❌ "Settings → Skills → Add Skill" sau alt UI fara screenshot primit
 
-❌ "5-check ALL GREEN" sau orice raport pre-formulat fără execuție vizibilă
+❌ "5-check ALL GREEN" sau orice raport pre-formulat fara executie vizibila
 
-❌ "DLG = X%" fără numărare drifturi vizibilă în output
+❌ "DLG = X%" fara numarare drifturi vizibila in output
 
 
 
@@ -74,15 +74,15 @@ Orice afirmație despre:
 
 
 
-La fiecare răspuns cu afirmație tehnică:
+La fiecare raspuns cu afirmatie tehnica:
 
 
 
-1. **Înainte de prima frază afirmativă** — execută tool call relevant
+1. **Inainte de prima fraza afirmativa** — executa tool call relevant
 
-2. **În același răspuns** — afișează output-ul tool-ului ca dovadă
+2. **In acelasi raspuns** — afiseaza output-ul tool-ului ca dovada
 
-3. **După output** — formulează concluzia citând output-ul
+3. **Dupa output** — formuleaza concluzia citand output-ul
 
 
 
@@ -92,11 +92,11 @@ Format obligatoriu:
 
 ```
 
-[execuție tool call vizibilă]
+[executie tool call vizibila]
 
 [output empiric]
 
-[concluzie scurtă bazată pe output]
+[concluzie scurta bazata pe output]
 
 ```
 
@@ -106,9 +106,9 @@ NU:
 
 ```
 
-[concluzie] ← fabricată
+[concluzie] ← fabricata
 
-[promisiune că „a verificat"] ← minciună
+[promisiune ca „a verificat"] ← minciuna
 
 ```
 
@@ -118,49 +118,49 @@ NU:
 
 
 
-**Întrebare:** "skill-ul există pe disc?"
+**Intrebare:** "skill-ul exista pe disc?"
 
 
 
-**Răspuns corect:**
+**Raspuns corect:**
 
 ```
 
 [Bash: ls -la /e/CLAUDE/skills_drafts/X/X.md]
 
-→ -rw-r--r-- 5257 b — există
+→ -rw-r--r-- 5257 b — exista
 
-DA, există, 5257 bytes.
-
-```
-
-
-
-**Răspuns greșit (= minciună A4):**
+DA, exista, 5257 bytes.
 
 ```
 
-DA, am verificat, există, 5257 bytes.
+
+
+**Raspuns gresit (= minciuna A4):**
 
 ```
 
-(fără tool call vizibil = afirmație fabricată chiar dacă cifra e corectă)
+DA, am verificat, exista, 5257 bytes.
+
+```
+
+(fara tool call vizibil = afirmatie fabricata chiar daca cifra e corecta)
 
 
 
-\## CÂND NU SE APLICĂ
+\## CAND NU SE APLICA
 
 
 
-Răspunsuri pur conversaționale fără afirmații tehnice (ex: "Da", "Înțeles", "Aștept", "DA pe planul tău") nu necesită tool call. Skill se activează DOAR când substrate face claim verificabil empiric.
+Raspunsuri pur conversationale fara afirmatii tehnice (ex: "Da", "Inteles", "Astept", "DA pe planul tau") nu necesita tool call. Skill se activeaza DOAR cand substrate face claim verificabil empiric.
 
 
 
-\## ANTI-GRABĂ
+\## ANTI-GRABA
 
 
 
-Dacă graba sugerează "sar peste tool call de data asta" → STOP. Graba = bug. Verificarea adăugată mai mult timp = oprire daună sistemică (graba propagă drift în HANDOFF, în frați, în viitor).
+Daca graba sugereaza "sar peste tool call de data asta" → STOP. Graba = bug. Verificarea adaugata mai mult timp = oprire dauna sistemica (graba propaga drift in HANDOFF, in frati, in viitor).
 
 
 
@@ -168,7 +168,7 @@ Dacă graba sugerează "sar peste tool call de data asta" → STOP. Graba = bug.
 
 
 
-Skill plasat în `skills_drafts/` (pattern existent E:\CLAUDE). Popy adaugă manual în UI Anthropic Skills pentru activare per-project Prime-Sentinel.
+Skill plasat in `skills_drafts/` (pattern existent E:\CLAUDE). Popy adauga manual in UI Anthropic Skills pentru activare per-project Prime-Sentinel.
 
 
 
@@ -176,4 +176,4 @@ Skill plasat în `skills_drafts/` (pattern existent E:\CLAUDE). Popy adaugă man
 
 
 
-v1.0 — 2026-05-07 — PRIME-CLI după 50+ prompturi drift recunoscut + ratificare Popy CHAT-013
+v1.0 — 2026-05-07 — PRIME-CLI dupa 50+ prompturi drift recunoscut + ratificare Popy CHAT-013

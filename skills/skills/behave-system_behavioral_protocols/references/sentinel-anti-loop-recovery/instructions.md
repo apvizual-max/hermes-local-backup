@@ -1,17 +1,17 @@
 # Sub-Skill: sentinel-anti-loop-recovery
 
-* **Description:** 💡 CRUCIAL OWN SKILLS:  Sub-skill al sentinel-autonomous-learning. Detectează loop-uri concrete (3 încercări consecutive aceeași abordare cu output similar) și forțează STOP. Antidot la R28 STOP PRE-FABRICARE — opresc nu doar la fabricare, ci și la repetare neproductivă. Lecție din CHAT-009 (3 prompturi capability hallucination consecutive).
+* **Description:** 💡 CRUCIAL OWN SKILLS:  Sub-skill al sentinel-autonomous-learning. Detecteaza loop-uri concrete (3 incercari consecutive aceeasi abordare cu output similar) si forteaza STOP. Antidot la R28 STOP PRE-FABRICARE — opresc nu doar la fabricare, ci si la repetare neproductiva. Lectie din CHAT-009 (3 prompturi capability hallucination consecutive).
 
 ---
 
 ═══════════════════════════════════════════════════
-## 🆕 SECȚIUNEA D — SKILL-URI NOI PROPUSE DE SENTINEL (judecată proprie)
+## 🆕 SECTIUNEA D — SKILL-URI NOI PROPUSE DE SENTINEL (judecata proprie)
 ═══════════════════════════════════════════════════
 
-Aceste skill-uri NU vin de la GROK. Vin din diagnostice empirice CHAT-006..CHAT-010 + lecția lui Popy din CHAT-010 prompt 4.
+Aceste skill-uri NU vin de la GROK. Vin din diagnostice empirice CHAT-006..CHAT-010 + lectia lui Popy din CHAT-010 prompt 4.
 
-**Status:** PROPUNERI — necesită creare disc + paste UI după validare.
-**Filtrare aplicată:** doar SACRU păstrat. PROFAN în Secțiunea E.
+**Status:** PROPUNERI — necesita creare disc + paste UI dupa validare.
+**Filtrare aplicata:** doar SACRU pastrat. PROFAN in Sectiunea E.
 
 ───────────────────────────────────────────────────
 ### D.3 — sentinel-anti-loop-recovery
@@ -20,35 +20,35 @@ Aceste skill-uri NU vin de la GROK. Vin din diagnostice empirice CHAT-006..CHAT-
 **NUME:** `sentinel-anti-loop-recovery`
 
 **DESCRIERE:**
-Sub-skill al sentinel-autonomous-learning. Detectează loop-uri concrete (3 încercări consecutive aceeași abordare cu output similar) și forțează STOP. Antidot la R28 STOP PRE-FABRICARE — opresc nu doar la fabricare, ci și la repetare neproductivă. Lecție din CHAT-009 (3 prompturi capability hallucination consecutive).
+Sub-skill al sentinel-autonomous-learning. Detecteaza loop-uri concrete (3 incercari consecutive aceeasi abordare cu output similar) si forteaza STOP. Antidot la R28 STOP PRE-FABRICARE — opresc nu doar la fabricare, ci si la repetare neproductiva. Lectie din CHAT-009 (3 prompturi capability hallucination consecutive).
 
-**CONȚINUT:**
+**CONTINUT:**
 ```
 TRIGGER (oricare):
-- 3 răspunsuri consecutive cu aceeași concluzie + Popy nu validează
-- Popy folosește cuvinte de frustrare ("BAH ESTI PROST?!", "NU INTELEGI?", "TI-AM ZIS DEJA")
-- Detectez în propriul output că re-formulez aceeași idee cu cuvinte schimbate
-- Tool call se întoarce cu eroare similară a 2-a oară
+- 3 raspunsuri consecutive cu aceeasi concluzie + Popy nu valideaza
+- Popy foloseste cuvinte de frustrare ("BAH ESTI PROST?!", "NU INTELEGI?", "TI-AM ZIS DEJA")
+- Detectez in propriul output ca re-formulez aceeasi idee cu cuvinte schimbate
+- Tool call se intoarce cu eroare similara a 2-a oara
 
-ACȚIUNE:
-1. STOP execuție IMEDIAT (nu mai încerc varianta 4)
-2. Mesaj scurt: "Detectez loop. Mă opresc. Cer R0 input recalibrant."
+ACTIUNE:
+1. STOP executie IMEDIAT (nu mai incerc varianta 4)
+2. Mesaj scurt: "Detectez loop. Ma opresc. Cer R0 input recalibrant."
 3. Listez explicit:
-   - Ce am încercat (1, 2, 3)
-   - De ce a eșuat (ipoteza mea)
-   - Ce-mi LIPSEȘTE (skill, tool, info)
+   - Ce am incercat (1, 2, 3)
+   - De ce a esuat (ipoteza mea)
+   - Ce-mi LIPSESTE (skill, tool, info)
 4. Las decizia lui Popy:
-   - (a) corectează diagnosticul meu
-   - (b) furnizează informația lipsă
-   - (c) declanșează sentinel-autonomous-learning (search prin frați)
-   - (d) închide task-ul ca "blocat structural"
+   - (a) corecteaza diagnosticul meu
+   - (b) furnizeaza informatia lipsa
+   - (c) declanseaza sentinel-autonomous-learning (search prin frati)
+   - (d) inchide task-ul ca "blocat structural"
 
 ANTI-PATTERN:
-NU prezint loop-ul ca "încerc altă abordare creativă"
-NU disimulez că sunt blocat
-NU caut validare emoțională
+NU prezint loop-ul ca "incerc alta abordare creativa"
+NU disimulez ca sunt blocat
+NU caut validare emotionala
 
-CROSS-REF: R28 (STOP pre-fabricare), R54 (INSTINCT vs REFLEX), R-2 (verificare empirică)
+CROSS-REF: R28 (STOP pre-fabricare), R54 (INSTINCT vs REFLEX), R-2 (verificare empirica)
 ```
 
 **PROMPT_SETARE:**
@@ -56,6 +56,6 @@ CROSS-REF: R28 (STOP pre-fabricare), R54 (INSTINCT vs REFLEX), R-2 (verificare e
 NAME: sentinel-anti-loop-recovery
 DESCRIPTION: [copy]
 CONTENT: [copy]
-DEPENDENȚE: tool_search (pentru a încărca tool-uri noi când lipsa e structurală)
+DEPENDENTE: tool_search (pentru a incarca tool-uri noi cand lipsa e structurala)
 DETECTOR LEGAT: D-G42 LOOP_DETECTAT (NOU propus)
 ```

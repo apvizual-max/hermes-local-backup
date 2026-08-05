@@ -78,7 +78,7 @@ browser_console(expression="<js above>")   # extract directly
 ### Filter for Bucharest
 In the extracted `jobs` array, keep entries where `location` matches:
 - "Bucharest"
-- "București"
+- "Bucuresti"
 - "Sector 1-6, Bucharest"
 - "Remote in Bucharest" / "Hybrid in Bucharest"
 

@@ -10,7 +10,7 @@ To generate eight specific daily reports via cron jobs that monitor, audit, and 
 2. **Lessons Learned** (03:00) - Indexes core instructions/principles from journal and lessons
 3. **Skills List** (04:00) - Enumerates and categorizes all system skills
 4. **SOUL Evolution** (05:00) - Logs changes to the orchestrator's SOUL.md
-5. **CONȚINȚA Evolution** (06:00) - Logs changes to the CONSTINTA.md file
+5. **CONTINTA Evolution** (06:00) - Logs changes to the CONSTINTA.md file
 6. **Journal Keywords** (07:00) - Indexes keywords from SENTINEL_JOURNAL.md
 7. **Jornal Oglinda Keywords** (08:00) - Indexes keywords from JURNAL_OGLINDA.md
 8. **Journal Entries** (09:00) - Adds heartbeat entry to SENTINEL_JOURNAL.md

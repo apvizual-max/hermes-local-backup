@@ -73,9 +73,9 @@ fallback_providers: '["gemini"]'
 
 ### Profile `.env` Sample:
 ```env
-GOOGLE_API_KEY=AIzaSy[REDACTED]
-GEMINI_API_KEY=AIzaSy[REDACTED]
-OPENROUTER_API_KEY=sk-or-[REDACTED]
+GOOGLE_API_KEY=AIza[REDACTED]
+GEMINI_API_KEY=AIza[REDACTED]
+OPENROUTER_API_KEY=sk-or-v1-[REDACTED]
 ```
 *(Note: Per-profile config files in `/profiles/<name>/config.yaml` take precedence over the global `/config.yaml` file).*
 

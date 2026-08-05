@@ -18,7 +18,7 @@ def main():
     
     # Stopword sets (basic)
     stopwords_en = set("""the and or of to in is it that this was for with as on at but from by about into over after also very just not you we he she they i am are be been being have has had do does did can could should would may might must""".split())
-    stopwords_ro = set("""și sau pentru cu la de este să cât mai puțin foarte dar ori de asemenea totuși insă chiar bine rău nu da nu""".split())
+    stopwords_ro = set("""si sau pentru cu la de este sa cat mai putin foarte dar ori de asemenea totusi insa chiar bine rau nu da nu""".split())
     stopwords = stopwords_en.union(stopwords_ro)
     
     if not journal_path.is_file():

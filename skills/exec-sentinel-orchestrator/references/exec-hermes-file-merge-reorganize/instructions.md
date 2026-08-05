@@ -24,7 +24,7 @@ profile directories, state-snapshots, and backup archives.
 - Two files in the same directory represent the same concept (different spelling/encoding)
 - A SOT (Single Source of Truth) name is being enforced system-wide
 - Profile files, snapshot files, or backup files need renaming after a terminology change
-- You need to consolidate `CONSTIINTA.md` / `CONȘTINȚA.md` → `CONSTINTA.md` (or similar)
+- You need to consolidate `CONSTIINTA.md` / `CONSTINTA.md` → `CONSTINTA.md` (or similar)
 
 ## Scope — Always Cover These Paths
 

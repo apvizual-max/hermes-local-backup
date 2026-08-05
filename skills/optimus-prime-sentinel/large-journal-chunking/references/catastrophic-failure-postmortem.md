@@ -43,7 +43,7 @@ The cleaning pipeline was designed to remove binary/encrypted garbage from journ
 The `FORBIDDEN_RE` list grew to include **legitimate punctuation used in natural language**:
 
 ```regex
-:        # colons in "TOOL CALL #2 (CONDIȚIONAT): "
+:        # colons in "TOOL CALL #2 (CONDITIONAT): "
 ( )      # parentheses in "Preventive maintenance executed (backup, health check)."
 \        # backslashes in Windows paths in SOURCES
 . , -    # normal sentence punctuation

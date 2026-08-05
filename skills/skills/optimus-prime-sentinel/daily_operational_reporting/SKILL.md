@@ -80,7 +80,7 @@ The daily operational reporting system consists of eight specialized cron jobs t
   - `PARTICULAR`: Subset of Active with categories in `{triple-crunch, journal-index, user-md, keyword-index, skill-lint, soul-lint, constinta-lint, maintenance, learning}`
 - **Excludes**: Archived (`status: archived/deprecated`) or `archive\*` foldered skills
 
-#### SOUL/CONȚINȚA Evolution Logs
+#### SOUL/CONTINTA Evolution Logs
 - **Mechanism**: Unified diff between current file and most recent backup
 - **Actor Determination**: Comparison with user-editable backups (if exist)
 - **Log Entry**: `TIMESTAMP | ACTOR | EDIT` followed by diff and blank line

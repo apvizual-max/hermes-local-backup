@@ -61,7 +61,7 @@ python references/model-catalog-maintenance/scripts/\1
 ```
 It will report any Python or Markdown files that contain non‑ASCII characters in string literals or f‑strings. Fix any occurrences by replacing:
 - Em‑dash ( — ) and en‑dash ( – ) with plain hyphen (-).
-- Romanian diacritics in stop‑word lists with their ASCII equivalents (e.g., `ș` → `s`, `ț` → `t`, `â` → `a`, `î` → `i`, `ă` → `a`).
+- Romanian diacritics in stop‑word lists with their ASCII equivalents (e.g., `s` → `s`, `t` → `t`, `a` → `a`, `i` → `i`, `a` → `a`).
 
 ### 7. Optional: Run the Project Test Suite
 If a virtual environment is present, execute:

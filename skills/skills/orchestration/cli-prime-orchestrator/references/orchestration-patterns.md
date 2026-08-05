@@ -31,7 +31,7 @@ version: 1.0.0
         "auth_type": "oauth",
         "priority": 0,
         "source": "manual:antigravity_cli",
-        "access_token": "[REDACTED_YA29]",
+        "access_token": "ya29.a0ARG...",
         "base_url": "https://generativelanguage.googleapis.com/v1beta"
       }
     ],
@@ -132,7 +132,7 @@ new_entry = PooledCredential(
     auth_type=AUTH_TYPE_OAUTH,
     priority=0,
     source=f"{SOURCE_MANUAL}:antigravity_cli",
-    access_token="[REDACTED_YA29]",
+    access_token="ya29.a0ARG...",
     base_url="https://generativelanguage.googleapis.com/v1beta",
 )
 pool.add_entry(new_entry)
@@ -205,7 +205,7 @@ GET /api/providers/oauth?profile=default
 
 # Add credential to pool
 POST /api/credentials/pool
-{ "provider": "gemini-oauth", "api_key": "[REDACTED_YA29]", "label": "personal" }
+{ "provider": "gemini-oauth", "api_key": "ya29...", "label": "personal" }
 
 # Remove credential
 DELETE /api/credentials/pool/gemini-oauth/1
