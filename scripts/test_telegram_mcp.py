@@ -3,7 +3,11 @@
 import subprocess, json, os, sys, time
 
 env = os.environ.copy()
-env["TELEGRAM_API_TOKEN"] = "8677539910:AAGYKZHMI9GR98a4mcYBAuv6z-T0TIKNuSQ"
+api_token = os.environ.get("TELEGRAM_API_TOKEN")
+if not api_token:
+    print("Error: TELEGRAM_API_TOKEN environment variable is not set.")
+    sys.exit(1)
+env["TELEGRAM_API_TOKEN"] = api_token
 
 # Start the server process
 proc = subprocess.Popen(

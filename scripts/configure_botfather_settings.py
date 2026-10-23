@@ -15,7 +15,12 @@ import json
 import urllib.request
 import os
 
-BOT_TOKEN = "8677539910:AAGYKZHMI9GR98a4mcYBAuv6z-T0TIKNuSQ"
+BOT_TOKEN = os.environ.get("TELEGRAM_API_TOKEN")
+if not BOT_TOKEN:
+    print("Error: TELEGRAM_API_TOKEN environment variable is not set. Cannot configure bot privacy settings.")
+    import sys
+    sys.exit(1)
+
 API_BASE = f"https://api.telegram.org/bot{BOT_TOKEN}"
 
 def call_api(method, data=None, files=None):
