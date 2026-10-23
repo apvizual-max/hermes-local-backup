@@ -2,8 +2,15 @@
 """Test the Telegram Bot MCP server."""
 import subprocess, json, os, sys, time
 
+# 🛡️ Sentinel: Read token from environment variable
+api_token = os.environ.get("TELEGRAM_API_TOKEN")
+if not api_token:
+    print("❌ ERROR: TELEGRAM_API_TOKEN environment variable not set.", file=sys.stderr)
+    print("Please set it to your bot token before running this script.", file=sys.stderr)
+    sys.exit(1)
+
 env = os.environ.copy()
-env["TELEGRAM_API_TOKEN"] = "8677539910:AAGYKZHMI9GR98a4mcYBAuv6z-T0TIKNuSQ"
+env["TELEGRAM_API_TOKEN"] = api_token
 
 # Start the server process
 proc = subprocess.Popen(

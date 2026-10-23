@@ -14,8 +14,15 @@ This script uses the telegram-bot MCP server's tg_send_message tool to:
 import json
 import urllib.request
 import os
+import sys
 
-BOT_TOKEN = "8677539910:AAGYKZHMI9GR98a4mcYBAuv6z-T0TIKNuSQ"
+# 🛡️ Sentinel: Removed hardcoded API token to prevent credential leakage
+BOT_TOKEN = os.environ.get("TELEGRAM_API_TOKEN") or os.environ.get("TELEGRAM_BOT_TOKEN")
+if not BOT_TOKEN:
+    print("❌ ERROR: TELEGRAM_API_TOKEN environment variable not set.", file=sys.stderr)
+    print("Please set it to your bot token before running this script.", file=sys.stderr)
+    sys.exit(1)
+
 API_BASE = f"https://api.telegram.org/bot{BOT_TOKEN}"
 
 def call_api(method, data=None, files=None):

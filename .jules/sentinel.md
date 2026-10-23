@@ -1,0 +1,4 @@
+## 2026-10-23 - Hardcoded Telegram API Token Vulnerability
+**Vulnerability:** A hardcoded `TELEGRAM_API_TOKEN` (`8677539910:AAGYKZHMI9GR98a4mcYBAuv6z-T0TIKNuSQ`) was found in multiple scripts (`scripts/configure_botfather_settings.py`, `scripts/test_telegram_mcp.py`, `scripts/check_telegram_bot.py`).
+**Learning:** Hardcoded tokens in source files are a significant security risk, as they can easily be committed to version control and exposed. Even in local or backup scripts, relying on hardcoded credentials can lead to accidental leaks. The `configure_botfather_settings.py` and test scripts should read the token from environment variables or a `.env` file, falling back to an error or prompt rather than containing hardcoded secrets.
+**Prevention:** Always use environment variables, a secure secret manager, or `.env` configuration files to manage sensitive credentials like API tokens. Never commit actual token values directly into source code.
