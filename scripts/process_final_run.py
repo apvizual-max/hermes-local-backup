@@ -83,6 +83,7 @@ try:
         rel_path = os.path.relpath(filepath, BASE)
         first_part = rel_path.split(os.sep)[0] if os.sep in rel_path else rel_path
         role = get_role(first_part)
+        entries = []
         for i, line in enumerate(lines, start=1):
             line_stripped = line.rstrip('\n\r')
             if not line_stripped.strip():
@@ -94,10 +95,14 @@ SOURCES:
 - `{filepath}`
 ---
 '''
-            with open(JOURNAL, 'a', encoding='utf-8') as jf:
-                jf.write(entry)
+            entries.append(entry)
             next_num += 1
             lines_added_total += 1
+
+        if entries:
+            with open(JOURNAL, 'a', encoding='utf-8') as jf:
+                jf.write("".join(entries))
+
         processed_total += 1
         if processed_total % 500 == 0:
             elapsed = time.time() - start_time
