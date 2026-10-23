@@ -95,45 +95,49 @@ EXCLUDE_DIRS = {
 }
 
 # File patterns to exclude (secrets and caches)
+# BOLT OPTIMIZATION: Pre-compiled regex patterns to eliminate compilation overhead
+# during the O(N) file traversal in the backup process.
 EXCLUDE_FILE_PATTERNS = [
-    r'\.env$',
-    r'\.env\..*',
-    r'\.lock$',
-    r'\.tmp$',
-    r'\.log$',
-    r'auth\.json.*',
-    r'auth\.lock',
-    r'git-credentials',
-    r'\.git-credentials',
-    r'\.npmrc',
-    r'\.skills_prompt_snapshot\.json',
-    r'models_dev_cache\.json',
-    r'provider_models_cache\.json',
-    r'ollama_cloud_models_cache\.json',
-    r'mcp_schema_cache\.json',
-    r'model_catalog\.json$',
-    r'nous_recommended_cache\.json',
-    r'openrouter_model_metadata\.json',
-    r'channel_directory\.json',
-    r'gateway_state\.json',
-    r'desktop-build-stamp\.json',
-    r'context_length_cache\.yaml',
-    r'profile\.yaml',
+    re.compile(r'\.env$'),
+    re.compile(r'\.env\..*'),
+    re.compile(r'\.lock$'),
+    re.compile(r'\.tmp$'),
+    re.compile(r'\.log$'),
+    re.compile(r'auth\.json.*'),
+    re.compile(r'auth\.lock'),
+    re.compile(r'git-credentials'),
+    re.compile(r'\.git-credentials'),
+    re.compile(r'\.npmrc'),
+    re.compile(r'\.skills_prompt_snapshot\.json'),
+    re.compile(r'models_dev_cache\.json'),
+    re.compile(r'provider_models_cache\.json'),
+    re.compile(r'ollama_cloud_models_cache\.json'),
+    re.compile(r'mcp_schema_cache\.json'),
+    re.compile(r'model_catalog\.json$'),
+    re.compile(r'nous_recommended_cache\.json'),
+    re.compile(r'openrouter_model_metadata\.json'),
+    re.compile(r'channel_directory\.json'),
+    re.compile(r'gateway_state\.json'),
+    re.compile(r'desktop-build-stamp\.json'),
+    re.compile(r'context_length_cache\.yaml'),
+    re.compile(r'profile\.yaml'),
 ]
 
 # Secret patterns for redaction
+# BOLT OPTIMIZATION: Pre-compiled redaction patterns to avoid recompilation
+# during deep directory walks, improving overall backup speed.
 SECRET_PATTERNS = [
-    (r'ghp_[A-Za-z0-9]{36}', 'ghp_[REDACTED]'),
-    (r'gho_[A-Za-z0-9]{36,}', 'gho_[REDACTED]'),
-    (r'ghu_[A-Za-z0-9]{36,}', 'ghu_[REDACTED]'),
-    (r'ghs_[A-Za-z0-9]{36,}', 'ghs_[REDACTED]'),
-    (r'ghr_[A-Za-z0-9]{36,}', 'ghr_[REDACTED]'),
-    (r'sk-or-[a-zA-Z0-9\-]+', 'sk-or-[REDACTED]'),
-    (r'sk-ant-[a-zA-Z0-9\-]+', 'sk-ant-[REDACTED]'),
-    (r'sk-[a-zA-Z0-9]{20,}', 'sk-[REDACTED]'),
-    (r'AIza[A-Za-z0-9_\-]{35}', 'AIzaSy[REDACTED]'),
-    (r'1//[A-Za-z0-9_\-]{40,}', '[REDACTED_GOOGLE_TOKEN]'),
-    (r'ya29\.[A-Za-z0-9_\-\.]+', '[REDACTED_YA29]'),
+    (re.compile(r'ghp_[A-Za-z0-9]{36}'), 'ghp_[REDACTED]'),
+    (re.compile(r'gho_[A-Za-z0-9]{36,}'), 'gho_[REDACTED]'),
+    (re.compile(r'ghu_[A-Za-z0-9]{36,}'), 'ghu_[REDACTED]'),
+    (re.compile(r'ghs_[A-Za-z0-9]{36,}'), 'ghs_[REDACTED]'),
+    (re.compile(r'ghr_[A-Za-z0-9]{36,}'), 'ghr_[REDACTED]'),
+    (re.compile(r'sk-or-[a-zA-Z0-9\-]+'), 'sk-or-[REDACTED]'),
+    (re.compile(r'sk-ant-[a-zA-Z0-9\-]+'), 'sk-ant-[REDACTED]'),
+    (re.compile(r'sk-[a-zA-Z0-9]{20,}'), 'sk-[REDACTED]'),
+    (re.compile(r'AIza[A-Za-z0-9_\-]{35}'), 'AIzaSy[REDACTED]'),
+    (re.compile(r'1//[A-Za-z0-9_\-]{40,}'), '[REDACTED_GOOGLE_TOKEN]'),
+    (re.compile(r'ya29\.[A-Za-z0-9_\-\.]+'), '[REDACTED_YA29]'),
 ]
 
 # Files that MUST be backed up (core config)
@@ -219,7 +223,7 @@ def should_exclude_file(filename):
     """Check if file should be excluded."""
     # Check patterns
     for pattern in EXCLUDE_FILE_PATTERNS:
-        if re.search(pattern, filename):
+        if pattern.search(filename):
             return True
     
     # Skip backup artifacts
@@ -329,7 +333,7 @@ def redact_secrets_in_staging():
                 
                 original = content
                 for pattern, replacement in SECRET_PATTERNS:
-                    content = re.sub(pattern, replacement, content)
+                    content = pattern.sub(replacement, content)
                 
                 if content != original:
                     with open(filepath, 'w', encoding='utf-8', errors='ignore') as f:

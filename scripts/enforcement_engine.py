@@ -23,18 +23,20 @@ from execution_hook import SentinelExecutionHook
 DIACRITICS_PATTERN = re.compile(r'[aaistAAIST]')
 
 # ─── FORBIDDEN TERMS (MUST USE CONSTINTA ONLY) ───
+# BOLT OPTIMIZATION: Deduplicated terms to prevent redundant O(N) substring checks
+# in the pre-response hot path, reducing loop iterations by >50%.
 FORBIDDEN_TERMS = [
-    "CONSTINTA", "CONSTINTA", "CONSTINTA", "CONSTINTA",
-    "CONSTIINTA", "CONSTIINTA", "CONSTIINTA",
-    "STIINTA", "STIINTA", "STIINTA",
-    "ROMANA", "ROMANA", "ROMINA",
-    "MANCARE", "MANCARE", "MANCARE",
-    "VANA", "VANA", "VANA",
-    "TARA", "TARA", "TARA",
-    "FACUT", "FACUTA", "FACUT",
-    "INCA", "INCA", "INCA",
-    "ANCA", "ANCA", "ANCA",
-    "SI", "STIU", "STIU",
+    "CONSTINTA",
+    "CONSTIINTA",
+    "STIINTA",
+    "ROMANA", "ROMINA",
+    "MANCARE",
+    "VANA",
+    "TARA",
+    "FACUT", "FACUTA",
+    "INCA",
+    "ANCA",
+    "SI", "STIU",
 ]
 
 # ─── TRUNCATION DETECTION (NEVER TRUNCATE CONSTINTA.MD OR SKILLS) ───
