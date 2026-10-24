@@ -50,17 +50,18 @@ def main():
     # We'll do: re.findall(r'[^\W\d_]+', content, flags=re.UNICODE) to get sequences of Unicode letters.
     # Then filter length >=4 and not in stopwords (case-insensitive check).
     
-    words = re.findall(r'[^\W\d_]+', content, flags=re.UNICODE)
+    # ⚡ Bolt optimization: pushed length filter into regex {4,} to avoid O(N) allocation of short words,
+    # and reordered loop checks to delay .lower() allocation until after O(1) deduplication check.
+    words = re.findall(r'[^\W\d_]{4,}', content, flags=re.UNICODE)
     seen = set()
     keywords = []
     for w in words:
-        if len(w) < 4:
+        if w in seen:
             continue
+        seen.add(w)
         if w.lower() in stopwords:
             continue
-        if w not in seen:
-            seen.add(w)
-            keywords.append(w)
+        keywords.append(w)
     
     # Write timestamped index file
     timestamped_path = reports_dir / f"JOURNAL_KEYWORDS_{timestamp}.txt"
