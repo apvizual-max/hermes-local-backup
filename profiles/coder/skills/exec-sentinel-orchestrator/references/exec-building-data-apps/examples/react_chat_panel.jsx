@@ -242,7 +242,7 @@ export default function ChatPanel({ isOpen, onClose, contextText }) {
       </div>
 
       <form onSubmit={handleSend} className="p-4 border-t border-slate-200 dark:border-slate-800 flex items-end bg-slate-100 dark:bg-[#121212] relative">
-        <textarea
+        <textarea aria-label="Message"
           ref={textareaRef}
           value={input} onChange={(e) => setInput(e.target.value)} onKeyDown={handleKeyDown} disabled={isLoading}
           placeholder="Ask a question..."
