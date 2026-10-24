@@ -154,7 +154,7 @@ export default function ChatPanel({ isOpen, onClose, contextText }) {
     <div className={`fixed top-0 right-0 h-full w-[400px] bg-white dark:bg-[#1a1a1a] shadow-2xl flex flex-col transition-transform ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
       <div className="flex items-center justify-between p-4 border-b border-slate-200 dark:border-slate-800">
         <div className="font-semibold text-slate-900 dark:text-white">Chat</div>
-        <button onClick={onClose}><X className="w-5 h-5 text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200" /></button>
+        <button onClick={onClose} aria-label="Close chat"><X className="w-5 h-5 text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200" /></button>
       </div>
 
       <div className="flex-1 overflow-y-auto p-4 flex flex-col gap-4">
@@ -170,6 +170,7 @@ export default function ChatPanel({ isOpen, onClose, contextText }) {
                 <div className="bg-slate-50 dark:bg-[#1e1e1e] border border-slate-200 dark:border-slate-700/60 rounded-xl overflow-hidden shadow-sm">
                   <button
                     onClick={() => toggleThought(i)}
+                    aria-expanded={!!expandedThoughts[i]}
                     className="w-full flex items-center gap-2 px-3 py-2 text-xs font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800/50"
                   >
                     {expandedThoughts[i] ? <ChevronDown className="w-3.5 h-3.5 flex-shrink-0" /> : <ChevronRight className="w-3.5 h-3.5 flex-shrink-0" />}
@@ -248,7 +249,7 @@ export default function ChatPanel({ isOpen, onClose, contextText }) {
           rows={1}
           className="w-full bg-white dark:bg-[#1a1a1a] border border-slate-300 dark:border-slate-700 rounded-xl pl-4 pr-12 py-3 text-sm focus:outline-none focus:border-blue-500 text-slate-800 dark:text-slate-100 placeholder-slate-500 dark:placeholder-slate-400 resize-none overscroll-contain"
         />
-        <button type="submit" disabled={!input.trim() || isLoading} className="absolute right-6 bottom-6 p-2 bg-blue-600 hover:bg-blue-700 rounded-full text-white transition-colors disabled:opacity-50">
+        <button type="submit" aria-label="Send message" disabled={!input.trim() || isLoading} className="absolute right-6 bottom-6 p-2 bg-blue-600 hover:bg-blue-700 rounded-full text-white transition-colors disabled:opacity-50">
           <Send className="w-4 h-4" />
         </button>
       </form>
